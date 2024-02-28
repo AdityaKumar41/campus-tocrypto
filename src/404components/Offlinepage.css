@@ -1,0 +1,25 @@
+.desktop-3,
+.desktop-3 * {
+  box-sizing: border-box;
+}
+.desktop-3 {
+  background: #6843ec;
+  height: 875px;
+  position: relative;
+}
+.desktop-3 .ellipse-34 {
+  background: #ffeb3b;
+  border-radius: 50%;
+  width: 491px;
+  height: 418px;
+  position: absolute;
+  left: 459px;
+  top: 197px;
+  filter: blur(174.5px);
+}
+.desktop-3 .wide-screen-offline-instance {
+  width: 556px !important;
+  position: absolute !important;
+  left: 426px !important;
+  top: 172px !important;
+}

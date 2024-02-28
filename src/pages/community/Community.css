@@ -1,0 +1,207 @@
+
+.community{
+    position: relative;
+    top: -10vw;
+    z-index: -1;
+    color: white;
+    background-color: rgba(154, 84, 235, 1);
+    height: 50vw;
+    /* background-image: linear-gradient(rgba(154, 84, 235, 1),rgba(0, 0, 0, 0));; */
+}
+.community-section1{
+    display: flex;
+    position: relative;
+    top: 10vw;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    /* height: 50vw; */
+}
+.community-section1-left{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+.community-section1-left h1{
+    font-size: 5vw;
+    font-weight: 500;
+}
+.community-section1-left span{
+    font-size: 2vw;
+    font-weight: 300;
+}
+.community-section1-left button{
+    width: fit-content;
+    font-size: 1.6vw;
+    background-color: #D2FF3A;
+    font-family: "Work Sans" sans-serif;
+    padding: 1vw 5vw;
+    border: none;
+    border-radius: 1vw;
+}
+.community-section-right img{
+    width: 13vw;
+}
+.community-circle{
+    position: absolute;
+    top: 47vw;
+    width: 100%;
+    height: 10vw;
+    background-color: rgba(104, 67, 236, 0.336);
+    border-radius: 50%;
+    filter: blur(8vw);
+}
+.community-section2{
+    text-align: center;
+    font-size: 1.6vw;
+    letter-spacing: 0.2vw;
+    color: #6843EC;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    bottom: 5vw;
+}
+.community-section2-down{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 1.2vw;
+    gap: 2vw;
+}
+.community-section2-down img{
+    width: 11%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+
+}
+.community-section3 img{
+    width: 83vw;
+    position: relative;
+    left: 16.5vw;
+    top: 8vw;
+    z-index: -1;
+}
+.community-section3-head{
+    width: 30vw;
+    position: relative;
+    bottom: 38vw;
+    left: 20vw;
+    color: white;
+}
+.community-section3-head h4{
+    font-size: 2vw;
+    font-weight: 500;
+
+}
+.community-section3-head span{
+    font-size: 1vw;
+    font-weight: 300;
+}
+.community-input-field {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5vw;
+    margin-top: 2vw;
+
+}
+.community-section3-head button{
+    margin-top: 4vw;
+    width: fit-content;
+    font-size: 1vw;
+    font-weight: 700;
+    background-color: #D2FF3A;
+    font-family: "Work Sans" sans-serif;
+    padding: 0.7vw 3.5vw;
+    border: none;
+    border-radius: 1vw;
+}
+
+@media screen and (max-width:720px) {
+    .community-section-right:nth-child(2){
+        display: none;
+    }
+    .community{
+        top: -15vw;
+        height: 100vw;
+    }
+    .community-section1{
+        top: 15vw;
+
+    }
+    .community-section1-left h1{
+        font-size: 10vw;
+    }
+    .community-section1-left span{
+        font-size: 5vw;
+    }
+    .community-section1-left button{
+        padding: 3vw 10vw;
+        font-size: 4vw;
+    }
+    .community-section2-up{
+        font-size: 4vw;
+    }
+    .community-section2-down{
+        overflow-x: hidden;
+        width: 90vw;
+    }
+    .community-section2-down img{
+        width: 35%;
+        animation: scroll 2s linear infinite;
+    }
+    @keyframes scroll {
+        0% {
+            transform: translateX(-100%);
+        }
+        100%{
+          transform: translateX(100%);
+        }
+    }
+    .community-section3-head{
+        width: 90vw;
+        position: relative;
+        bottom: 45vw;
+        left: 8vw;
+        color: white;
+    }
+    .community-section3-head h4{
+        font-size: 9vw;
+        font-weight: 500;
+    
+    }
+    .community-section3-head span{
+        font-size: 3vw;
+        font-weight: 100;
+        opacity: 0.7;
+    }
+    .community-input-field input[type="text"],input[type="email"],input[type="tel"] {
+        width: 32vw;
+        background-color: #0A0A0A;
+        padding: 3vw 4vw;
+        color: #848895;
+        border: none;
+        outline: none;
+        border-radius: 0.5vw;
+        font-size: 3vw;
+    }
+    .community-input-field {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5vw;
+        margin-top: 5vw;
+    
+    }
+    .community-section3-head button{
+        margin-top: 4vw;
+        width: fit-content;
+        font-size: 4vw;
+        background-color: #D2FF3A;
+        font-family: "Work Sans" sans-serif;
+        padding: 1.5vw 5vw;
+        border: none;
+        border-radius: 1.5vw;
+    }
+}

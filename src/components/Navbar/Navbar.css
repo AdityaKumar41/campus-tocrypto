@@ -1,0 +1,114 @@
+.navbar{
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    /* z-index: 1; */
+}
+/* .circle2{
+    width: 80vw;
+    height: 20vw;
+    background-color: #6843EC;
+    position: absolute;
+    left: 4vw;
+    top: -10vw;
+    z-index: -1;
+    border-radius: 50%;
+    filter: blur(7vw);
+
+} */
+.navigation ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2vw;
+    list-style-type: none;
+    padding: 2vw;
+}
+/* @media screen and (max-width: 720px) {
+    .navigation{
+        display: none;
+    }
+} */
+.navigation ul li a{
+    display: flex;
+    align-items: center;
+    gap: 0.2vw;
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-size: 1.16vw;
+}
+/* .navigation button{
+    background-color: transparent;
+    padding: 0.7vw 1vw;
+    border: 0.13vw solid white;
+    color: white;
+    border-radius: 1.5vw;
+    cursor: pointer;
+} */
+.home img{
+    width: 10vw;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+}
+.navigation ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* .navigation ul li {
+    margin-right: 20px;
+  } */
+  
+  .menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+  }
+  
+  @media screen and (max-width: 720px) {
+    .navigation ul {
+      display: none;
+    }
+    .navbar{
+        height: 60px;
+    }
+    .menu-icon {
+      display: flex;
+    }
+    .navigation ul li a{
+        
+        font-size: 4vw;
+        /* border: 1px solid white; */
+        /* padding: 2px; */
+        /* border-radius: 5px; */
+    }
+    .navigation ul.active {
+        position: absolute;
+      display: flex;
+      flex-direction: column;
+      height: 195px;
+      width: 179px;
+      position: fixed;
+      top: -14px;
+      right: 0;
+      background: linear-gradient( 180deg,rgba(104, 67, 236, 0.973) 0%, rgba(211, 236, 67, 0.986) 100% );
+      overflow-y: auto; /* Enable scrolling if needed */
+      box-sizing: border-box;
+      border-radius: 5px;
+      z-index: 999;
+    }
+  }
+  

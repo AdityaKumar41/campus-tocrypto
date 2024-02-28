@@ -1,0 +1,331 @@
+.FAQ-section{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.contact-page{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-size: 2.7vw;
+    font-weight: 600;
+    /* margin-bottom: 30vw; */
+}
+.contact-circle-top{
+    position: absolute;
+    top: -10vw;
+    /* left: 1vw; */
+    background-color: #6843EC;
+    width: 100%;
+    height: 20vw;
+    overflow-x: hidden;
+    border-radius: 10%;
+    filter: blur(8vw);
+    z-index: -1;
+}
+.form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2.5vw;
+    font-weight: 700;
+    position: relative;
+    /* top: -3vw; */
+    margin-top: -5vw;
+    width: 100%;
+}
+.contact-left-side{
+    display: flex;
+    gap: 1.5vw;
+    flex-direction: column;
+    
+}
+.contact-right-side img{
+    position: relative;
+    top: -2vw;
+    width: 40vw;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    background-color: radial-gradient(circle,#B3D73B,#E47320);
+    
+}
+
+.name-field{
+    display: flex;
+    gap: 1vw;
+}
+.firstname{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7vw;
+}
+.lastname{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7vw;
+}
+
+.contact-left-side span{
+    font-size: 0.8vw;
+    font-weight: 400;
+    width: max-content;
+    border: 0.1vw solid white;
+    padding: 0.2vw 1vw;
+    border-radius: 0.3vw;
+
+}
+.contact-left-side span::before{
+    content: " ";
+    position: relative;
+    top: -1.66vw;
+    /* bottom: 150%;  At the top of the tooltip */
+    left: 3%;
+    margin-left: -0.3vw;
+    border-width: 0.35vw;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+}
+
+.form input::placeholder{
+    color: white;
+    opacity: 0.8;
+}
+.contact-left-side input{
+    padding: 0.7vw 2vw;
+    border-radius: 0.7vw;
+    background-color: transparent;
+    border: 0.12vw solid #3d4c77;
+    color: white;
+    outline: none;
+    font-size: 0.9vw;
+    opacity: 0.6;
+}
+.form button{
+    width: 17vw;
+    background-color: #6843EC;
+    color: white;
+    border: none;
+    border-radius: 0.5vw ;
+    font-size: 1.18vw;
+    font-weight: 700;
+    padding: 0.7vw 0vw;
+    cursor: pointer;
+}
+@media screen and (max-width:720px) {
+    .form button{
+        font-size: 3vw;
+        width: 30vw;
+        padding: 3vw 0vw;
+        border-radius: 1.5vw;
+    }
+    .contact-right-side img{
+        display: none;
+    }
+    .name-field{
+        display: flex;
+        gap: 3vw;
+    }
+    .contact-left-side input{
+        width: 35vw;
+        padding: 3.5vw 2vw;
+        font-size: 3.2vw;
+        border-radius: 2vw;
+    }
+    .contact-left-side input:nth-child(2),.contact-left-side input:nth-child(3),.contact-left-side input:nth-child(4){
+        width: 95%;
+        border-radius: 0.7vw;
+        background-color: transparent;
+        border: 0.12vw solid #3d4c77;
+        padding: 3vw 2vw;
+        color: white;
+    }
+    .contact-page{
+        font-size: 10vw;
+    }
+    /* .contact-left-side input{
+        
+    } */
+}
+.c-section2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2.3vw;
+}
+.c-section2 h3 span{
+    color: #B3D73B;
+}
+.c-section2 h3,h6{
+    margin: 2vw 0 0 0;
+}
+.c-section2 h6{
+    font-size: 1.25vw;
+    font-weight: 300;
+}
+.person1 img{
+    width: 10vw;
+    height: 10vw;
+    border-radius: 5%;
+    object-fit: cover;
+}
+.photos{
+    margin-top: 2vw;
+    display: flex;
+    justify-content: center;
+    gap: 6vw;
+    font-size: 1vw;
+}
+.person1 h3{
+    margin: 1vw 0 0 0;
+    font-size: 1.3vw;
+    font-weight: 500;
+}
+.person1 span{
+    font-size: 0.8vw;
+    font-weight: 300;
+}
+.questions{
+    width: 80%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vw;
+    flex-direction: column;
+    gap: 2vw;
+    font-size: 1.5vw;
+}
+.faq-head{
+    text-align: center;
+    font-size: 2.5vw;
+}
+.faq-head h6{
+    font-size: 1.3vw;
+    font-weight: 600;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.3vw 1.3vw;
+    max-width: fit-content;
+    color: #6941C6;
+    background-color: #6941c63a;
+}
+.faq-1{
+    border: 0.1vw solid white;
+    padding: 0.7vw 3vw;
+    border-radius: 0.6vw;
+}
+.faq-1 p{
+    font-size: 1vw;
+    font-weight: 300;
+    letter-spacing: 0.05vw;
+    text-align: justify;
+}
+.faq-1 summary{
+    cursor: pointer;
+    font-size: 1.3vw;
+    font-weight: 700;
+    letter-spacing: 0.06vw;
+}
+@media screen and (max-width:720px) {
+    .c-section2{
+        margin-top: 25px;
+    }
+    .c-section2 h3{
+        margin-top: 8vw;
+        font-size: 8vw;
+    }
+    .c-section2 h3 span{
+        color: #B3D73B;
+    }
+    .c-section2 h3,h6{
+        margin: 2vw 0 0 0;
+    }
+    .c-section2 h6{
+        font-size: 4vw;
+        font-weight: 200;
+        opacity: 0.7;
+        line-height: 7vw;
+    }
+    .photos {
+        width: 100%;
+        height: 100%;
+        margin-top: 2vw;
+        display: flex;
+        justify-content: flex-start; /* Change from space-around to flex-start */
+        font-size: 1vw;
+        /* overflow-x: auto; */
+        gap: 5vw;
+        /* overflow: auto; Enable overflow scrolling */
+    }
+    .photos::-webkit-scrollbar{
+        width: 0;
+    }
+    
+    .person1 {
+        flex-shrink: 0; /* Prevent shrinking */
+    }
+    
+    .person1 h3 {
+        margin: 1vw 0 0 0;
+        font-size: 3.3vw;
+        font-weight: 500;
+        width: 38vw;
+    }
+    
+    .person1 img {
+        width: 30vw;
+        height: auto; /* Let height adjust automatically */
+        border-radius: 1.3vw;
+    }
+    
+    .person1 span {
+        font-size: 3vw;
+        font-weight: 300;
+        opacity: 0.7;
+    }
+    .questions{
+        width: 100%;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2vw;
+        flex-direction: column;
+        gap: 2vw;
+        font-size: 4.5vw;
+    }
+
+    .faq-head{
+        text-align: center;
+        font-size: 4.5vw;
+    }
+    .faq-head h6{
+        font-size: 4.3vw;
+        font-weight: 600;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0.3vw 1.3vw;
+        max-width: fit-content;
+        color: #6941C6;
+        background-color: #6941c63a;
+    }
+    .faq-1{
+        border: 0.1vw solid white;
+        padding: 3vw 3vw;
+        border-radius: 2vw;
+    }
+    .faq-1 p{
+        font-size: 4vw;
+        font-weight: 300;
+        letter-spacing: 0.02vw;
+        line-height: 5vw;
+        text-align: justify;
+        opacity: 0.7;
+    }
+    .faq-1 summary{
+        cursor: pointer;
+        font-size: 4.3vw;
+        font-weight: 500;
+        letter-spacing: 0.06vw;
+        opacity: 0.8;
+    }
+}

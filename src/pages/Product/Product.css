@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+.product-section{
+    display: flex;
+    gap: 10vw;
+    flex-direction: column;
+    color: white;
+}
+
+.product-section img{
+    width: 2vw;
+    position: relative;
+    left: 40%;
+}
+
+.product-circle1{
+    position: absolute;
+    width: 28vw;
+    height: 28vw;
+    background-color: #6843EC;
+    z-index: -1;
+    top: -6vw;
+    left: -9vw;
+    border-radius: 50%;
+    filter: blur(6vw);
+}
+.product-circle2{
+    position: absolute;
+    top: -2vw;
+    /* left: 1vw; */
+    background-color: rgba(104, 67, 236, 1);
+    width: 100%;
+    height: 15vw;
+    overflow-x: hidden;
+    /* border-radius: 60%; */
+    filter: blur(9vw);
+    z-index: -1;
+}
+.product-circle3{
+    position: absolute;
+    top: 30%;
+    left: 79%;
+    z-index: -1;
+    /* transform: translate(-90%, -60%); */
+    /* transform: rotate(-90deg); */
+    height: 40vw;
+    width: 20vw;
+    border-radius: 100% 0 0 100%/50% 0 0 50%;
+    background-color: #6843EC;
+    filter: blur(5vw);
+}
+.wrapper svg {
+	font-family: "Russo One", sans-serif;
+	width: 100%; height: 100%;
+}
+.wrapper svg text {
+	animation: stroke 5s infinite alternate;
+	stroke-width: 2;
+	stroke: #FFFFFF;
+	font-size: 7vw;
+}
+@keyframes stroke {
+	0%   {
+		fill: rgba(255,255,255,0); stroke: rgba(255,255,255,1);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(255,255,255,0); stroke: rgba(255,255,255,1); }
+	80%  {fill: rgba(255,255,255,0); stroke: rgba(255,255,255,1); stroke-width: 3; }
+	100% {
+		fill: rgba(255,255,255,1); stroke: rgba(255,255,255,0);
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
+.Product-Social-media-Section{
+    display: flex;
+    gap: 4vw;
+    position: relative;
+    top: -7vw;
+    justify-content: center;
+    font-size: 1.8vw;
+}
+.Product-Social-media-Section svg{
+    cursor: pointer;
+}
+.Product-Social-media-Section svg:nth-child(1):hover{
+    color: blue;
+    background-color: white;
+    border-radius: 50%;
+
+}
+.product-section-3{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+}
+.planet1 img{
+    width: 11vw;
+}
+.planet2 img{
+    position: relative;
+    top: 0.3vw;
+    left: 20vw;
+    width: 35vw;
+    z-index: -1;
+}
+.product-discussionSection{
+    z-index: 1;
+    position: relative;
+    left: 25vw;
+    bottom: 6vw;
+    outline: none;
+    border: none;
+}
+.product-discussionSection input[type="text"]{
+    background-color: #0A0A0A;
+    border: none;
+    width: 15vw;
+    height: 2vw;
+    padding: 1vw 8.9vw 1vw 1.7vw  ;
+    border-radius: 2vw;
+    color: white;
+    font-size: 1vw;
+    outline: none;
+
+
+}
+.product-discussionSection button{
+    position: relative;
+    left: -8.5vw;
+    background-color: #D2FF3A;
+    padding: 0.7vw 1.5vw;
+    border-radius: 2vw;
+    font-weight: 600;
+    font-size: 0.97vw; 
+    cursor: pointer;
+    border: none;
+
+}
+@media screen and (max-width:720px) {
+    .product-section{
+        height: 75vh;
+        /* display: flex; */
+        /* gap: 136vw; */
+        /* flex-direction: column; */
+    }
+    .product-section-3{
+        display: none;
+    }
+    .Product-Social-media-Section{
+        font-size: 8vw;
+    }
+    .product-discussionSection{
+        display: none;
+    }
+    .planet2{
+        display: none;
+    }
+    .wrapper svg text{
+        font-size: 10vw;
+    }
+}
