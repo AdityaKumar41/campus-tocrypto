@@ -118,7 +118,16 @@
     border: none;
     border-radius: 1vw;
 }
-
+.community-input-field input{
+    width: 17vw;
+    background-color: #0A0A0A;
+    padding: 1vw 3vw;
+    color: #848895;
+    border: none;
+    outline: none;
+    border-radius: 0.5vw;
+    font-size: 1.5vw;
+}
 @media screen and (max-width:720px) {
     .community-section-right:nth-child(2){
         display: none;

@@ -7,7 +7,8 @@ import React, { useState, useEffect } from "react";
 import "./Contact.css";
 import Contact1 from "../../Assets/svg/Yuppies Chat.svg";
 const Person1 = "https://campus-crypto.s3.eu-north-1.amazonaws.com/Campus+2+Crypto/members/siddarth-kumar.jpeg";
-const Person2 = "https://campus-crypto.s3.eu-north-1.amazonaws.com/Campus+2+Crypto/members/chirpa.jpeg"
+const Person2 = "https://campus-crypto.s3.eu-north-1.amazonaws.com/Campus+2+Crypto/members/chirpa.jpeg";
+const Person3 = "https://campus-crypto.s3.eu-north-1.amazonaws.com/nirvan.png";
 const Contact = () => {
   const [formData, setFormData] = useState({
     firstName: "",
@@ -26,6 +27,7 @@ const Contact = () => {
   const peopleData = [
     { name: 'Siddharth Kumar', imgSrc: Person1 },
     { name: 'Chira Rajeswari Sushree Maharani', imgSrc: Person2 },
+    { name: 'Nirvan Abhilash', imgSrc: Person3}
   ];
 
   useEffect(() => {

@@ -320,16 +320,17 @@
         font-size: 4vw;
     }
     .discussionSection button{
-        position: absolute;
-        top: 121vw;
-        left: 55vw;
+        /* position: absolute; */
+        /* top: 109vw;
+        left: 55vw; */
         background-color: #D2FF3A;
         padding: 4vw 7vw;
-        border-radius: 5vw;
+        border-radius: 6vw;
         font-weight: 600;
         font-size: 2.5vw; 
         cursor: pointer;
         border: none;
+        margin-top: 10px;
     
     }
     .backgroungImg img{
@@ -456,6 +457,9 @@
         font-weight: 500;
         font-size: 3.5vw;
     }
+    .section7-content{
+        height: 50vw;
+    }
     
 }
 .section7-content{
@@ -473,6 +477,7 @@
     flex-direction: column;
     gap: 1vw;
 }
+/*  */
 .content-sec1{
     display: flex;
     gap: 1vw;
@@ -485,6 +490,7 @@
     text-align: center;
     padding: 2.8vw;
     background-color: #19161C;
+    height: 100%;
 }
 .block1 h2{
     margin: 0;
@@ -500,11 +506,13 @@
 .block2 img{
     width: 20.7vw;
     object-fit: cover;
+    height: 100%;
 }
 .content-right img{
     width: 41.5vw;
     aspect-ratio: 3/2;
     object-fit: cover;
+    height: 100%;
 }
 /* @media (width >= 768px) {
     .section2{
@@ -713,5 +721,19 @@
         100%{
           transform: translateX(100%);
         }
+    }
+
+    .block2 img{
+        height:22vw;
+    }
+    .block1{
+        padding: .5vw;
+    }
+    .block1 h2{
+        font-size: 3.5vw;
+    }
+    .block1 span{
+        font-size: 1.9vw;
+        font-weight: 200;
     }
 }
