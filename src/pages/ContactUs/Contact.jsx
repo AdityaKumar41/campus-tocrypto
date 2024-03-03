@@ -26,8 +26,8 @@ const Contact = () => {
   });
   const peopleData = [
     { name: 'Siddharth Kumar', imgSrc: Person1 },
-    { name: 'Chira Rajeswari Sushree Maharani', imgSrc: Person2 },
-    { name: 'Nirvan Abhilash', imgSrc: Person3}
+    { name: 'Nirvan Abhilash', imgSrc: Person3},
+    { name: 'C.R Sushree Maharani', imgSrc: Person2 }
   ];
 
   useEffect(() => {

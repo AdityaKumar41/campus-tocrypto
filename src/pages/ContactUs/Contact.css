@@ -248,15 +248,15 @@
         line-height: 7vw;
     }
     .photos {
-        width: 100%;
+        width: 81vw;
         height: 100%;
         margin-top: 2vw;
         display: flex;
-        justify-content: flex-start; /* Change from space-around to flex-start */
+        flex-wrap: wrap;
+        justify-content: center;
         font-size: 1vw;
-        overflow-x: auto;
+        /* overflow-x: auto; */
         gap: 5vw;
-        /* overflow: auto; Enable overflow scrolling */
     }
     .photos::-webkit-scrollbar{
         width: 0;
@@ -275,7 +275,7 @@
     
     .person1 img {
         width: 30vw;
-        height: auto; /* Let height adjust automatically */
+        height: 26vw; /* Let height adjust automatically */
         border-radius: 1.3vw;
     }
     
