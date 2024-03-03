@@ -1,14 +1,17 @@
 import React, { useState, useEffect } from "react";
-// import { FaLinkedinIn } from "react-icons/fa6";
+import { FaLinkedinIn } from "react-icons/fa6";
 // import Popup from "reactjs-popup";
 // import 'reactjs-popup/dist/index.css';
 // import axios from 'axios';
-// import { NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./Contact.css";
 import Contact1 from "../../Assets/svg/Yuppies Chat.svg";
 const Person1 = "https://campus-crypto.s3.eu-north-1.amazonaws.com/Campus+2+Crypto/members/siddarth-kumar.jpeg";
 const Person2 = "https://campus-crypto.s3.eu-north-1.amazonaws.com/Campus+2+Crypto/members/chirpa.jpeg";
 const Person3 = "https://campus-crypto.s3.eu-north-1.amazonaws.com/nirvan.png";
+const person1Linked = "https://www.linkedin.com/in/siddharth-kumar-45b449133/";
+const person2Linked = "https://www.linkedin.com/in/nirvan-abhilash-8a890218b/";
+const person3Linked = "https://www.linkedin.com/in/chira-rajeswari-sushree-maharani-6208b9269/";
 const Contact = () => {
   const [formData, setFormData] = useState({
     firstName: "",
@@ -25,9 +28,9 @@ const Contact = () => {
     },
   });
   const peopleData = [
-    { name: 'Siddharth Kumar', imgSrc: Person1 },
-    { name: 'Nirvan Abhilash', imgSrc: Person3},
-    { name: 'C.R Sushree Maharani', imgSrc: Person2 }
+    { name: 'Siddharth Kumar', imgSrc: Person1, link:  person1Linked},
+    { name: 'Nirvan Abhilash', imgSrc: Person3, link: person2Linked},
+    { name: 'C.R Sushree Maharani', imgSrc: Person2, link: person3Linked}
   ];
 
   useEffect(() => {
@@ -173,7 +176,7 @@ const Contact = () => {
         </form>
         <div className="c-section2">
           <h3>
-            Our <span>Member</span>
+            Our <span>Founding</span>
           </h3>
           <h6>
           C2C started in 2017 and this year we restarted this group and expanding our presence globally.{" "}
@@ -183,7 +186,7 @@ const Contact = () => {
               <div className="person1" key={index}>
                 <img src={person.imgSrc} alt="img" />
                 <h3>{person.name}</h3>
-                {/* <span><FaLinkedinIn /></span> */}
+                <span><NavLink to={person.link}><FaLinkedinIn  className="linkedin-icons"/></NavLink></span>
               </div>
             ))}
           </div>
