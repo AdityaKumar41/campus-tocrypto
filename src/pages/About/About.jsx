@@ -79,9 +79,9 @@ const About = () => {
               <div className="sub-content1">
                 <img src={telegram} alt="icon" />
                 <div className="sub-content1-right">
-                  <h6 className="content-1-h6">How technology started</h6>
+                  <h6 className="content-1-h6">How Community started?</h6>
                   <span>
-                    Building an enterprisedoesn't need your thousands.
+                  It’s all started with group of students. And strong supporter of Bitcoin Blockchain.
                   </span>
                 </div>
               </div>
@@ -90,7 +90,7 @@ const About = () => {
                 <div className="sub-content-right">
                   <h6 className="content-1-h6">Endless Possibilities</h6>
                   <span>
-                    Building an enterprisedoesn't need your thousands.
+                  Joining a community doesn’t need your dollars.
                   </span>
                 </div>
               </div>
@@ -130,7 +130,7 @@ const About = () => {
      <div className="inside-grid">
       <img src={grid} alt="back" />
       {windowWidth < 720 && (
-        <img src={grid} alt="second image" />
+        <img src={grid} alt="second-image" />
       )}
     </div>
         </div>

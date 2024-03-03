@@ -176,8 +176,7 @@ const Contact = () => {
             Our <span>Member</span>
           </h3>
           <h6>
-            With our intuitive interface and user-friendly features, you can
-            easily create and manage your data, reports, and more.{" "}
+          C2C started in 2017 and this year we restarted this group and expanding our presence globally.{" "}
           </h6>
           <div className="photos">
             {peopleData.map((person, index) => (

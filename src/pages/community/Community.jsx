@@ -18,7 +18,12 @@ const imgFusionWave = "https://campus-crypto.s3.eu-north-1.amazonaws.com/ICONS/F
 const imgBlockCation = "https://campus-crypto.s3.eu-north-1.amazonaws.com/ICONS/blockcation_logo.png";
 const imgFilemarket = "https://campus-crypto.s3.eu-north-1.amazonaws.com/ICONS/filemarket.png";
 const imgGramTarang = "https://campus-crypto.s3.eu-north-1.amazonaws.com/ICONS/logo.png";
-
+  // function scrollToSection() {
+  //   const section = document.getElementById('sectionId');
+  //   if (section) {
+  //     section.scrollIntoView({ behavior: 'smooth' });
+  //   }
+  // };
 
 const Community = () => {
   const [formData, setFormData] = useState({
@@ -98,7 +103,6 @@ const Community = () => {
       }).then(
         message => alert(message)
       );
-      
       // Clear form fields
       setFormData({
         firstName: "",
@@ -116,14 +120,14 @@ const Community = () => {
       });
     }
   };
+
   return (
     <>
     <div className="community">
         <div className="community-section1">
             <div className="community-section1-left">
                 <h1>Access the power of Blockchain</h1>
-                <span>Explore the power of Blockchain</span>
-                <button>Join us</button>
+                <span>From lecture halls to blockchains. Get ahead in finance and tech with Campus to Crypto.</span>
             </div>
             <div className="community-section-right">
                 <img src={PlusIcon} alt="icon" />
@@ -149,7 +153,7 @@ const Community = () => {
         <div className="community-section3">
           <img src={Planet} alt="img" />
           <div className="community-section3-head">
-            <h4>Join Our Community Now</h4>
+            <h4 id="sectionId">Join Our Community Now</h4>
             <span>Join our vibrant blockchain community today! Engage, learn, and collaborate with like-minded enthusiasts. Don't miss out, join now!</span>
             <form className="community-input-field" onSubmit={handleSubmited}>
             <div className="firstname">

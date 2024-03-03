@@ -14,12 +14,12 @@ const Footer = () => {
       <div className="footer-section">
        <div className="footer-section-content">
        <div className="footer-section-left">
-        <NavLink to='/' ><img src={logoI} alt="LoGo" /></NavLink>
+        <NavLink to='/' ><img src={logoI} alt="LoGo" className='navlin-img'/></NavLink>
         <div className='Manged-by'>Managed by CUTM Community</div>
         <div className="social-media-logo">
-        <NavLink to='/https://www.youtube.com'><GrYoutube /></NavLink>
-        <NavLink to='/https://www.twitter.com/campustocrypto'><BsTwitterX /></NavLink>
-        <NavLink to='/https:www.instagram.com/campustocrypto'><FaInstagram /></NavLink>
+        <NavLink to='https://www.youtube.com'><GrYoutube /></NavLink>
+        <NavLink to='https://www.twitter.com/campustocrypto'><BsTwitterX /></NavLink>
+        <NavLink to='https:www.instagram.com/campustocrypto'><FaInstagram /></NavLink>
         <NavLink to='/#'><BiLogoTelegram /></NavLink>
         </div>
         <div className='footer-cp'>© Copyright 2024 Centurion University.</div>

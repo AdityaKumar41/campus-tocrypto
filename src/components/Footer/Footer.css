@@ -69,6 +69,7 @@
     .Manged-by{
         font-size: 3.5vw;
         margin-bottom: 8px;
+        text-transform: uppercase;
     }
     .social-media-logo svg{
         font-size: 4vw;
@@ -78,5 +79,8 @@
     }
     .get-connect{
         white-space: nowrap;
+    }
+    .navlin-img{
+        display: none;
     }
 }
