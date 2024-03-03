@@ -467,10 +467,17 @@
     flex-direction: row;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
+    overflow-y: hidden;
     gap: 1vw;
 }
 .section7-content::-webkit-scrollbar{
-    width: 0;
+    width: 2px;
+    background-color: #63625d;
+    width: 50vw;
+}
+.section7-content::-webkit-scrollbar-thumb{
+    background-color: #cec82f;
+    border-radius: 12px;
 }
 .content-left{
     display: flex;
@@ -735,5 +742,13 @@
     .block1 span{
         font-size: 1.9vw;
         font-weight: 200;
+    }
+    .section7-content::-webkit-scrollbar{
+        width: 0px;
+        background-color:transparent;
+    }
+    .section7-content::-webkit-scrollbar-thumb{
+        background-color: transparent;
+        width: 0px;
     }
 }

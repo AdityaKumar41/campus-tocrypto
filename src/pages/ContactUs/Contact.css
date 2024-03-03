@@ -254,7 +254,7 @@
         display: flex;
         justify-content: flex-start; /* Change from space-around to flex-start */
         font-size: 1vw;
-        /* overflow-x: auto; */
+        overflow-x: auto;
         gap: 5vw;
         /* overflow: auto; Enable overflow scrolling */
     }
