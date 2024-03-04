@@ -19,7 +19,7 @@ const Footer = () => {
         <div className="social-media-logo">
         <NavLink to='https://www.youtube.com'><GrYoutube /></NavLink>
         <NavLink to='https://www.twitter.com/campustocrypto'><BsTwitterX /></NavLink>
-        <NavLink to='https:www.instagram.com/campustocrypto'><FaInstagram /></NavLink>
+        <NavLink to='https://www.instagram.com/campustocrypto'><FaInstagram /></NavLink>
         <NavLink to='/#'><BiLogoTelegram /></NavLink>
         </div>
         <div className='footer-cp'>© Copyright 2024 Centurion University.</div>
