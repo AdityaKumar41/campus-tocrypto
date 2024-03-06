@@ -181,7 +181,7 @@ const Home = () => {
     }
   };
   const [typeEffect] = useTypewriter({
-    words: ["Blockchain", "Decentralize", "Cryptocurrency"],
+    words: ["Blockchain", "Decentralization", "Cryptocurrency"],
     loop: true,
     typeSpeed: 100,
     deleteSpeed: 40,
