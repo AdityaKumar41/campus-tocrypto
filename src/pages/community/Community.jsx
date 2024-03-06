@@ -1,4 +1,5 @@
 import React,{useState,useEffect} from 'react';
+import Popup from 'reactjs-popup';
 import './Community.css';
 import PlusIcon from '../../Assets/svg/Group (1).svg';
 import L from '../../Assets/svg/Vector (4).svg';
@@ -40,7 +41,7 @@ const Community = () => {
       message:"",
     },
   });
-
+  const [showPopup, setShowPopup] = useState(false);
   useEffect(() => {
     // Load smtp.js script dynamically
     const script = document.createElement('script');
@@ -101,7 +102,7 @@ const Community = () => {
         Subject: 'New message from ' + formData.firstName + ' ' + formData.lastName,
         Body: 'Phone Number: ' + formData.phoneNumber + '\n\nEmail: ' + formData.email+'\n\nMessage: ' + formData.message
       }).then(
-        message => alert(message)
+        setShowPopup(true)
       );
       // Clear form fields
       setFormData({
@@ -201,6 +202,18 @@ const Community = () => {
             {formData.errors.email &&( <span>{formData.errors.email}</span>)}
               <button type='submit'>Join us</button>
             </form>
+            <Popup
+          open={showPopup}
+          onClose={() => setShowPopup(false)}
+          contentStyle={{ maxWidth: '400px', borderRadius: '20px', boxShadow: '0 10px 20px rgba(0, 0, 0, 0.3)' }}
+          overlayStyle={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}
+        >
+          <div className="popup-content">
+            <span className="popup-close-btn" onClick={() => setShowPopup(false)}>&times;</span>
+            <h3 className="popup-title">🥳🎉Thank you for Joining our Community 🎉!</h3>
+            <p className="popup-message">We'll get back to you as soon as possible.</p>
+          </div>
+        </Popup>
             
           </div>
          

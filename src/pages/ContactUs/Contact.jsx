@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FaLinkedinIn } from "react-icons/fa6";
-// import Popup from "reactjs-popup";
+import Popup from "reactjs-popup";
 // import 'reactjs-popup/dist/index.css';
 // import axios from 'axios';
 import { NavLink } from "react-router-dom";
@@ -32,7 +32,7 @@ const Contact = () => {
     { name: 'Nirvan Abhilash', imgSrc: Person3, link: person2Linked},
     { name: 'C.R Sushree Maharani', imgSrc: Person2, link: person3Linked}
   ];
-
+  const [showPopup, setShowPopup] = useState(false);
   useEffect(() => {
     // Load smtp.js script dynamically
     const script = document.createElement('script');
@@ -93,8 +93,8 @@ const Contact = () => {
         Subject: 'New message from ' + formData.firstName + ' ' + formData.lastName,
         Body: 'Phone Number: ' + formData.phoneNumber + '\n\nEmail: ' + formData.email+'\n\nMessage: ' + formData.message
       }).then(
-        message => alert(message)
-      );
+        setShowPopup(true)
+      )
       
       // Clear form fields
       setFormData({
@@ -174,6 +174,20 @@ const Contact = () => {
             <img src={Contact1} alt="icon" />
           </div>
         </form>
+        <Popup
+          open={showPopup}
+          onClose={() => setShowPopup(false)}
+          contentStyle={{ maxWidth: '400px', borderRadius: '20px', boxShadow: '0 10px 20px rgba(0, 0, 0, 0.3)' }}
+          overlayStyle={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}
+        >
+          <div className="popup-content">
+            <span className="popup-close-btn" onClick={() => setShowPopup(false)}>&times;</span>
+            <h3 className="popup-title">Thank you for submitting the form!</h3>
+            <p className="popup-message">We'll get back to you as soon as possible.</p>
+          </div>
+        </Popup>
+
+
         <div className="c-section2">
           <h3>
             Our <span>Founding</span>

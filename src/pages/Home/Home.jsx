@@ -1,5 +1,6 @@
 import React,{ useState, useEffect } from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
+import Popup from "reactjs-popup";
 import { Link } from "react-router-dom";
 import CountUp from 'react-countup';
 import { GoArrowUpRight } from "react-icons/go";
@@ -119,7 +120,7 @@ const Home = () => {
       email: "",
     },
   });
-
+  const [showPopup, setShowPopup] = useState(false);
   useEffect(() => {
     // Load smtp.js script dynamically
     const script = document.createElement('script');
@@ -168,7 +169,7 @@ const Home = () => {
         Subject: 'New subscriber',
         Body: 'Email: ' + formData.email
       }).then(
-        message => alert(message)
+        setShowPopup(true)
       );
       
       // Clear form fields
@@ -297,6 +298,18 @@ const Home = () => {
               {/* {formData.errors.email &&( <span>{formData.errors.email}</span>)} */}
               <button type="submit">Subscribe</button>
               </form>
+              <Popup
+          open={showPopup}
+          onClose={() => setShowPopup(false)}
+          contentStyle={{ maxWidth: '400px', borderRadius: '20px', boxShadow: '0 10px 20px rgba(0, 0, 0, 0.3)' }}
+          overlayStyle={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}
+        >
+          <div className="popup-content">
+            <span className="popup-close-btn" onClick={() => setShowPopup(false)}>&times;</span>
+            <h3 className="popup-title">Congratulations! 🎉!</h3>
+            <p className="popup-message">You've officially joined the ranks of our newsletter subscribers</p>
+          </div>
+        </Popup>
             </div>
           </div>
         </div>
