@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import Notification from '../external/Notification';
+import { popupPerson } from "../Home/Home";
 import { FaLinkedinIn } from "react-icons/fa6";
 import Popup from "reactjs-popup";
 // import 'reactjs-popup/dist/index.css';
@@ -33,6 +35,7 @@ const Contact = () => {
     { name: 'C.R Sushree Maharani', imgSrc: Person2, link: person3Linked}
   ];
   const [showPopup, setShowPopup] = useState(false);
+  const [showNotification, setShowNotification] = useState(false);
   useEffect(() => {
     // Load smtp.js script dynamically
     const script = document.createElement('script');
@@ -45,7 +48,10 @@ const Contact = () => {
       document.body.removeChild(script);
     };
   }, []);
-
+// call
+useEffect(() => {
+  setShowNotification(true);
+}, []);
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -187,7 +193,6 @@ const Contact = () => {
           </div>
         </Popup>
 
-
         <div className="c-section2">
           <h3>
             Our <span>Founding</span>
@@ -205,6 +210,26 @@ const Contact = () => {
             ))}
           </div>
         </div>
+        {/* {notification} */}
+      <div>
+        {showNotification && (
+          <div className="notification-wrapper">
+            <div className="external-notification">
+              <Notification 
+                message={
+                  <>
+                  <span>
+                    Registration is open <a href={popupPerson.registrationLink} target="_blank" rel="noreferrer">Click Now</a>!
+                  </span>
+                  <span className="popup-close-btn" onClick={() => setShowNotification(false)}>&times;</span>
+                  </>
+                } 
+              />
+            </div>
+            
+          </div>
+        )}
+      </div>
         <div className="FAQ-section">
           <div className="faq-head">
             <h6>FAQs</h6>

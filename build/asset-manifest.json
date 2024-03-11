@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8f6c98d5.css",
+    "main.js": "/static/js/main.6ec313ed.js",
+    "static/js/592.718bf927.chunk.js": "/static/js/592.718bf927.chunk.js",
+    "static/media/rectangle-1340.png": "/static/media/rectangle-1340.34526b8d72e3c5ad54de.png",
+    "static/media/backgroundIMAGE.png": "/static/media/backgroundIMAGE.3f602253f58d66659055.png",
+    "static/media/Yuppies Managing.svg": "/static/media/Yuppies Managing.76732f9d9bd6f180d93602d87b5c84de.svg",
+    "static/media/Yuppies Chat.svg": "/static/media/Yuppies Chat.1a2a4863b4b5f2c6a804534bedb1d5fc.svg",
+    "static/media/Yuppies Remote Team.svg": "/static/media/Yuppies Remote Team.c6231b46efa4d0619a4600398418fd9c.svg",
+    "static/media/Group 17.svg": "/static/media/Group 17.bc42071b8e5e508a835faf73b3d06526.svg",
+    "static/media/Group 1171275444.svg": "/static/media/Group 1171275444.507154a13dbb11cce85186903f89587e.svg",
+    "static/media/81.svg": "/static/media/81.b15774dc796cfed599046a536b475118.svg",
+    "static/media/82.svg": "/static/media/82.790ee18679b6e5012af0d0a08ff39710.svg",
+    "static/media/Icon.svg": "/static/media/Icon.8c315956482e1e0ff85546b88035755e.svg",
+    "static/media/Group 16.svg": "/static/media/Group 16.75ac74faee7ce1b1b0b8853436c5b2af.svg",
+    "index.html": "/index.html",
+    "static/media/Icon (1).svg": "/static/media/Icon (1).dfe9dd2e557018793d849d58034be45d.svg",
+    "static/media/Group (1).svg": "/static/media/Group (1).96328e4b8e150a506ad4bbedeba1ed1b.svg",
+    "static/media/Tick.svg": "/static/media/Tick.18844d09ae8bc9357c89b94eab196e9e.svg",
+    "static/media/Group 1 (1).svg": "/static/media/Group 1 (1).8f7765f50bb94e5b9a7fa2150ced82b6.svg",
+    "static/media/Vector (4).svg": "/static/media/Vector (4).688f7d6417ec5b7d9af492d4dd8326aa.svg",
+    "main.8f6c98d5.css.map": "/static/css/main.8f6c98d5.css.map",
+    "main.6ec313ed.js.map": "/static/js/main.6ec313ed.js.map",
+    "592.718bf927.chunk.js.map": "/static/js/592.718bf927.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8f6c98d5.css",
+    "static/js/main.6ec313ed.js"
+  ]
+}

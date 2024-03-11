@@ -2,6 +2,9 @@
 .buttons-type-404-page-state-default * {
   box-sizing: border-box;
 }
+div#root{
+  height: 0px;
+}
 .buttons-type-404-page-state-default {
   width: 200px;
   height: 52px;

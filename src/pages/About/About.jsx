@@ -1,4 +1,6 @@
 import React,{useState,useEffect} from "react";
+import Notification from '../external/Notification';
+import { popupPerson } from "../Home/Home";
 import "./About.css";
 import Img from "../../Assets/svg/Yuppies Managing.svg";
 import telegram from "../../Assets/svg/Icon (1).svg";
@@ -46,7 +48,9 @@ const partner = [
 
 ]
 
+
 const About = () => {
+  const [showNotification, setShowNotification] = useState(false);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -57,6 +61,9 @@ const About = () => {
     return () => {
       window.removeEventListener('resize', handleResize);
     };
+  }, []);
+  useEffect(() => {
+    setShowNotification(true);
   }, []);
   return (
     <div>
@@ -124,6 +131,26 @@ const About = () => {
 
           </div>
         </div>
+      </div>
+      {/* {notification} */}
+      <div>
+        {showNotification && (
+          <div className="notification-wrapper">
+            <div className="external-notification">
+              <Notification 
+                message={
+                  <>
+                  <span>
+                    Registration is open <a href={popupPerson.registrationLink} target="_blank" rel="noreferrer">Click Now</a>!
+                  </span>
+                  <span className="popup-close-btn" onClick={() => setShowNotification(false)}>&times;</span>
+                  </>
+                } 
+              />
+            </div>
+            
+          </div>
+        )}
       </div>
      <div className="our-team-img">
      <div className="grid">

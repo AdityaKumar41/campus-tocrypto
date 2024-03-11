@@ -20,8 +20,8 @@ export const ButtonsType404PageStateDefault = ({
       }
     >
       <Link to="/">
-      <div className="rectangle-1"></div>
-      <div className="go-home">Go Home </div>
+        <div className="rectangle-1"></div>
+        <div className="go-home">Go Home </div>
       </Link>
     </div>
   );

@@ -345,6 +345,8 @@
 /* Contact.css */
 
 .popup-content {
+    margin-left: auto;
+    margin-right: auto;
     padding: 20px;
     background-color: #8b6ed8;
     border-radius: 8px;
@@ -382,7 +384,10 @@
   .popup-overlay {
     background-color: rgba(0, 0, 0, 0.6);
   }
-  
+  .external-notification{
+    font-size: 15px;
+    font-weight: 300;
+  }
   @keyframes slideIn {
     from {
       transform: translateY(-50%);
@@ -393,4 +398,3 @@
       opacity: 1;
     }
   }
-  

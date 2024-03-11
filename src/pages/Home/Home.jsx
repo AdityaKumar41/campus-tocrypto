@@ -1,4 +1,5 @@
 import React,{ useState, useEffect } from "react";
+import Notification from '../external/Notification';
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import Popup from "reactjs-popup";
 import { Link } from "react-router-dom";
@@ -25,7 +26,6 @@ import Backimg from "../../Assets/images/backgroundIMAGE.png";
 // import image6 from "../../Assets/images/image14.png";
 // import image7 from "../../Assets/images/image15.png";
 // import image8 from "../../Assets/images/image16.png";
-
 const imgPolk = "https://campus-crypto.s3.eu-north-1.amazonaws.com/Polkadot-20240223T062823Z-001/Polkadot/1694463747080.jfif";
 const imgwaveAI="https://campus-crypto.s3.eu-north-1.amazonaws.com/FusionWaveAi-20240223T065404Z-001/FusionWaveAi/1702374446893.jfif";
 const imgKoi="https://campus-crypto.s3.eu-north-1.amazonaws.com/KoinX/1674268329598.jfif";
@@ -112,7 +112,12 @@ const count = [
     title: "PROJECTS",
   },
 ];
-
+// this is the notification
+export const popupPerson = {
+  image: imgPolk,
+  name: "Radhakrishna Dasari",
+  registrationLink: "https://forms.gle/ckZApPnao3Z3BLCk7",
+};
 const Home = () => {
   const [formData, setFormData] = useState({
     email: "",
@@ -120,8 +125,50 @@ const Home = () => {
       email: "",
     },
   });
-  const [showPopup, setShowPopup] = useState(false);
+const [showPopup, setShowPopup] = useState(false);
+const [showPop, setShowPop] = useState(false);
+const [showNotification, setShowNotification] = useState(false);
+const [countdown, setCountdown] = useState({
+  days: 0,
+  hours: 0,
+  minutes: 0,
+  seconds: 0
+});
+
+useEffect(() => {
+  setShowPop(true);
+}, []);
+
+useEffect(()=>{
+  if (!showPop) {
+    setShowNotification(true);
+  }else{
+    setShowNotification(false);
+  }
+},[showPop]);
   useEffect(() => {
+    const futureDate = new Date("2024-03-14T00:00:00"); // Set your future date here
+    const interval = setInterval(() => {
+      const now = new Date();
+      const difference = futureDate.getTime() - now.getTime();
+
+      if (difference > 0) {
+        const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
+        const minutes = Math.floor((difference / (1000 * 60)) % 60);
+        const seconds = Math.floor((difference / 1000) % 60);
+
+        setCountdown({ days, hours, minutes,seconds  });
+      } else {
+        clearInterval(interval);
+      }
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
+  useEffect(() => {
+
+    
     // Load smtp.js script dynamically
     const script = document.createElement('script');
     script.src = 'https://smtpjs.com/v3/smtp.js';
@@ -208,6 +255,59 @@ const Home = () => {
             </span>
           </div>
         </div>
+        {/* {popup section} */}
+        {showPop && (
+        <Popup
+          open={true}
+          contentStyle={{ textAlign: 'center', maxWidth: '400px', borderRadius: '20px', boxShadow: '0 10px 20px rgba(0, 0, 0, 0.3)', background: 'rgb(255,255,255)',    margin: '25px auto auto auto' }}
+          overlayStyle={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}
+         className="popup-main-container">
+          <div className="popup-contentner">
+          <span className="popup-close-btn" onClick={() => setShowPop(false)}>&times;</span>
+            <img className="image-popup" src={popupPerson.image} alt={popupPerson.name} />
+            <h4 className="h4-name">{popupPerson.name}</h4>
+            <p className="register-des">Register now to join {popupPerson.name}'s session!</p>
+            
+            <div className="countdown-container">
+              <span className="countdown-number-big">
+                {countdown.days.toString().padStart(2, '0')} :
+              </span>
+              <span className="countdown-number-big">
+                {countdown.hours.toString().padStart(2, '0')} :
+              </span>
+              <span className="countdown-number-big">
+                {countdown.minutes.toString().padStart(2, '0')} :
+              </span>
+              <span className="countdown-number-big">
+                {countdown.seconds.toString().padStart(2, '0')}
+              </span>
+            </div>
+            <a href={popupPerson.registrationLink} target="_blank" rel="noopener noreferrer">Register Now</a>
+          </div>
+        </Popup>
+      )}
+      {/* {notification} */}
+      <div>
+        {showNotification && (
+          <div className="notification-wrapper">
+            <div className="external-notification">
+              <Notification 
+                message={
+                  <>
+                  <span>
+                    Registration is open <a href={popupPerson.registrationLink} target="_blank" rel="noreferrer">Click Now</a>!
+                  </span>
+                  <span className="popup-close-btn" onClick={() => setShowNotification(false)}>&times;</span>
+                  </>
+                } 
+              />
+            </div>
+            
+          </div>
+        )}
+      </div>
+
+
         {/* SECTION 2 */}
         <div className="new-mobile">
                 <div className="grid-container">

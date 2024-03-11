@@ -1,4 +1,6 @@
 import React,{useState,useEffect} from 'react';
+import Notification from '../external/Notification';
+import { popupPerson } from "../Home/Home";
 import Popup from 'reactjs-popup';
 import './Community.css';
 import PlusIcon from '../../Assets/svg/Group (1).svg';
@@ -42,6 +44,7 @@ const Community = () => {
     },
   });
   const [showPopup, setShowPopup] = useState(false);
+  const [showNotification, setShowNotification] = useState(false);
   useEffect(() => {
     // Load smtp.js script dynamically
     const script = document.createElement('script');
@@ -55,6 +58,10 @@ const Community = () => {
     };
   }, []);
 
+  // call 
+  useEffect(() => {
+    setShowNotification(true);
+  }, []);
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -137,6 +144,26 @@ const Community = () => {
             </div>
         </div>
     </div>
+    {/* {notification} */}
+    <div>
+        {showNotification && (
+          <div className="notification-wrapper">
+            <div className="external-notification">
+              <Notification 
+                message={
+                  <>
+                  <span>
+                    Registration is open <a href={popupPerson.registrationLink} target="_blank" rel="noreferrer">Click Now</a>!
+                  </span>
+                  <span className="popup-close-btn" onClick={() => setShowNotification(false)}>&times;</span>
+                  </>
+                } 
+              />
+            </div>
+            
+          </div>
+        )}
+      </div>
     <div className="community-circle"></div>
     <div className="community-section2">
         <div className="community-section2-up">
@@ -218,6 +245,7 @@ const Community = () => {
           </div>
          
         </div>
+        
     </>
   )
 }
