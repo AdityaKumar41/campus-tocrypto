@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./Navbar.css";
-const logo = "https://campus-crypto.s3.eu-north-1.amazonaws.com/favicon-logo.png";
+const logo = "https://campus-crypto.s3.eu-north-1.amazonaws.com/campustocryptologo.png";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);

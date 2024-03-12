@@ -11,6 +11,7 @@ import Contact from "./pages/ContactUs/Contact";
 import NotFound from "./pages/Error/404";
 import Community from "./pages/community/Community";
 import COE from "./pages/COE/COE";
+import Offline from "./pages/offline/offline";
 function App() {
   const [online, setOnline] = useState(navigator.onLine);
   // const action = useNavigationType();
@@ -31,23 +32,25 @@ function App() {
   }, []);
   return (
     <Router>
-      {online && <Navbar />}
-      {online ? (
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/COE" element={<COE />} />
-          <Route path="/About" element={<About />} />
-          <Route path="/Project" element={<Project />} />
-          <Route path="/Community" element={<Community />} />
-          <Route path="/Contact" element={<Contact />} />
-          {/* 404 route */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      ) : (
-        <div>You are offline</div>
-      )}
-      {online && <Footer />}
-    </Router>
+  {online ? (
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/COE" element={<COE />} />
+        <Route path="/About" element={<About />} />
+        <Route path="/Project" element={<Project />} />
+        <Route path="/Community" element={<Community />} />
+        <Route path="/Contact" element={<Contact />} />
+        {/* 404 route */}
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+      <Footer />
+    </>
+  ) : (
+    <Offline />
+  )}
+</Router>
   );
 }
 

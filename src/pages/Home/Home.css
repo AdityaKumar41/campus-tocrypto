@@ -647,6 +647,7 @@
 .popup-contentner{
     background-color:#8b6ed854;
     padding: 6px;
+    border-radius: 10px;
 }
 .image-popup{
     width: 85%;
@@ -694,7 +695,19 @@
     font-size: 22px;
     
   }
+  .popup-main-close-btn{
+    position: absolute;
+    top: -8px;
+    right: 7px;
+    font-size: 40px;
+    color: #999999;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+  }
   
+  .popup-main-close-btn:hover {
+    color: #ff6347;
+  }
   @media screen and (max-width: 720px) {
     .popup-contentner{
         width: 75vw;
@@ -705,6 +718,10 @@
       .image-popup{
         width: 58%;
         height: 20vh;
+      }
+      .popup-main-close-btn{
+        top: -3px;
+        right: 12px;
       }
   }
 @keyframes glitch {

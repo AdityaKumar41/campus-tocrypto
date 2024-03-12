@@ -263,7 +263,7 @@ useEffect(()=>{
           overlayStyle={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}
          className="popup-main-container">
           <div className="popup-contentner">
-          <span className="popup-close-btn" onClick={() => setShowPop(false)}>&times;</span>
+          <span className="popup-main-close-btn" onClick={() => setShowPop(false)}>&times;</span>
             <img className="image-popup" src={popupPerson.image} alt={popupPerson.name} />
             <h4 className="h4-name">{popupPerson.name}</h4>
             <p className="register-des">Register now to join {popupPerson.name}'s session!</p>

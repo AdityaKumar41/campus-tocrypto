@@ -1,0 +1,45 @@
+.ellipse-shape {
+  position: absolute;
+  height: calc(100% - 25px);
+  top: 0.813rem;
+  bottom: 0.75rem;
+  left: 2.063rem;
+  border-radius: 50%;
+  background-color: #ffeb3b;
+  filter: blur(349px);
+  width: 30.688rem;
+}
+.vector-arrow-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 34.75rem;
+  height: 27.688rem;
+}
+.wide-screen-offline {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.desktop-frame {
+  height: 27.688rem;
+  width: 34.75rem;
+  position: relative;
+  max-width: 100%;
+}
+.desktop-3 {
+  width: 100%;
+  height: 54.688rem;
+  position: relative;
+  background-color: var(--color-blueviolet-100);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 13.5rem var(--padding-xl);
+  box-sizing: border-box;
+  letter-spacing: normal;
+}
