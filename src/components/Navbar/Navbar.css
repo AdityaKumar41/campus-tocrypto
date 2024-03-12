@@ -55,6 +55,12 @@
     aspect-ratio: 3/2;
     object-fit: contain;
 }
+
+@media screen and (max-width:720px) {
+  .home img{
+    width: 18vw;
+  }
+}
 .navigation ul {
     display: flex;
     list-style: none;
