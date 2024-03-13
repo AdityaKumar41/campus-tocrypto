@@ -147,7 +147,7 @@ useEffect(()=>{
   }
 },[showPop]);
   useEffect(() => {
-    const futureDate = new Date("2024-03-14T00:00:00"); // Set your future date here
+    const futureDate = new Date("2024-03-14T15:00:00"); // Set your future date here
     const interval = setInterval(() => {
       const now = new Date();
       const difference = futureDate.getTime() - now.getTime();
