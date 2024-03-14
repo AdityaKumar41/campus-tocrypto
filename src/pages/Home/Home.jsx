@@ -303,11 +303,10 @@ useEffect(()=>{
       <a href={popupPerson.joinNow} target="blank" rel="noopener noreferrer">Join now!</a> : (
         <a href={popupPerson.registrationLink} target="_blank" rel="noopener noreferrer">Register now!</a>
       )}
-      {timerEnded && <Confetti />}
     </div>
   </Popup>
-  
 )}
+    {timerEnded && <Confetti />}
 {/* add youtube video here */}
 {Showpopuprev && (
   <Popup
