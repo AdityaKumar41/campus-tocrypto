@@ -3,14 +3,15 @@ import Notification from '../external/Notification';
 import { popupPerson } from "../Home/Home";
 import Popup from 'reactjs-popup';
 import './Community.css';
-import PlusIcon from '../../Assets/svg/Group (1).svg';
 import L from '../../Assets/svg/Vector (4).svg';
+import PlusIcon from '../../Assets/svg/Group (1).svg';
+import Planet from '../../Assets/images/rectangle-1340.png';
 import Triangle from '../../Assets/svg/Group 1 (1).svg'
-import Planet from '../../Assets/images/rectangle-1340.png'
-// import YoutubeIcon from '../../Assets/svg/youtube-color-icon.svg'
+import {timeredning} from '../Home/Home';
 // import InstaIcon from '../../Assets/svg/ig-instagram-icon.svg'
-// import DiscordIcon from '../../Assets/svg/discord-round-color-icon.svg'
+// import YoutubeIcon from '../../Assets/svg/youtube-color-icon.svg'
 // import TwitterIcon from '../../Assets/svg/x-social-media-logo-icon.svg'
+// import DiscordIcon from '../../Assets/svg/discord-round-color-icon.svg'
 // import { Link } from 'react-router-dom';
 
 
@@ -103,8 +104,8 @@ const Community = () => {
     if (Object.keys(errors).length === 0) {
       // Send email using SMTP.js
       window.Email.send({
-        SecureToken: "17983650-9109-4d14-b06e-4c92fc80753b",
         To: 'campustocrypto@gmail.com',
+        SecureToken: "17983650-9109-4d14-b06e-4c92fc80753b",
         From: "campustocrypto@gmail.com",
         Subject: 'New message from ' + formData.firstName + ' ' + formData.lastName,
         Body: 'Phone Number: ' + formData.phoneNumber + '\n\nEmail: ' + formData.email+'\n\nMessage: ' + formData.message
@@ -152,10 +153,12 @@ const Community = () => {
               <Notification 
                 message={
                   <>
-                  <span>
-                    Registration is open <a href={popupPerson.registrationLink} target="_blank" rel="noreferrer">Click Now</a>!
-                  </span>
-                  <span className="popup-close-btn" onClick={() => setShowNotification(false)}>&times;</span>
+                    {timeredning ? (
+                      <span>session is live now <a href={popupPerson.joinNow} target="_blank" rel="noopener noreferrer">Join Now</a>!</span>
+                    ) : (
+                      <span>Registration is open <a href={popupPerson.registrationLink} target="_blank" rel="noopener noreferrer">Click Now</a>!</span>
+                    )}
+                    <span className="popup-close-btn" onClick={() => setShowNotification(false)}>&times;</span>
                   </>
                 } 
               />

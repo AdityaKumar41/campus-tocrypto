@@ -6,6 +6,7 @@ import Popup from "reactjs-popup";
 // import 'reactjs-popup/dist/index.css';
 // import axios from 'axios';
 import { NavLink } from "react-router-dom";
+import {timeredning} from '../Home/Home';
 import "./Contact.css";
 import Contact1 from "../../Assets/svg/Yuppies Chat.svg";
 const Person1 = "https://campus-crypto.s3.eu-north-1.amazonaws.com/Campus+2+Crypto/members/siddarth-kumar.jpeg";
@@ -218,10 +219,12 @@ useEffect(() => {
               <Notification 
                 message={
                   <>
-                  <span>
-                    Registration is open <a href={popupPerson.registrationLink} target="_blank" rel="noreferrer">Click Now</a>!
-                  </span>
-                  <span className="popup-close-btn" onClick={() => setShowNotification(false)}>&times;</span>
+                    {timeredning ? (
+                      <span>session is live now <a href={popupPerson.joinNow} target="_blank" rel="moreferrer">Join Here</a>!</span>
+                    ) : (
+                      <span>Registration is open <a href={popupPerson.registrationLink} target="_blank" rel="noreferrer">Click Now</a>!</span>
+                    )}
+                    <span className="popup-close-btn" onClick={() => setShowNotification(false)}>&times;</span>
                   </>
                 } 
               />

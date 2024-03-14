@@ -5,6 +5,8 @@ import Popup from "reactjs-popup";
 import { Link } from "react-router-dom";
 import CountUp from 'react-countup';
 import { GoArrowUpRight } from "react-icons/go";
+import Confetti from '../Confetti';
+
 import "./Home.css";
 // import YTicon from "../../Assets/svg/youtube-color-icon.svg";
 // import Podcast from "../../Assets/svg/apple-podcasts-icon.svg";
@@ -52,7 +54,7 @@ const imgGramTarang = "https://campus-crypto.s3.eu-north-1.amazonaws.com/ICONS/l
 
 const YTicon = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png"
 const Podcast = "https://static.dezeen.com/uploads/2023/07/x-logo-twitter-elon-musk_dezeen_2364_col_0.jpg"
-
+const IntroVideo = "httpos";
 const Ylink = "https://www.instagram.com/campustocrypto/";
 const Tlink = "https://twitter.com/campustocrypto";
 const data = [
@@ -117,7 +119,10 @@ export const popupPerson = {
   image: imgPolk,
   name: "Radhakrishna Dasari",
   registrationLink: "https://forms.gle/ckZApPnao3Z3BLCk7",
+  joinNow: "https://us02web.zoom.us/j/89452865191?pwd=SXNTSXVZYlhaTFg2b1pVY1RPWGU4dz09",
+  Ytubevideo: "https://www.youtube.com/embed/9mbMzCRhuzs?si=B6QCxFrEcbB3PrMZ"
 };
+export const timeredning = false;
 const Home = () => {
   const [formData, setFormData] = useState({
     email: "",
@@ -128,12 +133,15 @@ const Home = () => {
 const [showPopup, setShowPopup] = useState(false);
 const [showPop, setShowPop] = useState(false);
 const [showNotification, setShowNotification] = useState(false);
+const [Showpopuprev, setShowpopuprev] = useState(false);
+const [timerEnded, setTimerEnded] = useState(false);
 const [countdown, setCountdown] = useState({
   days: 0,
   hours: 0,
   minutes: 0,
   seconds: 0
 });
+
 
 useEffect(() => {
   setShowPop(true);
@@ -142,8 +150,10 @@ useEffect(() => {
 useEffect(()=>{
   if (!showPop) {
     setShowNotification(true);
+    setShowpopuprev(true)
   }else{
     setShowNotification(false);
+    setShowpopuprev(false)
   }
 },[showPop]);
   useEffect(() => {
@@ -161,6 +171,9 @@ useEffect(()=>{
         setCountdown({ days, hours, minutes,seconds  });
       } else {
         clearInterval(interval);
+        // adding ending interval of the timer
+        setTimerEnded(true); 
+        timeredning = true
       }
     }, 1000);
 
@@ -216,7 +229,7 @@ useEffect(()=>{
         Subject: 'New subscriber',
         Body: 'Email: ' + formData.email
       }).then(
-        setShowPopup(true)
+        setShowPopup(true),
       );
       
       // Clear form fields
@@ -257,35 +270,61 @@ useEffect(()=>{
         </div>
         {/* {popup section} */}
         {showPop && (
-        <Popup
-          open={true}
-          contentStyle={{ textAlign: 'center', maxWidth: '400px', borderRadius: '20px', boxShadow: '0 10px 20px rgba(0, 0, 0, 0.3)', background: 'rgb(255,255,255)',    margin: '25px auto auto auto' }}
-          overlayStyle={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}
-         className="popup-main-container">
-          <div className="popup-contentner">
-          <span className="popup-main-close-btn" onClick={() => setShowPop(false)}>&times;</span>
-            <img className="image-popup" src={popupPerson.image} alt={popupPerson.name} />
-            <h4 className="h4-name">{popupPerson.name}</h4>
-            <p className="register-des">Register now to join {popupPerson.name}'s session!</p>
-            
-            <div className="countdown-container">
-              <span className="countdown-number-big">
-                {countdown.days.toString().padStart(2, '0')} :
-              </span>
-              <span className="countdown-number-big">
-                {countdown.hours.toString().padStart(2, '0')} :
-              </span>
-              <span className="countdown-number-big">
-                {countdown.minutes.toString().padStart(2, '0')} :
-              </span>
-              <span className="countdown-number-big">
-                {countdown.seconds.toString().padStart(2, '0')}
-              </span>
-            </div>
-            <a href={popupPerson.registrationLink} target="_blank" rel="noopener noreferrer">Register Now</a>
-          </div>
-        </Popup>
+  <Popup
+    open={true}
+    contentStyle={{ textAlign: 'center', maxWidth: 'auto', borderRadius: '20px', boxShadow: '0 10px 20px rgba(0, 0, 0, 0.3)', background: 'rgb(255,255,255)', margin: '25px auto auto auto' }}
+    overlayStyle={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}
+    className="popup-main-container">
+    <div className="popup-contentner">
+      <span className="popup-main-close-btn" onClick={() => setShowPop(false)}>&times;</span>
+      <img className="image-popup" src={popupPerson.image} alt={popupPerson.name} />
+      <h4 className="h4-name">{popupPerson.name}</h4>
+      {countdown.days === 0 && countdown.hours === 0 && countdown.minutes === 0 && countdown.seconds === 0 ? (
+        <p className="register-des">Seminar is live now 🎊!</p>
+      ) : (
+        <p className="register-des">Register now to join {popupPerson.name}'s session!</p>
       )}
+      
+      <div className="countdown-container">
+        <span className="countdown-number-big">
+          {countdown.days.toString().padStart(2, '0')} :
+        </span>
+        <span className="countdown-number-big">
+          {countdown.hours.toString().padStart(2, '0')} :
+        </span>
+        <span className="countdown-number-big">
+          {countdown.minutes.toString().padStart(2, '0')} :
+        </span>
+        <span className="countdown-number-big">
+          {countdown.seconds.toString().padStart(2, '0')}
+        </span>
+      </div>
+      {countdown.days === 0 && countdown.hours === 0 && countdown.minutes === 0 && countdown.seconds === 0 ? 
+      <a href={popupPerson.joinNow} target="blank" rel="noopener noreferrer">Join now!</a> : (
+        <a href={popupPerson.registrationLink} target="_blank" rel="noopener noreferrer">Register now!</a>
+      )}
+      {timerEnded && <Confetti />}
+    </div>
+  </Popup>
+  
+)}
+{/* add youtube video here */}
+{Showpopuprev && (
+  <Popup
+    open={true}
+    contentStyle={{ textAlign: 'center', maxWidth: 'auto', borderRadius: '15px', boxShadow: '0 10px 20px rgba(0, 0, 0, 0.3)', background: 'rgb(255,255,255)', margin: '25px auto auto auto' }}
+    overlayStyle={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}
+    className="popup-main-container"
+  >
+    <div className="popup-contentner popup-Ytub">
+      <span className="popup-main-close-btn" onClick={() => setShowpopuprev(false)}>&times;</span>
+      {/* Replace the image and text with the YouTube embed code */}
+      <iframe width="100%" height="100%" src={popupPerson.Ytubevideo} frameborder="0" allowfullscreen></iframe>
+    </div>
+  </Popup>
+)}
+
+
       {/* {notification} */}
       <div>
         {showNotification && (
@@ -294,10 +333,12 @@ useEffect(()=>{
               <Notification 
                 message={
                   <>
-                  <span>
-                    Registration is open <a href={popupPerson.registrationLink} target="_blank" rel="noreferrer">Click Now</a>!
-                  </span>
-                  <span className="popup-close-btn" onClick={() => setShowNotification(false)}>&times;</span>
+                    {countdown.days === 0 && countdown.hours === 0 && countdown.minutes === 0 && countdown.seconds === 0 ? (
+                      <span>session is live now join now! <a href={popupPerson.joinNow} target="_blank" rel="moreferrer">click Now</a>!</span>
+                    ) : (
+                      <span>Registration is open <a href={popupPerson.registrationLink} target="_blank" rel="noreferrer">Click Now</a>!</span>
+                    )}
+                    <span className="popup-close-btn" onClick={() => setShowNotification(false)}>&times;</span>
                   </>
                 } 
               />
@@ -399,16 +440,16 @@ useEffect(()=>{
               <button type="submit">Subscribe</button>
               </form>
               <Popup
-          open={showPopup}
-          onClose={() => setShowPopup(false)}
-          contentStyle={{ maxWidth: '400px', borderRadius: '20px', boxShadow: '0 10px 20px rgba(0, 0, 0, 0.3)' }}
-          overlayStyle={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}
-        >
-          <div className="popup-content">
-            <span className="popup-close-btn" onClick={() => setShowPopup(false)}>&times;</span>
-            <h3 className="popup-title">Congratulations! 🎉!</h3>
-            <p className="popup-message">You've officially joined the ranks of our newsletter subscribers</p>
-          </div>
+                open={showPopup}
+                onClose={() => setShowPopup(false)}
+                contentStyle={{ maxWidth: '400px', borderRadius: '20px', boxShadow: '0 10px 20px rgba(0, 0, 0, 0.3)' }}
+                overlayStyle={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}
+              >
+                <div className="popup-content">
+                  <span className="popup-close-btn" onClick={() => setShowPopup(false)}>&times;</span>
+                  <h3 className="popup-title">Congratulations! 🎉!</h3>
+                  <p className="popup-message">You've officially joined the ranks of our newsletter subscribers</p>
+                </div>
         </Popup>
             </div>
           </div>

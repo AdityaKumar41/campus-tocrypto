@@ -10,6 +10,7 @@ import Tick from "../../Assets/svg/Tick.svg";
 import grid from '../../Assets/svg/Group 1171275444.svg';
 // import img from "../../Assets/images/sampleimg1.avif";
 import { Link } from "react-router-dom";
+import {timeredning} from '../Home/Home'
 // import google from '../../Assets/images/image-50.png';
 // import { FaLinkedinIn, FaXTwitter, FaFacebookF } from "react-icons/fa6";
 const imgKoinX = "https://campus-crypto.s3.eu-north-1.amazonaws.com/ICONS/koinx.webp";
@@ -140,10 +141,12 @@ const About = () => {
               <Notification 
                 message={
                   <>
-                  <span>
-                    Registration is open <a href={popupPerson.registrationLink} target="_blank" rel="noreferrer">Click Now</a>!
-                  </span>
-                  <span className="popup-close-btn" onClick={() => setShowNotification(false)}>&times;</span>
+                    {timeredning ? (
+                      <span>session is live now <a href={popupPerson.joinNow} target="_blank" rel="moreferrer">Join Here</a>!</span>
+                    ) : (
+                      <span>Registration is open <a href={popupPerson.registrationLink} target="_blank" rel="noreferrer">Click Now</a>!</span>
+                    )}
+                    <span className="popup-close-btn" onClick={() => setShowNotification(false)}>&times;</span>
                   </>
                 } 
               />
