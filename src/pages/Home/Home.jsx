@@ -122,7 +122,7 @@ export const popupPerson = {
   joinNow: "https://us02web.zoom.us/j/89452865191?pwd=SXNTSXVZYlhaTFg2b1pVY1RPWGU4dz09",
   Ytubevideo: "https://www.youtube.com/embed/9mbMzCRhuzs?si=B6QCxFrEcbB3PrMZ"
 };
-export const timeredning = false;
+export let timeredning = false;
 const Home = () => {
   const [formData, setFormData] = useState({
     email: "",
