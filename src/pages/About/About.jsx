@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from "react";
-import Notification from '../external/Notification';
+// import Notification from '../external/Notification';
 import { popupPerson } from "../Home/Home";
 import "./About.css";
 import Img from "../../Assets/svg/Yuppies Managing.svg";
@@ -10,7 +10,7 @@ import Tick from "../../Assets/svg/Tick.svg";
 import grid from '../../Assets/svg/Group 1171275444.svg';
 // import img from "../../Assets/images/sampleimg1.avif";
 import { Link } from "react-router-dom";
-import {timeredning} from '../Home/Home'
+// import {timeredning} from '../Home/Home'
 // import google from '../../Assets/images/image-50.png';
 // import { FaLinkedinIn, FaXTwitter, FaFacebookF } from "react-icons/fa6";
 const imgKoinX = "https://campus-crypto.s3.eu-north-1.amazonaws.com/ICONS/koinx.webp";
@@ -134,7 +134,7 @@ const About = () => {
         </div>
       </div>
       {/* {notification} */}
-      <div>
+      {/* <div>
         {showNotification && (
           <div className="notification-wrapper">
             <div className="external-notification">
@@ -154,7 +154,7 @@ const About = () => {
             
           </div>
         )}
-      </div>
+      </div> */}
      <div className="our-team-img">
      <div className="grid">
      <div className="inside-grid">

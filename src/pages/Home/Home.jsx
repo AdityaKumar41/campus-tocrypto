@@ -1,11 +1,11 @@
 import React,{ useState, useEffect } from "react";
-import Notification from '../external/Notification';
+// import Notification from '../external/Notification';
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import Popup from "reactjs-popup";
 import { Link } from "react-router-dom";
 import CountUp from 'react-countup';
 import { GoArrowUpRight } from "react-icons/go";
-import Confetti from '../Confetti';
+// import Confetti from '../Confetti';
 
 import "./Home.css";
 // import YTicon from "../../Assets/svg/youtube-color-icon.svg";
@@ -54,7 +54,7 @@ const imgGramTarang = "https://campus-crypto.s3.eu-north-1.amazonaws.com/ICONS/l
 
 const YTicon = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png"
 const Podcast = "https://static.dezeen.com/uploads/2023/07/x-logo-twitter-elon-musk_dezeen_2364_col_0.jpg"
-const IntroVideo = "httpos";
+// const IntroVideo = "httpos";
 const Ylink = "https://www.instagram.com/campustocrypto/";
 const Tlink = "https://twitter.com/campustocrypto";
 const data = [
@@ -122,7 +122,7 @@ export const popupPerson = {
   joinNow: "https://us02web.zoom.us/j/89452865191?pwd=SXNTSXVZYlhaTFg2b1pVY1RPWGU4dz09",
   Ytubevideo: "https://www.youtube.com/embed/9mbMzCRhuzs?si=B6QCxFrEcbB3PrMZ"
 };
-export let timeredning = false;
+// export let timeredning = false;
 const Home = () => {
   const [formData, setFormData] = useState({
     email: "",
@@ -131,54 +131,56 @@ const Home = () => {
     },
   });
 const [showPopup, setShowPopup] = useState(false);
-const [showPop, setShowPop] = useState(false);
-const [showNotification, setShowNotification] = useState(false);
+// const [showPop, setShowPop] = useState(false);
+// const [showNotification, setShowNotification] = useState(false);
 const [Showpopuprev, setShowpopuprev] = useState(false);
-const [timerEnded, setTimerEnded] = useState(false);
-const [countdown, setCountdown] = useState({
-  days: 0,
-  hours: 0,
-  minutes: 0,
-  seconds: 0
-});
+// const [timerEnded, setTimerEnded] = useState(false);
+// const [countdown, setCountdown] = useState({
+//   days: 0,
+//   hours: 0,
+//   minutes: 0,
+//   seconds: 0
+// });
 
 
-useEffect(() => {
-  setShowPop(true);
-}, []);
-
+// useEffect(() => {
+//   setShowPop(true);
+// }, []);
 useEffect(()=>{
-  if (!showPop) {
-    setShowNotification(true);
-    setShowpopuprev(true)
-  }else{
-    setShowNotification(false);
-    setShowpopuprev(false)
-  }
-},[showPop]);
-  useEffect(() => {
-    const futureDate = new Date("2024-03-14T15:00:00"); // Set your future date here
-    const interval = setInterval(() => {
-      const now = new Date();
-      const difference = futureDate.getTime() - now.getTime();
+  setShowpopuprev(true)
+},[]);
+// useEffect(()=>{
+//   if (!showPop) {
+//     setShowNotification(true);
+//     setShowpopuprev(true)
+//   }else{
+//     setShowNotification(false);
+//     setShowpopuprev(false)
+//   }
+// },[showPop]);
+  // useEffect(() => {
+  //   const futureDate = new Date("2024-03-14T15:00:00"); // Set your future date here
+  //   const interval = setInterval(() => {
+  //     const now = new Date();
+  //     const difference = futureDate.getTime() - now.getTime();
 
-      if (difference > 0) {
-        const days = Math.floor(difference / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
-        const minutes = Math.floor((difference / (1000 * 60)) % 60);
-        const seconds = Math.floor((difference / 1000) % 60);
+  //     if (difference > 0) {
+  //       const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+  //       const hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
+  //       const minutes = Math.floor((difference / (1000 * 60)) % 60);
+  //       const seconds = Math.floor((difference / 1000) % 60);
 
-        setCountdown({ days, hours, minutes,seconds  });
-      } else {
-        clearInterval(interval);
-        // adding ending interval of the timer
-        setTimerEnded(true); 
-        timeredning = true
-      }
-    }, 1000);
+  //       setCountdown({ days, hours, minutes,seconds  });
+  //     } else {
+  //       clearInterval(interval);
+  //       // adding ending interval of the timer
+  //       setTimerEnded(true); 
+  //       timeredning = true
+  //     }
+  //   }, 1000);
 
-    return () => clearInterval(interval);
-  }, []);
+  //   return () => clearInterval(interval);
+  // }, []);
   useEffect(() => {
 
     
@@ -269,7 +271,7 @@ useEffect(()=>{
           </div>
         </div>
         {/* {popup section} */}
-        {showPop && (
+        {/* {showPop && (
   <Popup
     open={true}
     contentStyle={{ textAlign: 'center', maxWidth: 'auto', borderRadius: '20px', boxShadow: '0 10px 20px rgba(0, 0, 0, 0.3)', background: 'rgb(255,255,255)', margin: '25px auto auto auto' }}
@@ -305,8 +307,9 @@ useEffect(()=>{
       )}
     </div>
   </Popup>
-)}
-    {timerEnded && <Confetti />}
+)} */}
+{/* confetti */}
+    {/* {timerEnded && <Confetti />} */}
 {/* add youtube video here */}
 {Showpopuprev && (
   <Popup
@@ -325,7 +328,7 @@ useEffect(()=>{
 
 
       {/* {notification} */}
-      <div>
+      {/* <div>
         {showNotification && (
           <div className="notification-wrapper">
             <div className="external-notification">
@@ -345,7 +348,7 @@ useEffect(()=>{
             
           </div>
         )}
-      </div>
+      </div> */}
 
 
         {/* SECTION 2 */}

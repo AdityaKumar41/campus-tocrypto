@@ -1,13 +1,13 @@
 import React,{useState,useEffect} from 'react';
-import Notification from '../external/Notification';
-import { popupPerson } from "../Home/Home";
+// import Notification from '../external/Notification';
+// import { popupPerson } from "../Home/Home";
 import Popup from 'reactjs-popup';
 import './Community.css';
 import L from '../../Assets/svg/Vector (4).svg';
 import PlusIcon from '../../Assets/svg/Group (1).svg';
 import Planet from '../../Assets/images/rectangle-1340.png';
 import Triangle from '../../Assets/svg/Group 1 (1).svg'
-import {timeredning} from '../Home/Home';
+// import {timeredning} from '../Home/Home';
 // import InstaIcon from '../../Assets/svg/ig-instagram-icon.svg'
 // import YoutubeIcon from '../../Assets/svg/youtube-color-icon.svg'
 // import TwitterIcon from '../../Assets/svg/x-social-media-logo-icon.svg'
@@ -45,7 +45,7 @@ const Community = () => {
     },
   });
   const [showPopup, setShowPopup] = useState(false);
-  const [showNotification, setShowNotification] = useState(false);
+  // const [showNotification, setShowNotification] = useState(false);
   useEffect(() => {
     // Load smtp.js script dynamically
     const script = document.createElement('script');
@@ -60,9 +60,9 @@ const Community = () => {
   }, []);
 
   // call 
-  useEffect(() => {
-    setShowNotification(true);
-  }, []);
+  // useEffect(() => {
+  //   setShowNotification(true);
+  // }, []);
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -146,7 +146,7 @@ const Community = () => {
         </div>
     </div>
     {/* {notification} */}
-    <div>
+    {/* <div>
         {showNotification && (
           <div className="notification-wrapper">
             <div className="external-notification">
@@ -166,7 +166,7 @@ const Community = () => {
             
           </div>
         )}
-      </div>
+      </div> */}
     <div className="community-circle"></div>
     <div className="community-section2">
         <div className="community-section2-up">

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import Notification from '../external/Notification';
-import { popupPerson } from "../Home/Home";
+// import Notification from '../external/Notification';
+// import { popupPerson } from "../Home/Home";
 import { FaLinkedinIn } from "react-icons/fa6";
 import Popup from "reactjs-popup";
 // import 'reactjs-popup/dist/index.css';
@@ -36,7 +36,7 @@ const Contact = () => {
     { name: 'C.R Sushree Maharani', imgSrc: Person2, link: person3Linked}
   ];
   const [showPopup, setShowPopup] = useState(false);
-  const [showNotification, setShowNotification] = useState(false);
+  // const [showNotification, setShowNotification] = useState(false);
   useEffect(() => {
     // Load smtp.js script dynamically
     const script = document.createElement('script');
@@ -50,9 +50,9 @@ const Contact = () => {
     };
   }, []);
 // call
-useEffect(() => {
-  setShowNotification(true);
-}, []);
+// useEffect(() => {
+//   setShowNotification(true);
+// }, []);
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -212,7 +212,7 @@ useEffect(() => {
           </div>
         </div>
         {/* {notification} */}
-      <div>
+      {/* <div>
         {showNotification && (
           <div className="notification-wrapper">
             <div className="external-notification">
@@ -232,7 +232,7 @@ useEffect(() => {
             
           </div>
         )}
-      </div>
+      </div> */}
         <div className="FAQ-section">
           <div className="faq-head">
             <h6>FAQs</h6>
