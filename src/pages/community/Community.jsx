@@ -22,6 +22,8 @@ const imgFusionWave = "https://campus-crypto.s3.eu-north-1.amazonaws.com/ICONS/F
 const imgBlockCation = "https://campus-crypto.s3.eu-north-1.amazonaws.com/ICONS/blockcation_logo.png";
 const imgFilemarket = "https://campus-crypto.s3.eu-north-1.amazonaws.com/ICONS/filemarket.png";
 const imgGramTarang = "https://campus-crypto.s3.eu-north-1.amazonaws.com/ICONS/logo.png";
+const imgePolkdot = "https://campus-crypto.s3.eu-north-1.amazonaws.com/Polkadot_Logo.webp";
+const imgweb3foundation = "https://campus-crypto.s3.eu-north-1.amazonaws.com/web3-foundation.png"
   // function scrollToSection() {
   //   const section = document.getElementById('sectionId');
   //   if (section) {
@@ -175,6 +177,8 @@ const Community = () => {
           <div className="community-section2-down">
             <img src={imgCutm} alt="img" />
             <img src={imgGramTarang} alt="img" />
+            <img src={imgePolkdot} alt="imgpol" />
+            <img src={imgweb3foundation} alt="web3img" />
             <img src={imgFilemarket} alt="img" />
             <img src={imgKoinX} alt="img" />
             <img src={imgFusionWave} alt="img" />

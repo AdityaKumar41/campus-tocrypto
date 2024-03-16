@@ -70,24 +70,26 @@
     position: relative;
     top: 1.2vw;
     gap: 2vw;
+    
 }
 .community-section2-down img{
     width: 11%;
     aspect-ratio: 3/2;
     object-fit: contain;
+    animation: scroll 18s linear infinite;
 
 }
 .community-section3 img{
     width: 83vw;
     position: relative;
     left: 16.5vw;
-    top: 8vw;
+    top: 3vw;
     z-index: -1;
 }
 .community-section3-head{
     width: 30vw;
     position: relative;
-    bottom: 38vw;
+    bottom: 40vw;
     left: 20vw;
     color: white;
 }
@@ -156,18 +158,20 @@
     }
     .community-section2-down{
         overflow-x: hidden;
-        width: 90vw;
+        width: 94vw;
+        position: relative;
+        left: -16px;
     }
     .community-section2-down img{
         width: 35%;
-        animation: scroll 2s linear infinite;
+        animation: scroll 18s linear infinite;
     }
     @keyframes scroll {
         0% {
-            transform: translateX(-100%);
+            transform: translateX(-600%);
         }
         100%{
-          transform: translateX(100%);
+          transform: translateX(600%);
         }
     }
     .community-section3-head{
