@@ -177,6 +177,7 @@
     width: 11%;
     aspect-ratio: 3/2;
     object-fit: contain;
+    animation: scroll 20s linear infinite;
 
 }
 .cards{
@@ -737,6 +738,10 @@
         height: 23vh;
     }
   }
+  .video-home video{
+    width: 25vw;
+    height: 50vh;
+  }
 @keyframes glitch {
   0% {
     clip-path: var(--slice-1);
@@ -813,16 +818,12 @@
     }
     .section3-down img{
         width: 35%;
-        animation: scroll 2s linear infinite;
     }
-    @keyframes scroll {
-        0% {
-            transform: translateX(-100%);
-        }
-        100%{
-          transform: translateX(100%);
-        }
+    .section3-down{
+        /* width: 100vw; */
+        animation: scroll 10s linear infinite;
     }
+    
 
     .block2 img{
         height:22vw;
@@ -844,5 +845,13 @@
     .section7-content::-webkit-scrollbar-thumb{
         background-color: transparent;
         width: 0px;
+    }
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(-1000%);
+    }
+    100%{
+      transform: translateX(1000%);
     }
 }

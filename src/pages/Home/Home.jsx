@@ -51,7 +51,8 @@ const imgFusionWave = "https://campus-crypto.s3.eu-north-1.amazonaws.com/ICONS/F
 const imgBlockCation = "https://campus-crypto.s3.eu-north-1.amazonaws.com/ICONS/blockcation_logo.png";
 const imgFilemarket = "https://campus-crypto.s3.eu-north-1.amazonaws.com/ICONS/filemarket.png";
 const imgGramTarang = "https://campus-crypto.s3.eu-north-1.amazonaws.com/ICONS/logo.png";
-
+const imgePolkdot = "https://campus-crypto.s3.eu-north-1.amazonaws.com/Polkadot_Logo.webp";
+const imgweb3foundation = "https://campus-crypto.s3.eu-north-1.amazonaws.com/web3-foundation.png"
 const YTicon = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png"
 const Podcast = "https://static.dezeen.com/uploads/2023/07/x-logo-twitter-elon-musk_dezeen_2364_col_0.jpg"
 // const IntroVideo = "httpos";
@@ -321,7 +322,7 @@ useEffect(()=>{
     <div className="popup-contentner popup-Ytub">
       <span className="popup-main-close-btn" onClick={() => setShowpopuprev(false)}>&times;</span>
       {/* Replace the image and text with the YouTube embed code */}
-      <iframe width="100%" height="100%" src={popupPerson.Ytubevideo} frameborder="0" allowfullscreen></iframe>
+      <iframe width="100%" height="100%" src={popupPerson.Ytubevideo} frameborder="0" allowfullscreen title="campus to crypto"></iframe>
     </div>
   </Popup>
 )}
@@ -400,6 +401,8 @@ useEffect(()=>{
           <div className="section3-down">
             <img src={imgCutm} alt="img" />
             <img src={imgGramTarang} alt="img" />
+            <img src={imgePolkdot} alt="imgpol" />
+            <img src={imgweb3foundation} alt="web3img" />
             <img src={imgFilemarket} alt="img" />
             <img src={imgKoinX} alt="img" />
             <img src={imgFusionWave} alt="img" />
