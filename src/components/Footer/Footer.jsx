@@ -22,7 +22,7 @@ const Footer = () => {
         <NavLink to='https://www.instagram.com/campustocrypto'><FaInstagram /></NavLink>
         <NavLink to='/#'><BiLogoTelegram /></NavLink>
         </div>
-        <div className='footer-cp'>© Copyright 2024 Centurion University.</div>
+        <div className='footer-cp'>© Copyright 2024 Centurion University</div>
         </div>
         <div className='main-right-side'>
         {/* <div className="footer-section-right">
@@ -36,9 +36,9 @@ const Footer = () => {
           <div className='get-connect'>GET CONNCTED</div>
           <ul>
             <li><NavLink to='/about'>About</NavLink></li>
-            <li><NavLink to='#'>BLog</NavLink></li>
+            <li><NavLink to='#'>Blog</NavLink></li>
             <li><NavLink to={nevigateN}>Newsletter</NavLink></li>
-            <li><NavLink to='#'>OurTeam</NavLink></li>
+            <li><NavLink to='#'>Our Team</NavLink></li>
           </ul>
         </div>
         </div>
