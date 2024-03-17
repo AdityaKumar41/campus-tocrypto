@@ -343,6 +343,9 @@
     }
     
 }
+.num30+{
+    white-space: nowrap;
+}
 .section5{
     margin-top: 10vw;
     text-align: center;
@@ -580,7 +583,6 @@
     font-size: 18px;
     color: #ffffff;
   }
-
   .button-49,
 .button-49:after {
   /* width: 150px; */

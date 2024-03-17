@@ -85,7 +85,9 @@ const Contact = () => {
     if (formData.phoneNumber.trim().length !== 10) {
       errors.phoneNumber = "Phone number must be 10 digits";
     }
-
+    if (formData.message.trim().length === 0) {
+      errors.message = "Write your message!";
+    }
     setFormData({
       ...formData,
       errors: errors,
@@ -173,8 +175,11 @@ const Contact = () => {
             {formData.errors.phoneNumber && (
               <span>{formData.errors.phoneNumber}</span>
             )}
-            <input type="textarea" placeholder="Leave a Message" name="message" value={formData.message}
-                  onChange={handleChange} />
+                <input type="textarea" placeholder="Leave a Message" name="message" value={formData.message}
+                      onChange={handleChange} />
+                      {formData.errors.message && (
+                      <span >{formData.errors.message}</span>
+                    )}
             <button type="submit">Send a Message</button>
           </div>
           <div className="contact-right-side">

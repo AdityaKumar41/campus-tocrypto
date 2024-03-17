@@ -121,7 +121,7 @@ export const popupPerson = {
   name: "Radhakrishna Dasari",
   registrationLink: "https://forms.gle/ckZApPnao3Z3BLCk7",
   joinNow: "https://us02web.zoom.us/j/89452865191?pwd=SXNTSXVZYlhaTFg2b1pVY1RPWGU4dz09",
-  Ytubevideo: "https://www.youtube.com/embed/9mbMzCRhuzs?si=B6QCxFrEcbB3PrMZ"
+  Ytubevideo: "https://www.youtube.com/embed/aDVOfEAw4OQ?si=DuMFAljtNhDKhUxW"
 };
 // export let timeredning = false;
 const Home = () => {
@@ -356,7 +356,7 @@ useEffect(()=>{
         <div className="new-mobile">
                 <div className="grid-container">
                   <Link to={"/community"}><div className="item item-1 button-49">Join Us 🎯</div></Link>
-                  <Link to={"/project"}><div className="item item-2 button-49 btn-49" ><span className="num" data-val="40">30+</span> Projects</div></Link>
+                  <Link to={"/project"}><div className="item item-2 button-49 btn-49" ><span className="num num30+" data-val="40">30+</span> Projects</div></Link>
                   <div className="item item-3">C2C Join our Community, We are waiting for you</div>
                   <div className="item item-4">POWERING TOOLS AND INTEGRATIONS FROM COMPANIES ALL AROUND THE WORLD</div>
                 </div>
