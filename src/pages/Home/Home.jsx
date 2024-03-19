@@ -62,7 +62,7 @@ const data = [
   {
     image: imgPolk,
     name: "Radhakrishna Dasari",
-    role: "Polkadot (14th March 2024)",
+    role: "Polkadot",
   },
   {
     image: imgwaveAI,

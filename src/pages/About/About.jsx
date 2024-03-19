@@ -20,7 +20,7 @@ const imgFusionWave = "https://campus-crypto.s3.eu-north-1.amazonaws.com/ICONS/F
 // const imgBlockCation = "https://campus-crypto.s3.eu-north-1.amazonaws.com/ICONS/blockcation_logo.png";
 const imgFilemarket = "https://campus-crypto.s3.eu-north-1.amazonaws.com/ICONS/filemarket.png";
 // const imgGramTarang = "https://campus-crypto.s3.eu-north-1.amazonaws.com/ICONS/logo.png";
-const imgs = "https://campus-crypto.s3.eu-north-1.amazonaws.com/Sequence+01.00_00_10_14.Still001.jpg"
+const imgs = "https://campus-crypto.s3.eu-north-1.amazonaws.com/c2c-grp.JPG"
 const team =[
   {
     img: imgs,
