@@ -33,7 +33,7 @@ const imgwaveAI="https://campus-crypto.s3.eu-north-1.amazonaws.com/FusionWaveAi-
 const imgKoi="https://campus-crypto.s3.eu-north-1.amazonaws.com/KoinX/1674268329598.jfif";
 const imgBlok= "https://campus-crypto.s3.eu-north-1.amazonaws.com/BlockonCapital/1698334334464.jfif";
 const imgBSB="https://campus-crypto.s3.eu-north-1.amazonaws.com/BlockseBlock/1692902136792.jfif";
-const imgSFT="https://campus-crypto.s3.eu-north-1.amazonaws.com/SnapperTech/f.jfif";
+const imgSFT="https://campus-crypto.s3.eu-north-1.amazonaws.com/Prashant-Jain-os7dyihyws13c81v9gb47mewndnnltkp6gwkkgm028.png";
 //footer-side
 const image1 = "https://campus-crypto.s3.eu-north-1.amazonaws.com/Campus+2+Crypto/iamge1.jpg";
 const image2 = "https://campus-crypto.s3.eu-north-1.amazonaws.com/Campus+2+Crypto/a9af380e-0c82-42f8-bf87-4fd36c207085.jfif";
@@ -356,7 +356,7 @@ useEffect(()=>{
         <div className="new-mobile">
                 <div className="grid-container">
                   <Link to={"/community"}><div className="item item-1 button-49">Join Us 🎯</div></Link>
-                  <Link to={"/project"}><div className="item item-2 button-49 btn-49" ><span className="num num30+" data-val="40">30+</span> Projects</div></Link>
+                  <Link to={"/project"}><div className="item item-2 button-49 btn-49" ><span className="num num30+" data-val="40">30+</span> Project</div></Link>
                   <div className="item item-3">C2C Join our Community, We are waiting for you</div>
                   <div className="item item-4">POWERING TOOLS AND INTEGRATIONS FROM COMPANIES ALL AROUND THE WORLD</div>
                 </div>

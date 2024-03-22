@@ -592,6 +592,7 @@
   background: linear-gradient(45deg, transparent 5%, #d1ff3ac0 5%);
   border: 0;
   color: #fff;
+  max-width: 30vw;
   /* letter-spacing: 3px; */
   box-shadow: 6px 0px 0px #e4e1db00;
   outline: transparent;
@@ -603,6 +604,7 @@
 .btn-49{
   background: linear-gradient(45deg, transparent 5%, #6843EC 5%);
   box-shadow: 6px 0px 0px #736d8800;
+  width: 100%;
 }
 .button-49:after {
   --slice-0: inset(50% 50% 50% 50%);
