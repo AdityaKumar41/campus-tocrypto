@@ -37,7 +37,7 @@ const FrameComponent1 = () => {
                 <div className="bootcamp-2024-parent">
                   <div className="bootcamp-2024">Bootcamp 2024</div>
                   <div className="ipsum-is-simply-dummy-text-of-wrapper">
-                    <div className="ipsum-is-simply-dummy">{`Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum `}</div>
+                    <div className="ipsum-is-simply-dummy">{`Empowering Innovators: Forging the Future Together at Chainlink Bootcamp 2024`}</div>
                   </div>
                 </div>
               </div>

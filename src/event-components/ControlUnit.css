@@ -188,7 +188,7 @@
   line-height: 4.25rem;
   background: linear-gradient(transparent, transparent),
     linear-gradient(135deg, #fff 30%, rgba(255, 255, 255, 0.5));
-  /* -webkit-background-clip: text; */
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1),
     -1px -1px 0 rgba(255, 255, 255, 0.2);
@@ -281,7 +281,7 @@
   height: 3rem;
   border-radius: var(--br-9980xl);
   box-sizing: border-box;
-  justify-content: flex-start;
+  justify-content: center;
   border: 1px solid var(--color-blueviolet-200);
 }
 .link-text-base1:hover {
@@ -293,10 +293,10 @@
 .resource-requestor {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
 }
 .command-executor {
-  justify-content: flex-start;
+  justify-content: center;
   gap: var(--gap-base);
 }
 .resource-requestor {
@@ -481,7 +481,7 @@
   }
   .resource-requestor {
     padding-left: var(--padding-xl);
-    padding-right: var(--padding-xl);
+    /* padding-right: var(--padding-xl); */
     box-sizing: border-box;
   }
   .filter-chain {

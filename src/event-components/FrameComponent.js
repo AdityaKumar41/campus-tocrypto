@@ -14,7 +14,7 @@ const FrameComponent = () => {
     },
     {
       image: "/rectangle-12@2x.png",
-      title: "Chainlink Live Seminar at CUTM",
+      title: "Chainlink Live Workshop at CUTM.",
       subtitle: "Exploring the Future of Decentralized Oracles and Smart Contracts with Industry Leaders",
       month: "APR",
       date: "14",

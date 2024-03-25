@@ -197,8 +197,9 @@
   overflow: hidden;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
   padding: var(--padding-3xs);
 }
 .button {
@@ -233,7 +234,7 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: center;
-  padding: 0 var(--padding-2xl) 0 var(--padding-xl);
+  /* padding: 0 var(--padding-2xl) 0 var(--padding-xl); */
 }
 .picture-mt-9 {
   flex: 1;
@@ -298,12 +299,14 @@
   .bootcamp-2024,
   .chainlink {
     align-self: center;
-    font-size: 35px;
+    font-size: 32px;
     font-weight: 600;
+    white-space: nowrap;
+    text-align: center;
     line-height: 3.188rem;
   }
   .try-for-free {
-    font-size: var(--font-size-3xl);
+    font-size: 1rem;
     line-height: 2.5rem;
   }
   .picture-mt-9 {

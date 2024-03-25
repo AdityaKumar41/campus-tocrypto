@@ -34,7 +34,7 @@ const [countdown, setCountdown] = useState({
   // object here
   const groupDetails = {
     group1: {title: "Bootcamp 2024",heading:"Chainlink",date: "1-12 April 2024",Time: "08-12 PM",location: "CUTM Bhubaneswar",joinLink: "https://lu.ma/ChainlinkBootcamp2024?utm_source=012moiiuvdi2"},
-    group2: {title: "Chainlink Seminar 2024",heading:"Chainlink",date: "1-12 April 2024",Time: "08-12 PM",location: "CUTM Bhubaneswar",joinLink: "#"}
+    group2: {title: "Chainlink Live Workshop 2024",heading:"Chainlink",date: "1-12 April 2024",Time: "08-12 PM",location: "CUTM Bhubaneswar",joinLink: "#"}
   }
   let { id } = useParams();
   let content;
