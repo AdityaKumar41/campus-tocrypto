@@ -17,7 +17,7 @@ a{
     height: 20vw;
     overflow-x: hidden;
     /* border-radius: 60%; */
-    filter: blur(8vw);
+    filter: blur(16vw);
     z-index: -1;
 }
 hr{

@@ -6,14 +6,14 @@
 }
 .circle{
     position: absolute;
-    width: 28vw;
+    width: 50vw;
     height: 28vw;
     background-color: #6843EC;
     z-index: -1;
     top: -6vw;
     left: -9vw;
     border-radius: 50%;
-    filter: blur(6vw);
+    filter: blur(12vw);
 }
 .section1{
     display: flex;
@@ -74,6 +74,7 @@
         max-width: 90%;
         font-size: 8vw;
         font-weight: 500;
+        margin-top: 40px;
     }
     .section1-left span{
         font-size: 8vw;
@@ -231,7 +232,17 @@
     cursor: pointer;
     
 }
-
+.section-margin{
+    width: 100%;
+    text-align: center;
+    margin: 0px 10px 20px 5px;
+}
+.section-margin p{
+    margin:  auto auto;
+    width: fit-content;
+background-color: #fff;
+color: black;
+}
 .discussionSection input[type="email"]{
     background-color: #0A0A0A;
     border: none;
@@ -825,7 +836,7 @@
     }
     .section3-down{
         /* width: 100vw; */
-        animation: scroll 10s linear infinite;
+        animation: scrollm 20s linear infinite;
     }
     
 
@@ -849,6 +860,14 @@
     .section7-content::-webkit-scrollbar-thumb{
         background-color: transparent;
         width: 0px;
+    }
+}
+@keyframes scrollm {
+    0% {
+        transform: translateX(-150%);
+    }
+    100%{
+      transform: translateX(150%);
     }
 }
 @keyframes scroll {

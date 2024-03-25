@@ -58,6 +58,16 @@ const Navbar = () => {
             </li>
             <li onClick={hideMenu}>
               <NavLink
+                to="/event"
+                style={({ isActive }) => {
+                  return isActive ? { color: "#D2FF3A" } : { color: "white" };
+                }}
+              >
+                Event
+              </NavLink>
+            </li>
+            <li onClick={hideMenu}>
+              <NavLink
                 to="/About"
                 style={({ isActive }) => {
                   return isActive ? { color: "#D2FF3A" } : { color: "white" };

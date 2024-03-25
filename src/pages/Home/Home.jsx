@@ -107,7 +107,7 @@ const count = [
     title: "YEARS",
   },
   {
-    number: "30+",
+    number: "100+",
     title: "ACTIVE MEMBERS",
   },
   {
@@ -148,7 +148,7 @@ const [Showpopuprev, setShowpopuprev] = useState(false);
 //   setShowPop(true);
 // }, []);
 useEffect(()=>{
-  setShowpopuprev(true)
+  setShowpopuprev(false)
 },[]);
 // useEffect(()=>{
 //   if (!showPop) {
@@ -395,6 +395,9 @@ useEffect(()=>{
         </div>
         {/* SECTION 3 */}
         <div className="section3">
+          {/* <div className="section3-up section-margin">
+            <p>SPECIAL SPONSOR</p>
+          </div> */}
           <div className="section3-up">
           POWERING TOOLS AND INTEGRATIONS FROM COMPANIES ALL AROUND THE WORLD
           </div>

@@ -13,14 +13,14 @@
 }
 .contact-circle-top{
     position: absolute;
-    top: -10vw;
+    top: -7vw;
     /* left: 1vw; */
     background-color: #6843EC;
     width: 100%;
     height: 20vw;
     overflow-x: hidden;
     border-radius: 10%;
-    filter: blur(8vw);
+    filter: blur(18vw);
     z-index: -1;
 }
 .form{

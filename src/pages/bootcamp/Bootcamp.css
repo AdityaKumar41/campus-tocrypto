@@ -1,0 +1,197 @@
+.frame-child {
+  width: 90rem;
+  height: 151.313rem;
+  position: relative;
+  background-color: var(--color-black);
+  display: none;
+  max-width: 100%;
+  z-index: 0;
+}
+.description,
+.frame-item-boot {
+  position: absolute;
+  margin: 0 !important;
+  z-index: 2;
+}
+.frame-item-boot {
+  width: 100%;
+  height: 35.625rem;
+  top: -10vw;
+  right: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit:  cover;
+}
+@media screen and (max-width: 720px) {
+  .frame-item-boot{
+    top: -18vw;
+    height: 15.625rem;
+  }
+}
+.description {
+  width: 11.563rem;
+  bottom: 5rem;
+  left: -1.219rem;
+  text-decoration: underline;
+  letter-spacing: 0.2px;
+  line-height: 3.125rem;
+  font-weight: 900;
+  display: inline-block;
+}
+.div {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  background: radial-gradient(
+    50% 50%at 50% 50%,
+    #4452fe,
+    rgba(228, 115, 32, 0)
+  );
+  filter: blur(264px);
+  mix-blend-mode: normal;
+  max-width: 100%;
+  z-index: 3;
+}
+.description-box {
+  width: 76.519rem;
+  height: 28.938rem;
+  margin: 0 !important;
+  position: absolute;
+  top: 24.625rem;
+  left: 7.594rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+  text-align: center;
+  font-size: var(--font-size-20xl);
+  color: var(--light-text);
+  font-family: var(--font-darker-grotesque);
+}
+.all-sessions-will,
+.bootcamp-structure,
+.registration-is-now,
+.this-is-your {
+  margin-block-start: 0;
+  margin-block-end: 10px;
+}
+.cost-free,
+.duration-2-weeks,
+.language-english,
+.sessions-10-2 {
+  margin-bottom: false;
+}
+.duration-2-weeks-sessions {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  padding-left: var(--padding-33xl);
+}
+.what-you-will {
+  margin-block-start: 0;
+  margin-block-end: 10px;
+}
+.creating-erc20-tokens,
+.solidity-fundamentals-blockch1 {
+  margin-bottom: false;
+}
+.solidity-fundamentals-blockch {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  padding-left: var(--padding-33xl);
+}
+.registration-is-now-container {
+  width: 72.469rem;
+  height: 85rem;
+  position: relative;
+  font-size: var(--font-size-20xl);
+  letter-spacing: 0.2px;
+  line-height: 3.125rem;
+  font-weight: 600;
+  font-family: var(--font-darker-grotesque);
+  color: var(--light-text);
+  text-align: left;
+  display: inline-block;
+  max-width: 100%;
+  z-index: 1;
+}
+.registration-is-now-container-no{
+  width: 72.469rem;
+  height: 12rem;
+  position: relative;
+  font-size: var(--font-size-20xl);
+  letter-spacing: 0.2px;
+  line-height: 3.125rem;
+  font-weight: 600;
+  font-family: var(--font-darker-grotesque);
+  color: var(--light-text);
+  text-align: left;
+  display: inline-block;
+  max-width: 100%;
+  z-index: 1;
+}
+.bootcamp,
+.rectangle-parent-pr {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.rectangle-parent-pr {
+  flex: 1;
+  background-color: var(--color-black);
+  flex-direction: column;
+  padding: 18.313rem 7.45rem 18.375rem;
+  box-sizing: border-box;
+  gap: 6.688rem;
+  max-width: 100%;
+}
+.bootcamp {
+  width: 100%;
+  flex-direction: row;
+  letter-spacing: normal;
+  z-index: -1;
+}
+@media screen and (max-width: 1200px) {
+  .rectangle-parent-pr {
+    padding-top: 11.875rem;
+    padding-bottom: 11.938rem;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .description,
+  .registration-is-now-container {
+    font-size: var(--font-size-12xl);
+    line-height: 2.5rem;
+  }
+  .rectangle-parent-pr {
+    padding-top: 7.688rem;
+    padding-bottom: 7.75rem;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 750px) {
+  .rectangle-parent-pr {
+    gap: 3.313rem 6.688rem;
+    padding: 5rem 3.688rem 5.063rem;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .description,
+  .registration-is-now-container {
+    font-size: var(--font-size-4xl);
+    line-height: 1.875rem;
+  }
+  .rectangle-parent-pr {
+    gap: 1.688rem 6.688rem;
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}

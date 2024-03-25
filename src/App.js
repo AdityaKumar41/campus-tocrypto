@@ -1,3 +1,5 @@
+// App.js
+
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import "./App.css";
@@ -7,16 +9,15 @@ import About from "./pages/About/About";
 import Project from "./pages/Product/Product";
 import Footer from "./components/Footer/Footer";
 import Contact from "./pages/ContactUs/Contact";
-// import COMMUNITY from './community/COMMUNITY';
 import NotFound from "./pages/Error/404";
 import Community from "./pages/community/Community";
 import COE from "./pages/COE/COE";
+import Event from "./pages/event/event";
+import Bootcamp from './pages/bootcamp/Bootcamp';
 import Offline from "./pages/offline/offline";
+
 function App() {
   const [online, setOnline] = useState(navigator.onLine);
-  // const action = useNavigationType();
-  // const location = useLocation();
-  // const pathname = location.pathname;
 
   useEffect(() => {
     const handleOnline = () => setOnline(true);
@@ -30,27 +31,31 @@ function App() {
       window.removeEventListener('offline', handleOffline);
     };
   }, []);
+
   return (
     <Router>
-  {online ? (
-    <>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/COE" element={<COE />} />
-        <Route path="/About" element={<About />} />
-        <Route path="/Project" element={<Project />} />
-        <Route path="/Community" element={<Community />} />
-        <Route path="/Contact" element={<Contact />} />
-        {/* 404 route */}
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-      <Footer />
-    </>
-  ) : (
-    <Offline />
-  )}
-</Router>
+      {online ? (
+        <>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/COE" element={<COE />} />
+            <Route path="/event" element={<Event />} />
+            <Route path="/About" element={<About />} />
+            <Route path="/Project" element={<Project />} />
+            <Route path="/Community" element={<Community />} />
+            {/* Add the id parameter to the route */}
+            <Route path="/event-details/:id" element={<Bootcamp />} /> 
+            <Route path="/Contact" element={<Contact />} />
+            {/* 404 route */}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+          <Footer />
+        </>
+      ) : (
+        <Offline />
+      )}
+    </Router>
   );
 }
 
