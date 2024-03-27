@@ -211,7 +211,12 @@
 .text1 {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
+  width: 60vw;
+  justify-content: space-between;
+}
+.frame-parent9{
+  margin-left: 1.5rem;
 }
 .button1 {
   cursor: pointer;
@@ -234,7 +239,7 @@
     padding: 0;
     width: 10rem;
   }
-}
+}z
 .frame-parent9 {
   width: 67.131rem;
   justify-content: space-between;
@@ -318,7 +323,8 @@
 @media screen and (max-width: 450px) {
   .blockchain,
   .boot-camp-2024 {
-    font-size: var(--font-size-5xl);
+    font-size: var(--font-size-4xl);
+    /* font-size: var(--font-size-3xl); */
   }
   .april-2024 {
     font-size: var(--font-size-3xl);
