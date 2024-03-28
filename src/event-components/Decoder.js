@@ -20,7 +20,7 @@ const Decoder = () => {
     },
     {
       image: "https://campus-crypto.s3.eu-north-1.amazonaws.com/event/filemarket.png",
-      title: "Usecases or decentralize storage on Filemarket.",
+      title: "Usecases of decentralized storage on Filemarket.",
       subtitle: "Navigating Decentralized Data: Insights from the FileMarket Workshop",
       month: "APR",
       date: "14",
