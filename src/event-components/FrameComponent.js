@@ -8,16 +8,18 @@ const FrameComponent = () => {
       image: "https://campus-crypto.s3.eu-north-1.amazonaws.com/event/chainlink-web-p.png",
       title: "Chainlink Bootcamp 2024 (CUTM)",
       subtitle: "Empowering Tomorrow's Blockchain Innovators: Chainlink Bootcamp 2024 (CUTM)",
+      year: "2024",
       month: "APR",
-      date: "14",
+      date: "01",
       link: "/event-details/1"
     },
     {
       image: "/rectangle-12@2x.png",
       title: "Chainlink Live Workshop at CUTM.",
       subtitle: "Exploring the Future of Decentralized Oracles and Smart Contracts with Industry Leaders",
-      month: "APR",
-      date: "14",
+      year: "2024",
+      month: "TBA",
+      date: "",
       link: "/event-details/2"
   
     }
@@ -46,6 +48,9 @@ const FrameComponent = () => {
               {/* <div className="rectangle-div"></div> */}
                 <div className="frame-wrapper1">
                   <div className="frame-parent1">
+                  <div className="apr-wrapper">
+                      <b className="apr">{items.year}</b>
+                    </div>
                     <div className="apr-wrapper">
                       <b className="apr">{items.month}</b>
                     </div>

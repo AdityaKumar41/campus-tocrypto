@@ -64,7 +64,9 @@
 .b {
   margin-top: -0.238rem;
   position: relative;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-width: 1.556rem;
   flex-shrink: 0;
   z-index: 2;
@@ -95,7 +97,7 @@
 }
 .frame-wrapper1 {
   width: 1.663rem;
-  padding: 0.119rem 0 0;
+  padding: 0.4rem 0 0;
   box-sizing: border-box;
 }
 .well-get-you,

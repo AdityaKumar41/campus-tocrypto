@@ -14,6 +14,7 @@ const Decoder = () => {
       image: "https://campus-crypto.s3.eu-north-1.amazonaws.com/event/polkadot.png",
       title: "India’s first university to host polkadot workshop, by C2C.",
       subtitle: "Our students got a deep understanding on Web3 Foundation and Polkadot Ecosystem.",
+      year: "2024",
       month: "MAR",
       date: "14",
       link: "https://www.campustocrypto.com"
@@ -22,8 +23,9 @@ const Decoder = () => {
       image: "https://campus-crypto.s3.eu-north-1.amazonaws.com/event/filemarket.png",
       title: "Usecases of decentralized storage on Filemarket.",
       subtitle: "Navigating Decentralized Data: Insights from the FileMarket Workshop",
-      month: "APR",
-      date: "14",
+      year: "2024",
+      month: "FEB",
+      date: "13",
       link: "https://www.campustocrypto.com"
 
     },
@@ -31,8 +33,9 @@ const Decoder = () => {
       image: "https://campus-crypto.s3.eu-north-1.amazonaws.com/event/blocktion.png",
       title: "BlockseBlock Hackathon:",
       subtitle: " A transformative experience for our students, fostering collective creativity, knowledge acquisition, and invaluable hands-on experience.",
-      month: "APR",
-      date: "14",
+      year: "2024",
+      month: "FEB",
+      date: "06",
       link: "https://www.campustocrypto.com"
 
     },
@@ -40,7 +43,8 @@ const Decoder = () => {
       image: "https://campus-crypto.s3.eu-north-1.amazonaws.com/event/koinx.png",
       title: "Web3 & Fintech event in Centurion University hosted by C2C",
       subtitle: "enriching our understanding Tokenization of asset and other transformative technologies.",
-      month: "APR",
+      year: "2024",
+      month: "JAN",
       date: "14",
       link: "https://www.campustocrypto.com"
 
@@ -49,16 +53,18 @@ const Decoder = () => {
       image: "https://campus-crypto.s3.eu-north-1.amazonaws.com/event/fusionwaveAi.png",
       title: "Campus to Crypto: Career Journeys in Blockchain & AI",
       subtitle: "Exploring Career Trajectories in Blockchain and Generative AI with FusionWave AI",
-      month: "APR",
-      date: "14",
+      year: "2024",
+      month: "JAN",
+      date: "12",
       link: "https://www.campustocrypto.com"
 
     },{
       image: "https://campus-crypto.s3.eu-north-1.amazonaws.com/event/nearprotocol.jpg",
       title: "How to grow inside Web3 as an Noncoder.",
       subtitle: "Directly seated and inside for you to enjoy the show.",
-      month: "APR",
-      date: "14",
+      year: "2023",
+      month: "JAN",
+      date: "12",
       link: "https://www.campustocrypto.com"
 
     }
@@ -103,6 +109,9 @@ const Decoder = () => {
               {/* <div className="rectangle-div"></div> */}
                 <div className="frame-wrapper1">
                   <div className="frame-parent1">
+                  <div className="apr-wrapper">
+                      <b className="apr">{data.year}</b>
+                    </div>
                     <div className="apr-wrapper">
                       <b className="apr">{data.month}</b>
                     </div>

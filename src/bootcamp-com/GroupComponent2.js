@@ -2,7 +2,7 @@ import React,{useEffect,useState} from 'react';
 import { useParams } from 'react-router-dom';
 import "./GroupComponent2.css";
 const GroupComponent2 = () => {
-const [timerEnded, setTimerEnded] = useState(false);
+// const [timerEnded, setTimerEnded] = useState(false);
 const [countdown, setCountdown] = useState({
   days: 0,
   hours: 0,
@@ -25,7 +25,7 @@ const [countdown, setCountdown] = useState({
       } else {
         clearInterval(interval);
         // adding ending interval of the timer
-        setTimerEnded(true); 
+        // setTimerEnded(true); 
       }
     }, 1000);
 
@@ -34,7 +34,7 @@ const [countdown, setCountdown] = useState({
   // object here
   const groupDetails = {
     group1: {title: "Bootcamp 2024",heading:"Chainlink",date: "1-12 April 2024",Time: "08-12 PM",location: "CUTM Bhubaneswar",joinLink: "https://lu.ma/ChainlinkBootcamp2024?utm_source=012moiiuvdi2"},
-    group2: {title: "Chainlink Live Workshop 2024",heading:"Chainlink",date: "1-12 April 2024",Time: "08-12 PM",location: "CUTM Bhubaneswar",joinLink: "#"}
+    group2: {title: "Chainlink Live Workshop 2024",heading:"Chainlink",date: "To Be Announced!",Time: "00-00 PM",location: "CUTM Bhubaneswar",joinLink: "#"}
   }
   let { id } = useParams();
   let content;
