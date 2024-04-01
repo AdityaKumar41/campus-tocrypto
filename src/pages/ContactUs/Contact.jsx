@@ -6,7 +6,7 @@ import Popup from "reactjs-popup";
 // import 'reactjs-popup/dist/index.css';
 // import axios from 'axios';
 import { NavLink } from "react-router-dom";
-import {timeredning} from '../Home/Home';
+// import {timeredning} from '../Home/Home';
 import "./Contact.css";
 import Contact1 from "../../Assets/svg/Yuppies Chat.svg";
 const Person1 = "https://campus-crypto.s3.eu-north-1.amazonaws.com/Campus+2+Crypto/members/siddarth-kumar.jpeg";

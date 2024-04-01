@@ -1,6 +1,8 @@
 import { Navigate, useParams } from 'react-router-dom';
 import GroupComponent2 from "../../bootcamp-com/GroupComponent2";
+import Confetti from '../Confetti';
 import "./Bootcamp.css";
+// import { useEffect } from 'react';
 const Bootcamp = () => {
   let { id } = useParams();
   let details;
@@ -9,7 +11,7 @@ const Bootcamp = () => {
       <div className="bootcamp">
       <main className="rectangle-parent-pr">
         <div className="frame-child" />
-        
+        <Confetti/>
         <GroupComponent2/>
         <img className="frame-item-boot" src="/chainlinkbg.png" alt="" />
         <section className="registration-is-now-container">

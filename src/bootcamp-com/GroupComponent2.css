@@ -167,13 +167,13 @@
   width: 12.2rem;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
   padding: var(--padding-6xs) 0 0;
   box-sizing: border-box;
 }
 .try-for-free1 {
-  /* width: 8.6rem; */
+  width: 8.6rem;
   position: relative;
   font-size: 1.3rem;
   letter-spacing: 0.2px;
@@ -204,7 +204,8 @@
   margin-top: -0.344rem;
   overflow: hidden;
   justify-content: flex-start;
-  padding: var(--padding-3xs);
+  /* padding: var(--padding-3xs); */
+  padding: 7px 18px;
 }
 .button1,
 .frame-parent9,
@@ -214,9 +215,6 @@
   align-items: center;
   width: 60vw;
   justify-content: space-between;
-}
-.frame-parent9{
-  margin-left: 1.5rem;
 }
 .button1 {
   cursor: pointer;
@@ -228,7 +226,7 @@
   border-radius: var(--br-4981xl);
   box-shadow: var(--shadow);
   overflow: hidden;
-  flex-shrink: 0;
+  /* flex-shrink: 0; */
   justify-content: center;
   box-sizing: border-box;
   z-index: 1;
@@ -294,6 +292,11 @@
 .try-for-free1 a{
   text-decoration: none;
   white-space: nowrap;
+  text-align: center;
+}
+.bootcamp-live{
+  font-size: var(--font-size-13xl);
+  white-space: nowrap;
 }
 @media screen and (max-width: 1050px) {
   .blockchain,
@@ -318,6 +321,11 @@
   }
   .frame-parent6 {
     gap: 1.313rem 2.656rem;
+  }
+  .bootcamp-live{
+    font-size: var(--font-size-8xl);
+    margin-bottom: 1.5rem;
+    white-space: nowrap;
   }
 }
 @media screen and (max-width: 450px) {
