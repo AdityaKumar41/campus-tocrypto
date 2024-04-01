@@ -10,7 +10,7 @@ const [countdown, setCountdown] = useState({
   seconds: 0
 });
   useEffect(() => {
-    const futureDate = new Date("2024-04-01T08:00:00"); // Set your future date here
+    const futureDate = new Date("2024-04-01T20:00:00"); // Set your future date here
     const interval = setInterval(() => {
       const now = new Date();
       const difference = futureDate.getTime() - now.getTime();
@@ -33,7 +33,7 @@ const [countdown, setCountdown] = useState({
   }, []);
   // object here
   const groupDetails = {
-    group1: {title: "Bootcamp 2024",heading:"Chainlink",date: "1-12 April 2024",Time: "08-12 PM",location: "CUTM Bhubaneswar",joinLink: "https://lu.ma/ChainlinkBootcamp2024?utm_source=012moiiuvdi2"},
+    group1: {title: "Bootcamp 2024",heading:"Chainlink",date: "1-12 April 2024",Time: "08-10 PM",location: "CUTM Bhubaneswar",joinLink: "https://lu.ma/ChainlinkBootcamp2024?utm_source=012moiiuvdi2"},
     group2: {title: "Chainlink Live Workshop 2024",heading:"Chainlink",date: "To Be Announced!",Time: "00-00 PM",location: "CUTM Bhubaneswar",joinLink: "#"}
   }
   let { id } = useParams();
