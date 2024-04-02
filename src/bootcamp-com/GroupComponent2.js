@@ -34,7 +34,7 @@ const GroupComponent2 = () => {
   // after timer end
   // object here
   const groupDetails = {
-    group1: { title: "Bootcamp 2024", heading: "Chainlink", date: "1-12 April 2024", Time: "08-10 PM", location: "CUTM Bhubaneswar", Redgh: "https://lu.ma/ChainlinkBootcamp2024?utm_source=012moiiuvdi2",joinLink:"https://www.youtube.com/live/_YkfrNv4xoo?si=uEGyi5xS2GeqILvd" },
+    group1: { title: "Bootcamp 2024", heading: "Chainlink", date: "1-12 April 2024", Time: "08-10 PM", location: "CUTM Bhubaneswar", Redgh: "https://lu.ma/ChainlinkBootcamp2024?utm_source=012moiiuvdi2",joinLink:"https://www.youtube.com/live/uULPXQBMBpc?si=-rdMx85JBIORiup3" },
     group2: { title: "Chainlink Live Workshop 2024", heading: "Chainlink", date: "To Be Announced!", Time: "00-00 PM", location: "CUTM Bhubaneswar", Redgh: "#" }
   }
   let { id } = useParams();
