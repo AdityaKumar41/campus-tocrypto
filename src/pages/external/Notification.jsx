@@ -7,7 +7,7 @@ const Notification = ({ message, onClose }) => {
 
   useEffect(() => {
     const handleNotificationOpen = () => {
-      // Play sound when the notification is opened
+      // Play sound
       audioRef.current.play().catch(error => {
         console.error('Failed to play audio:', error);
       });

@@ -13,6 +13,7 @@ import Community from "./pages/community/Community";
 import COE from "./pages/COE/COE";
 import Event from "./pages/event/event";
 import Bootcamp from './pages/bootcamp/Bootcamp';
+// import Sticky from './components/sticky/sticky';
 import Offline from "./pages/offline/offline";
 
 function App() {
@@ -43,10 +44,8 @@ function App() {
             <Route path="/About" element={<About />} />
             <Route path="/Project" element={<Project />} />
             <Route path="/Community" element={<Community />} />
-            {/* Add the id parameter to the route */}
             <Route path="/event-details/:id" element={<Bootcamp />} /> 
             <Route path="/Contact" element={<Contact />} />
-            {/* 404 route */}
             <Route path="*" element={<NotFound />} />
           </Routes>
           <Footer />
