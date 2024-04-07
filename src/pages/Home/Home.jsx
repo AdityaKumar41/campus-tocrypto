@@ -4,7 +4,7 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 import Popup from "reactjs-popup";
 import { Link } from "react-router-dom";
 import CountUp from 'react-countup';
-import { GoArrowUpRight } from "react-icons/go";
+import {  GoArrowUpRight } from "react-icons/go";
 // import Confetti from '../Confetti';
 
 import "./Home.css";
@@ -254,6 +254,10 @@ useEffect(()=>{
     <>
     <div className="circle"></div>
       <div className="home">
+        <div className="framer">
+          <div className="content">Access the power of Decentralization on IPFS</div>
+          <div className="visit"><a href="https://campustocrypto.eth/">Visit site</a><GoArrowUpRight color="black"/></div>
+        </div>
         {/* SECTION 1 */}
         <div className="section1">
           <div className="section1-left">
