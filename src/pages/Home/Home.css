@@ -1,8 +1,6 @@
 .home{
-   
     color: beige;
     overflow-x: hidden;
-
 }
 .circle{
     position: absolute;
@@ -15,6 +13,48 @@
     border-radius: 50%;
     filter: blur(12vw);
 }
+
+.framer{
+    align-items: center;
+    background: linear-gradient(140deg, rgb(157, 255, 0) 0%, #6843EC 50%);
+    /* background-color: #6843EC; */
+    border-radius: 12px;
+    display: flex;
+    flex: none;
+    flex-direction: row;
+    gap: 10px;
+    height: min-content;
+    justify-content: center;
+    overflow: hidden;
+    padding: 10px 40px;
+    position: relative;
+    margin: 15px 150px 50px 150px;
+    font-family: sans-serif;
+    .content{
+        font-weight: 600;
+    }
+    .visit{
+        background-color: white;
+        border-radius: 12px;
+        padding: 5px 7px 5px 7px;
+        a{
+            color: black;
+            
+        }
+        
+    }
+    
+    @media (max-width: 900px)
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction : column;
+        margin: 30px;
+    }
+}
+
+
 .section1{
     display: flex;
     justify-content: space-between;
