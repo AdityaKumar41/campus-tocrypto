@@ -256,7 +256,7 @@ useEffect(()=>{
       <div className="home">
         <div className="framer">
           <div className="content">Access the power of Decentralization on IPFS</div>
-          <div className="visit"><a href="https://campustocrypto.eth/">Visit site</a><GoArrowUpRight color="black"/></div>
+          <div className="visit"><a href="https://campustocrypto.eth.limo" target="blank" rel="noopener noreferrer">Visit site</a><GoArrowUpRight color="black"/></div>
         </div>
         {/* SECTION 1 */}
         <div className="section1">
