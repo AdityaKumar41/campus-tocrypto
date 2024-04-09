@@ -265,15 +265,15 @@ useEffect(()=>{
             <span>{typeEffect}</span>
             <Cursor style={{ color: "white" }} />
           </div>
-          <div className="section1-right">
-            <br />
+          {/* <div className="section1-right">
+            
             <span>
               Blockchain technology that enables secure and transparent
               record-keeping of transactions across a network of computers. It
               was originally designed as the underlying technology for the
               cryptocurrency Bitcoin.
             </span>
-          </div>
+          </div> */}
         </div>
         {/* {popup section} */}
         {/* {showPop && (
@@ -403,7 +403,7 @@ useEffect(()=>{
             <p>SPECIAL SPONSOR</p>
           </div> */}
           <div className="section3-up">
-          POWERING TOOLS AND INTEGRATIONS FROM COMPANIES ALL AROUND THE WORLD
+          PARTNER/SUPPORT
           </div>
           <div className="section3-down">
             <img src={imgCutm} alt="img" />

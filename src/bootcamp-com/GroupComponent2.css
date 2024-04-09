@@ -190,7 +190,7 @@
   font-size: 1.3rem;
   letter-spacing: 0.2px;
   line-height: 3.125rem;
-  font-weight: 900;
+  /* font-weight: 900; */
   font-family: var(--font-montserrat);
   color: var(--light-text);
   text-align: center;
