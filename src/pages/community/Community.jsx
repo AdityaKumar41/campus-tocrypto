@@ -172,7 +172,7 @@ const Community = () => {
     <div className="community-circle"></div>
     <div className="community-section2">
         <div className="community-section2-up">
-            POWERING TOOLS AND INTEGRATIONS FROM COMPANIES ALL AROUND THE WORLD
+            PARTNER/SUPPORT
           </div>
           <div className="community-section2-down">
             <img src={imgCutm} alt="img" />
