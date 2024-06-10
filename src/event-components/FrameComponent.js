@@ -5,24 +5,15 @@ import "./FrameComponent.css";
 const FrameComponent = () => {
   const UpcomingEvenet = [
     {
-      image: "https://campus-crypto.s3.eu-north-1.amazonaws.com/event/chainlink-web-p.png",
-      title: "Chainlink Bootcamp 2024 (CUTM)",
-      subtitle: "Empowering Tomorrow's Blockchain Innovators: Chainlink Bootcamp 2024 (CUTM)",
-      year: "2024",
-      month: "APR",
-      date: "01",
-      link: "/event-details/1"
-    },
-    {
       image: "/rectangle-12@2x.png",
       title: "Chainlink Live Workshop at CUTM.",
-      subtitle: "Exploring the Future of Decentralized Oracles and Smart Contracts with Industry Leaders",
+      subtitle:
+        "Exploring the Future of Decentralized Oracles and Smart Contracts with Industry Leaders",
       year: "2024",
       month: "TBA",
       date: "",
-      link: "/event-details/2"
-  
-    }
+      link: "/event-details/2",
+    },
   ];
   return (
     <section className="page-child">
@@ -35,46 +26,42 @@ const FrameComponent = () => {
           </h1>
         </div>
         <div className="frame-div">
-          {UpcomingEvenet.map((items,key)=>{
-            return(
+          {UpcomingEvenet.map((items, key) => {
+            return (
               <div className="rectangle-container" key={key}>
-            <img
-              className="frame-child2"
-              loading="lazy"
-              alt=""
-              src={items.image}
-            />
-            <div className="rectangle-parent1">
-              {/* <div className="rectangle-div"></div> */}
-                <div className="frame-wrapper1">
-                  <div className="frame-parent1">
-                  <div className="apr-wrapper">
-                      <b className="apr">{items.year}</b>
-                    </div>
-                    <div className="apr-wrapper">
-                      <b className="apr">{items.month}</b>
-                    </div>
-                    <div className="wrapper">
-                      <b className="b">{items.date}</b>
+                <img
+                  className="frame-child2"
+                  loading="lazy"
+                  alt=""
+                  src={items.image}
+                />
+                <div className="rectangle-parent1">
+                  {/* <div className="rectangle-div"></div> */}
+                  <div className="frame-wrapper1">
+                    <div className="frame-parent1">
+                      <div className="apr-wrapper">
+                        <b className="apr">{items.year}</b>
+                      </div>
+                      <div className="apr-wrapper">
+                        <b className="apr">{items.month}</b>
+                      </div>
+                      <div className="wrapper">
+                        <b className="b">{items.date}</b>
+                      </div>
                     </div>
                   </div>
-                </div>
-              
-              <div className="frame-parent2">
-                <div className="wonder-girls-2010-wonder-girls-parent">
-                  <b className="wonder-girls-2010">
-                    {items.title}
-                  </b>
-                  <div className="well-get-you">
-                    {items.subtitle}
+
+                  <div className="frame-parent2">
+                    <div className="wonder-girls-2010-wonder-girls-parent">
+                      <b className="wonder-girls-2010">{items.title}</b>
+                      <div className="well-get-you">{items.subtitle}</div>
+                    </div>
+                    <div className="view-more">
+                      <a href={items.link}>View Details</a>
+                    </div>
                   </div>
-                </div>
-                <div className="view-more">
-                    <a href={items.link}>View Details</a>
                 </div>
               </div>
-            </div>
-          </div>
             );
           })}
         </div>
@@ -84,7 +71,7 @@ const FrameComponent = () => {
               <h1 className="join-these-brands">Supported by</h1>
             </div>
             <div className="weve-had-the">
-            We've had the pleasure of inviting and working with industry.
+              We've had the pleasure of inviting and working with industry.
             </div>
           </div>
         </div>

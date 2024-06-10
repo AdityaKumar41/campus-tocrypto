@@ -1,10 +1,10 @@
-import React,{ useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 // import Notification from '../external/Notification';
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import Popup from "reactjs-popup";
 import { Link } from "react-router-dom";
-import CountUp from 'react-countup';
-import {  GoArrowUpRight } from "react-icons/go";
+import CountUp from "react-countup";
+import { GoArrowUpRight } from "react-icons/go";
 // import Confetti from '../Confetti';
 
 import "./Home.css";
@@ -28,33 +28,56 @@ import Backimg from "../../Assets/images/backgroundIMAGE.png";
 // import image6 from "../../Assets/images/image14.png";
 // import image7 from "../../Assets/images/image15.png";
 // import image8 from "../../Assets/images/image16.png";
-const imgPolk = "https://campus-crypto.s3.eu-north-1.amazonaws.com/Polkadot-20240223T062823Z-001/Polkadot/1694463747080.jfif";
-const imgwaveAI="https://campus-crypto.s3.eu-north-1.amazonaws.com/FusionWaveAi-20240223T065404Z-001/FusionWaveAi/1702374446893.jfif";
-const imgKoi="https://campus-crypto.s3.eu-north-1.amazonaws.com/KoinX/1674268329598.jfif";
-const imgBlok= "https://campus-crypto.s3.eu-north-1.amazonaws.com/BlockonCapital/1698334334464.jfif";
-const imgBSB="https://campus-crypto.s3.eu-north-1.amazonaws.com/BlockseBlock/1692902136792.jfif";
-const imgSFT="https://campus-crypto.s3.eu-north-1.amazonaws.com/Prashant-Jain-os7dyihyws13c81v9gb47mewndnnltkp6gwkkgm028.png";
+const imgPolk =
+  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/radhakrishnadashari.jpg";
+const imgwaveAI =
+  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/ankitdas.jpg";
+const imgKoi =
+  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/punitagarwal.jpg";
+const imgFile =
+  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/Ilya%20(Makhov)%20Orlov.jpg";
+const imgBSB =
+  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/sahilthakur.jpg";
+const imgSFT =
+  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/Prashantsurana.png";
 //footer-side
-const image1 = "https://campus-crypto.s3.eu-north-1.amazonaws.com/Campus+2+Crypto/iamge1.jpg";
-const image2 = "https://campus-crypto.s3.eu-north-1.amazonaws.com/Campus+2+Crypto/a9af380e-0c82-42f8-bf87-4fd36c207085.jfif";
-const image3 = "https://campus-crypto.s3.eu-north-1.amazonaws.com/Campus+2+Crypto/image2.webp";
-const image4 = "https://campus-crypto.s3.eu-north-1.amazonaws.com/Campus+2+Crypto/image3.webp";
-const image5 = "https://campus-crypto.s3.eu-north-1.amazonaws.com/Campus+2+Crypto/22805cca-058e-40db-8f2c-194eee7908a0.jfif";
-const image6 = "https://campus-crypto.s3.eu-north-1.amazonaws.com/Campus+2+Crypto/image4.webp";
-const image7 = "https://campus-crypto.s3.eu-north-1.amazonaws.com/Campus+2+Crypto/9dc9148e-b7ff-4498-b7d7-2354f55a8cb9.jfif";
-const image8 = "https://campus-crypto.s3.eu-north-1.amazonaws.com/Campus+2+Crypto/a25fe95b-154a-48cd-9aff-d93dc4479a1e.jfif";
+const image1 =
+  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/iamge2018.jpg";
+const image2 =
+  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/timeline1.jpg";
+const image3 =
+  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/image2019.avif";
+const image4 =
+  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/image2020.webp";
+const image5 =
+  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/timeline2.jpg";
+const image6 =
+  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/image2021.avif";
+const image7 =
+  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/timeline4.jpg";
+const image8 =
+  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/timeline3.jpg";
 
-
-const imgKoinX = "https://campus-crypto.s3.eu-north-1.amazonaws.com/ICONS/koinx.webp";
-const imgCutm = "https://campus-crypto.s3.eu-north-1.amazonaws.com/ICONS/cutm+logo.png";
-const imgFusionWave = "https://campus-crypto.s3.eu-north-1.amazonaws.com/ICONS/FusionWaveAI.png";
-const imgBlockCation = "https://campus-crypto.s3.eu-north-1.amazonaws.com/ICONS/blockcation_logo.png";
-const imgFilemarket = "https://campus-crypto.s3.eu-north-1.amazonaws.com/ICONS/filemarket.png";
-const imgGramTarang = "https://campus-crypto.s3.eu-north-1.amazonaws.com/ICONS/logo.png";
-const imgePolkdot = "https://campus-crypto.s3.eu-north-1.amazonaws.com/Polkadot_Logo.webp";
-const imgweb3foundation = "https://campus-crypto.s3.eu-north-1.amazonaws.com/web3-foundation.png";
-const YTicon = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png"
-const Podcast = "https://static.dezeen.com/uploads/2023/07/x-logo-twitter-elon-musk_dezeen_2364_col_0.jpg"
+const imgKoinX =
+  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/koinx.svg";
+const imgCutm =
+  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/centurion.png";
+const imgFusionWave =
+  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/FusionWaveAI.png";
+const imgBlockCation =
+  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/blockcationlogo.png";
+const imgFilemarket =
+  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/filemarket.png";
+const imgGramTarang =
+  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/gramtarang.png";
+const imgePolkdot =
+  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/Polkadot_Logo.webp";
+const imgweb3foundation =
+  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/web3foundation.webp";
+const YTicon =
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png";
+const Podcast =
+  "https://static.dezeen.com/uploads/2023/07/x-logo-twitter-elon-musk_dezeen_2364_col_0.jpg";
 // const IntroVideo = "httpos";
 const Ylink = "https://www.instagram.com/campustocrypto/";
 const Tlink = "https://twitter.com/campustocrypto";
@@ -75,9 +98,9 @@ const data = [
     role: "CEO of KoinX",
   },
   {
-    image:imgBlok,
-    name: "Jagdish Pandya",
-    role: "CEO of BlockOn",
+    image: imgFile,
+    name: "Ilya Orlov",
+    role: "CEO of Filemarket",
   },
   {
     image: imgBSB,
@@ -87,7 +110,7 @@ const data = [
   {
     image: imgSFT,
     name: "Prashant Surana",
-    role: "CEO of Snapper Future Tech",
+    role: "Co-founder & Dir of Snapper Future Tech",
   },
 ];
 const CountComponent = ({ count }) => (
@@ -95,7 +118,8 @@ const CountComponent = ({ count }) => (
     {count.map((Count, index) => (
       <div className="innner-count" key={index}>
         {/* Use CountUp component */}
-        <CountUp end={parseInt(Count.number)} duration={2.5} /><span>+</span>
+        <CountUp end={parseInt(Count.number)} duration={2.5} />
+        <span>+</span>
         <h3 className="inner-count-h3">{Count.title}</h3>
       </div>
     ))}
@@ -120,8 +144,9 @@ export const popupPerson = {
   image: imgPolk,
   name: "Radhakrishna Dasari",
   registrationLink: "https://forms.gle/ckZApPnao3Z3BLCk7",
-  joinNow: "https://us02web.zoom.us/j/89452865191?pwd=SXNTSXVZYlhaTFg2b1pVY1RPWGU4dz09",
-  Ytubevideo: "https://www.youtube.com/embed/aDVOfEAw4OQ?si=DuMFAljtNhDKhUxW"
+  joinNow:
+    "https://us02web.zoom.us/j/89452865191?pwd=SXNTSXVZYlhaTFg2b1pVY1RPWGU4dz09",
+  Ytubevideo: "https://www.youtube.com/embed/aDVOfEAw4OQ?si=DuMFAljtNhDKhUxW",
 };
 // export let timeredning = false;
 const Home = () => {
@@ -131,34 +156,33 @@ const Home = () => {
       email: "",
     },
   });
-const [showPopup, setShowPopup] = useState(false);
-// const [showPop, setShowPop] = useState(false);
-// const [showNotification, setShowNotification] = useState(false);
-const [Showpopuprev, setShowpopuprev] = useState(false);
-// const [timerEnded, setTimerEnded] = useState(false);
-// const [countdown, setCountdown] = useState({
-//   days: 0,
-//   hours: 0,
-//   minutes: 0,
-//   seconds: 0
-// });
+  const [showPopup, setShowPopup] = useState(false);
+  // const [showPop, setShowPop] = useState(false);
+  // const [showNotification, setShowNotification] = useState(false);
+  const [Showpopuprev, setShowpopuprev] = useState(false);
+  // const [timerEnded, setTimerEnded] = useState(false);
+  // const [countdown, setCountdown] = useState({
+  //   days: 0,
+  //   hours: 0,
+  //   minutes: 0,
+  //   seconds: 0
+  // });
 
-
-// useEffect(() => {
-//   setShowPop(true);
-// }, []);
-useEffect(()=>{
-  setShowpopuprev(false)
-},[]);
-// useEffect(()=>{
-//   if (!showPop) {
-//     setShowNotification(true);
-//     setShowpopuprev(true)
-//   }else{
-//     setShowNotification(false);
-//     setShowpopuprev(false)
-//   }
-// },[showPop]);
+  // useEffect(() => {
+  //   setShowPop(true);
+  // }, []);
+  useEffect(() => {
+    setShowpopuprev(false);
+  }, []);
+  // useEffect(()=>{
+  //   if (!showPop) {
+  //     setShowNotification(true);
+  //     setShowpopuprev(true)
+  //   }else{
+  //     setShowNotification(false);
+  //     setShowpopuprev(false)
+  //   }
+  // },[showPop]);
   // useEffect(() => {
   //   const futureDate = new Date("2024-03-14T15:00:00"); // Set your future date here
   //   const interval = setInterval(() => {
@@ -175,7 +199,7 @@ useEffect(()=>{
   //     } else {
   //       clearInterval(interval);
   //       // adding ending interval of the timer
-  //       setTimerEnded(true); 
+  //       setTimerEnded(true);
   //       timeredning = true
   //     }
   //   }, 1000);
@@ -183,11 +207,9 @@ useEffect(()=>{
   //   return () => clearInterval(interval);
   // }, []);
   useEffect(() => {
-
-    
     // Load smtp.js script dynamically
-    const script = document.createElement('script');
-    script.src = 'https://smtpjs.com/v3/smtp.js';
+    const script = document.createElement("script");
+    script.src = "https://smtpjs.com/v3/smtp.js";
     script.async = true;
     document.body.appendChild(script);
 
@@ -227,14 +249,12 @@ useEffect(()=>{
       // Send email using SMTP.js
       window.Email.send({
         SecureToken: "17983650-9109-4d14-b06e-4c92fc80753b",
-        To: 'campustocrypto@gmail.com',
+        To: "campustocrypto@gmail.com",
         From: "campustocrypto@gmail.com",
-        Subject: 'New subscriber',
-        Body: 'Email: ' + formData.email
-      }).then(
-        setShowPopup(true),
-      );
-      
+        Subject: "New subscriber",
+        Body: "Email: " + formData.email,
+      }).then(setShowPopup(true));
+
       // Clear form fields
       setFormData({
         email: "",
@@ -252,11 +272,22 @@ useEffect(()=>{
   });
   return (
     <>
-    <div className="circle"></div>
+      <div className="circle"></div>
       <div className="home">
         <div className="framer">
-          <div className="content">Access the power of Decentralization on IPFS</div>
-          <div className="visit"><a href="https://campustocrypto.eth.limo" target="blank" rel="noopener noreferrer">Visit site</a><GoArrowUpRight color="black"/></div>
+          <div className="content">
+            Access the power of Decentralization on IPFS
+          </div>
+          <div className="visit">
+            <a
+              href="https://campustocrypto.eth.limo"
+              target="blank"
+              rel="noopener noreferrer"
+            >
+              Visit site
+            </a>
+            <GoArrowUpRight color="black" />
+          </div>
         </div>
         {/* SECTION 1 */}
         <div className="section1">
@@ -313,27 +344,46 @@ useEffect(()=>{
     </div>
   </Popup>
 )} */}
-{/* confetti */}
-    {/* {timerEnded && <Confetti />} */}
-{/* add youtube video here */}
-{Showpopuprev && (
-  <Popup
-    open={true}
-    contentStyle={{ textAlign: 'center', maxWidth: 'auto', borderRadius: '15px', boxShadow: '0 10px 20px rgba(0, 0, 0, 0.3)', background: 'rgb(255,255,255)', margin: '25px auto auto auto' }}
-    overlayStyle={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}
-    className="popup-main-container"
-  >
-    <div className="popup-contentner popup-Ytub">
-      <span className="popup-main-close-btn" onClick={() => setShowpopuprev(false)}>&times;</span>
-      {/* Replace the image and text with the YouTube embed code */}
-      <iframe width="100%" height="100%" src={popupPerson.Ytubevideo} frameborder="0" allowfullscreen title="campus to crypto" autoFocus></iframe>
-    </div>
-  </Popup>
-)}
+        {/* confetti */}
+        {/* {timerEnded && <Confetti />} */}
+        {/* add youtube video here */}
+        {Showpopuprev && (
+          <Popup
+            open={true}
+            contentStyle={{
+              textAlign: "center",
+              maxWidth: "auto",
+              borderRadius: "15px",
+              boxShadow: "0 10px 20px rgba(0, 0, 0, 0.3)",
+              background: "rgb(255,255,255)",
+              margin: "25px auto auto auto",
+            }}
+            overlayStyle={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}
+            className="popup-main-container"
+          >
+            <div className="popup-contentner popup-Ytub">
+              <span
+                className="popup-main-close-btn"
+                onClick={() => setShowpopuprev(false)}
+              >
+                &times;
+              </span>
+              {/* Replace the image and text with the YouTube embed code */}
+              <iframe
+                width="100%"
+                height="100%"
+                src={popupPerson.Ytubevideo}
+                frameborder="0"
+                allowfullscreen
+                title="campus to crypto"
+                autoFocus
+              ></iframe>
+            </div>
+          </Popup>
+        )}
 
-
-      {/* {notification} */}
-      {/* <div>
+        {/* {notification} */}
+        {/* <div>
         {showNotification && (
           <div className="notification-wrapper">
             <div className="external-notification">
@@ -355,16 +405,29 @@ useEffect(()=>{
         )}
       </div> */}
 
-
         {/* SECTION 2 */}
         <div className="new-mobile">
-                <div className="grid-container">
-                  <Link to={"/community"}><div className="item item-1 button-49">Join Us 🎯</div></Link>
-                  <Link to={"/project"}><div className="item item-2 button-49 btn-49" ><span className="num num30+" data-val="40">30+</span> Project</div></Link>
-                  <div className="item item-3">C2C Join our Community, We are waiting for you</div>
-                  <div className="item item-4">POWERING TOOLS AND INTEGRATIONS FROM COMPANIES ALL AROUND THE WORLD</div>
-                </div>
+          <div className="grid-container">
+            <Link to={"/community"}>
+              <div className="item item-1 button-49">Join Us 🎯</div>
+            </Link>
+            <Link to={"/project"}>
+              <div className="item item-2 button-49 btn-49">
+                <span className="num num30+" data-val="40">
+                  30+
+                </span>{" "}
+                Project
               </div>
+            </Link>
+            <div className="item item-3">
+              C2C Join our Community, We are waiting for you
+            </div>
+            <div className="item item-4">
+              POWERING TOOLS AND INTEGRATIONS FROM COMPANIES ALL AROUND THE
+              WORLD
+            </div>
+          </div>
+        </div>
         <div className="section2">
           <div className="section2-left">
             <img src={Bimage} alt="img" />{" "}
@@ -377,7 +440,7 @@ useEffect(()=>{
               <img src={Shape} alt="img" />
             </div>
             <div className="right-side-3">
-            Chain of Community Chain of Block, 
+              Chain of Community Chain of Block,
               <div className="profile">
                 <div className="image">
                   <img src={Person1} alt="img" />
@@ -391,9 +454,9 @@ useEffect(()=>{
               </div>
             </div>
             <Link to="/Community">
-            <div className="try-free">
-              Join Us <GoArrowUpRight />
-            </div>
+              <div className="try-free">
+                Join Us <GoArrowUpRight />
+              </div>
             </Link>
           </div>
         </div>
@@ -402,9 +465,7 @@ useEffect(()=>{
           {/* <div className="section3-up section-margin">
             <p>SPECIAL SPONSOR</p>
           </div> */}
-          <div className="section3-up">
-          PARTNER/SUPPORT
-          </div>
+          <div className="section3-up">PARTNER/SUPPORT</div>
           <div className="section3-down">
             <img src={imgCutm} alt="img" />
             <img src={imgGramTarang} alt="img" />
@@ -421,48 +482,67 @@ useEffect(()=>{
           <div className="card">
             Explore the power of Blockchain
             <p>
-            Explore the future of social interaction with our innovative blockchain-based social media platform! Join us today to experience decentralized.
+              Explore the future of social interaction with our innovative
+              blockchain-based social media platform! Join us today to
+              experience decentralized.
             </p>
             <div className="buttons">
-            <Link to={Ylink} style={{ color: "white" }} target="__blank">
-              <button >
-                INSTAGRAM <img src={YTicon} alt="Instagram icon" />
-              </button>
+              <Link to={Ylink} style={{ color: "white" }} target="__blank">
+                <button>
+                  INSTAGRAM <img src={YTicon} alt="Instagram icon" />
+                </button>
               </Link>
               <Link to={Tlink} style={{ color: "white" }} target="__blank">
-              <button>
-                TWITTER <img src={Podcast} alt="Twiiter icon" />
-              </button>
+                <button>
+                  TWITTER <img src={Podcast} alt="Twiiter icon" />
+                </button>
               </Link>
             </div>
           </div>
           <div className="card" id="subscribe">
             Connect through the Blockchain
             <p>
-            Subscribe now and join our blockchain community today to be part of the future of decentralized technology!
+              Subscribe now and join our blockchain community today to be part
+              of the future of decentralized technology!
             </p>
             <div className="discussionSection">
               <form action="" onSubmit={subscribe}>
-              <input type="email" id="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              placeholder="Enter Your Email Address" required/>
-              {/* {formData.errors.email &&( <span>{formData.errors.email}</span>)} */}
-              <button type="submit">Subscribe</button>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  placeholder="Enter Your Email Address"
+                  required
+                />
+                {/* {formData.errors.email &&( <span>{formData.errors.email}</span>)} */}
+                <button type="submit">Subscribe</button>
               </form>
               <Popup
                 open={showPopup}
                 onClose={() => setShowPopup(false)}
-                contentStyle={{ maxWidth: '400px', borderRadius: '20px', boxShadow: '0 10px 20px rgba(0, 0, 0, 0.3)' }}
-                overlayStyle={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}
+                contentStyle={{
+                  maxWidth: "400px",
+                  borderRadius: "20px",
+                  boxShadow: "0 10px 20px rgba(0, 0, 0, 0.3)",
+                }}
+                overlayStyle={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}
               >
                 <div className="popup-content">
-                  <span className="popup-close-btn" onClick={() => setShowPopup(false)}>&times;</span>
+                  <span
+                    className="popup-close-btn"
+                    onClick={() => setShowPopup(false)}
+                  >
+                    &times;
+                  </span>
                   <h3 className="popup-title">Congratulations! 🎉!</h3>
-                  <p className="popup-message">You've officially joined the ranks of our newsletter subscribers</p>
+                  <p className="popup-message">
+                    You've officially joined the ranks of our newsletter
+                    subscribers
+                  </p>
                 </div>
-        </Popup>
+              </Popup>
             </div>
           </div>
         </div>
@@ -485,7 +565,7 @@ useEffect(()=>{
 
         {/* SECTION 6 */}
         <div>
-          <CountComponent count={count}/>
+          <CountComponent count={count} />
         </div>
 
         <div className="section7">
@@ -495,7 +575,10 @@ useEffect(()=>{
               <div className="content-left">
                 <div className="block1">
                   <h2>2018</h2>
-                  <span>Got the first funding from CUTM to build the mining rig inside the University for educational purposes.</span>
+                  <span>
+                    Got the first funding from CUTM to build the mining rig
+                    inside the University for educational purposes.
+                  </span>
                 </div>
                 <div className="block2">
                   <img src={image1} alt="img" />
@@ -512,7 +595,9 @@ useEffect(()=>{
                 </div>
                 <div className="block1">
                   <h2>2019</h2>
-                  <span>In 2019, launched our first DAPP name "Blockation".</span>
+                  <span>
+                    In 2019, launched our first DAPP name "Blockation".
+                  </span>
                 </div>
               </div>
               <div className="content-right">
@@ -523,7 +608,9 @@ useEffect(()=>{
               <div className="content-left">
                 <div className="block1">
                   <h2>2020</h2>
-                  <span>Started Blockchain Skill Courses in all the campus.</span>
+                  <span>
+                    Started Blockchain Skill Courses in all the campus.
+                  </span>
                 </div>
                 <div className="block2">
                   <img src={image4} alt="img" />
@@ -540,7 +627,10 @@ useEffect(()=>{
                 </div>
                 <div className="block1">
                   <h2>2021</h2>
-                  <span>Launched web application of our first DAPP names "Blockcation".</span>
+                  <span>
+                    Launched web application of our first DAPP names
+                    "Blockcation".
+                  </span>
                 </div>
               </div>
               <div className="content-right">

@@ -1,12 +1,12 @@
-import React,{useState,useEffect} from 'react';
+import React, { useState, useEffect } from "react";
 // import Notification from '../external/Notification';
 // import { popupPerson } from "../Home/Home";
-import Popup from 'reactjs-popup';
-import './Community.css';
-import L from '../../Assets/svg/Vector (4).svg';
-import PlusIcon from '../../Assets/svg/Group (1).svg';
-import Planet from '../../Assets/images/rectangle-1340.png';
-import Triangle from '../../Assets/svg/Group 1 (1).svg'
+import Popup from "reactjs-popup";
+import "./Community.css";
+import L from "../../Assets/svg/Vector (4).svg";
+import PlusIcon from "../../Assets/svg/Group (1).svg";
+import Planet from "../../Assets/images/rectangle-1340.png";
+import Triangle from "../../Assets/svg/Group 1 (1).svg";
 // import {timeredning} from '../Home/Home';
 // import InstaIcon from '../../Assets/svg/ig-instagram-icon.svg'
 // import YoutubeIcon from '../../Assets/svg/youtube-color-icon.svg'
@@ -14,22 +14,28 @@ import Triangle from '../../Assets/svg/Group 1 (1).svg'
 // import DiscordIcon from '../../Assets/svg/discord-round-color-icon.svg'
 // import { Link } from 'react-router-dom';
 
-
-
-const imgKoinX = "https://campus-crypto.s3.eu-north-1.amazonaws.com/ICONS/koinx.webp";
-const imgCutm = "https://campus-crypto.s3.eu-north-1.amazonaws.com/ICONS/cutm+logo.png";
-const imgFusionWave = "https://campus-crypto.s3.eu-north-1.amazonaws.com/ICONS/FusionWaveAI.png";
-const imgBlockCation = "https://campus-crypto.s3.eu-north-1.amazonaws.com/ICONS/blockcation_logo.png";
-const imgFilemarket = "https://campus-crypto.s3.eu-north-1.amazonaws.com/ICONS/filemarket.png";
-const imgGramTarang = "https://campus-crypto.s3.eu-north-1.amazonaws.com/ICONS/logo.png";
-const imgePolkdot = "https://campus-crypto.s3.eu-north-1.amazonaws.com/Polkadot_Logo.webp";
-const imgweb3foundation = "https://campus-crypto.s3.eu-north-1.amazonaws.com/web3-foundation.png"
-  // function scrollToSection() {
-  //   const section = document.getElementById('sectionId');
-  //   if (section) {
-  //     section.scrollIntoView({ behavior: 'smooth' });
-  //   }
-  // };
+const imgKoinX =
+  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/koinx.svg";
+const imgCutm =
+  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/centurion.png";
+const imgFusionWave =
+  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/FusionWaveAI.png";
+const imgBlockCation =
+  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/blockcationlogo.png";
+const imgFilemarket =
+  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/filemarket.png";
+const imgGramTarang =
+  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/gramtarang.png";
+const imgePolkdot =
+  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/Polkadot_Logo.webp";
+const imgweb3foundation =
+  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/web3foundation.webp";
+// function scrollToSection() {
+//   const section = document.getElementById('sectionId');
+//   if (section) {
+//     section.scrollIntoView({ behavior: 'smooth' });
+//   }
+// };
 
 const Community = () => {
   const [formData, setFormData] = useState({
@@ -37,21 +43,21 @@ const Community = () => {
     lastName: "",
     email: "",
     phoneNumber: "",
-    message:"",
+    message: "",
     errors: {
       firstName: "",
       lastName: "",
       email: "",
       phoneNumber: "",
-      message:"",
+      message: "",
     },
   });
   const [showPopup, setShowPopup] = useState(false);
   // const [showNotification, setShowNotification] = useState(false);
   useEffect(() => {
     // Load smtp.js script dynamically
-    const script = document.createElement('script');
-    script.src = 'https://smtpjs.com/v3/smtp.js';
+    const script = document.createElement("script");
+    script.src = "https://smtpjs.com/v3/smtp.js";
     script.async = true;
     document.body.appendChild(script);
 
@@ -61,7 +67,7 @@ const Community = () => {
     };
   }, []);
 
-  // call 
+  // call
   // useEffect(() => {
   //   setShowNotification(true);
   // }, []);
@@ -106,27 +112,32 @@ const Community = () => {
     if (Object.keys(errors).length === 0) {
       // Send email using SMTP.js
       window.Email.send({
-        To: 'campustocrypto@gmail.com',
+        To: "campustocrypto@gmail.com",
         SecureToken: "17983650-9109-4d14-b06e-4c92fc80753b",
         From: "campustocrypto@gmail.com",
-        Subject: 'New message from ' + formData.firstName + ' ' + formData.lastName,
-        Body: 'Phone Number: ' + formData.phoneNumber + '\n\nEmail: ' + formData.email+'\n\nMessage: ' + formData.message
-      }).then(
-        setShowPopup(true)
-      );
+        Subject:
+          "New message from " + formData.firstName + " " + formData.lastName,
+        Body:
+          "Phone Number: " +
+          formData.phoneNumber +
+          "\n\nEmail: " +
+          formData.email +
+          "\n\nMessage: " +
+          formData.message,
+      }).then(setShowPopup(true));
       // Clear form fields
       setFormData({
         firstName: "",
         lastName: "",
         email: "",
         phoneNumber: "",
-        message:"",
+        message: "",
         errors: {
           firstName: "",
           lastName: "",
           email: "",
           phoneNumber: "",
-          message:"",
+          message: "",
         },
       });
     }
@@ -134,21 +145,24 @@ const Community = () => {
 
   return (
     <>
-    <div className="community">
+      <div className="community">
         <div className="community-section1">
-            <div className="community-section1-left">
-                <h1>Access the power of Blockchain</h1>
-                <span>From lecture halls to blockchains. Get ahead in finance and tech with Campus to Crypto.</span>
-            </div>
-            <div className="community-section-right">
-                <img src={PlusIcon} alt="icon" />
-                <img src={L} alt="icon" />
-                <img src={Triangle} alt="icon" />
-            </div>
+          <div className="community-section1-left">
+            <h1>Access the power of Blockchain</h1>
+            <span>
+              From lecture halls to blockchains. Get ahead in finance and tech
+              with Campus to Crypto.
+            </span>
+          </div>
+          <div className="community-section-right">
+            <img src={PlusIcon} alt="icon" />
+            <img src={L} alt="icon" />
+            <img src={Triangle} alt="icon" />
+          </div>
         </div>
-    </div>
-    {/* {notification} */}
-    {/* <div>
+      </div>
+      {/* {notification} */}
+      {/* <div>
         {showNotification && (
           <div className="notification-wrapper">
             <div className="external-notification">
@@ -169,53 +183,54 @@ const Community = () => {
           </div>
         )}
       </div> */}
-    <div className="community-circle"></div>
-    <div className="community-section2">
-        <div className="community-section2-up">
-            PARTNER/SUPPORT
-          </div>
-          <div className="community-section2-down">
-            <img src={imgCutm} alt="img" />
-            <img src={imgGramTarang} alt="img" />
-            <img src={imgePolkdot} alt="imgpol" />
-            <img src={imgweb3foundation} alt="web3img" />
-            <img src={imgFilemarket} alt="img" />
-            <img src={imgKoinX} alt="img" />
-            <img src={imgFusionWave} alt="img" />
-            <img src={imgBlockCation} alt="img" />
-          </div>
+      <div className="community-circle"></div>
+      <div className="community-section2">
+        <div className="community-section2-up">PARTNER/SUPPORT</div>
+        <div className="community-section2-down">
+          <img src={imgCutm} alt="img" />
+          <img src={imgGramTarang} alt="img" />
+          <img src={imgePolkdot} alt="imgpol" />
+          <img src={imgweb3foundation} alt="web3img" />
+          <img src={imgFilemarket} alt="img" />
+          <img src={imgKoinX} alt="img" />
+          <img src={imgFusionWave} alt="img" />
+          <img src={imgBlockCation} alt="img" />
         </div>
-        <div className="community-section3">
-          <img src={Planet} alt="img" />
-          <div className="community-section3-head">
-            <h4 id="sectionId">Join Our Community Now</h4>
-            <span>Join our vibrant blockchain community today! Engage, learn, and collaborate with like-minded enthusiasts. Don't miss out, join now!</span>
-            <form className="community-input-field" onSubmit={handleSubmited}>
+      </div>
+      <div className="community-section3">
+        <img src={Planet} alt="img" />
+        <div className="community-section3-head">
+          <h4 id="sectionId">Join Our Community Now</h4>
+          <span>
+            Join our vibrant blockchain community today! Engage, learn, and
+            collaborate with like-minded enthusiasts. Don't miss out, join now!
+          </span>
+          <form className="community-input-field" onSubmit={handleSubmited}>
             <div className="firstname">
-                <input
-                  type="text"
-                  name="firstName"
-                  value={formData.firstName}
-                  onChange={handleChange}
-                  placeholder="First Name"
-                />
-                {formData.errors.firstName && (
-                  <span >{formData.errors.firstName}</span>
-                )}
-              </div>
-              <div className="lastname">
-                <input
-                  type="text"
-                  name="lastName"
-                  value={formData.lastName}
-                  onChange={handleChange}
-                  placeholder="Last Name"
-                />
-                {formData.errors.lastName && (
-                  <span>{formData.errors.lastName}</span>
-                )}
-              </div>
               <input
+                type="text"
+                name="firstName"
+                value={formData.firstName}
+                onChange={handleChange}
+                placeholder="First Name"
+              />
+              {formData.errors.firstName && (
+                <span>{formData.errors.firstName}</span>
+              )}
+            </div>
+            <div className="lastname">
+              <input
+                type="text"
+                name="lastName"
+                value={formData.lastName}
+                onChange={handleChange}
+                placeholder="Last Name"
+              />
+              {formData.errors.lastName && (
+                <span>{formData.errors.lastName}</span>
+              )}
+            </div>
+            <input
               type="tel"
               name="phoneNumber"
               value={formData.phoneNumber}
@@ -233,28 +248,38 @@ const Community = () => {
               onChange={handleChange}
               placeholder="Enter Your Email Address"
             />
-            {formData.errors.email &&( <span>{formData.errors.email}</span>)}
-              <button type='submit'>Join us</button>
-            </form>
-            <Popup
-          open={showPopup}
-          onClose={() => setShowPopup(false)}
-          contentStyle={{ maxWidth: '400px', borderRadius: '20px', boxShadow: '0 10px 20px rgba(0, 0, 0, 0.3)' }}
-          overlayStyle={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}
-        >
-          <div className="popup-content">
-            <span className="popup-close-btn" onClick={() => setShowPopup(false)}>&times;</span>
-            <h3 className="popup-title">🥳🎉Thank you for Joining our Community 🎉!</h3>
-            <p className="popup-message">We'll get back to you as soon as possible.</p>
-          </div>
-        </Popup>
-            
-          </div>
-         
+            {formData.errors.email && <span>{formData.errors.email}</span>}
+            <button type="submit">Join us</button>
+          </form>
+          <Popup
+            open={showPopup}
+            onClose={() => setShowPopup(false)}
+            contentStyle={{
+              maxWidth: "400px",
+              borderRadius: "20px",
+              boxShadow: "0 10px 20px rgba(0, 0, 0, 0.3)",
+            }}
+            overlayStyle={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}
+          >
+            <div className="popup-content">
+              <span
+                className="popup-close-btn"
+                onClick={() => setShowPopup(false)}
+              >
+                &times;
+              </span>
+              <h3 className="popup-title">
+                🥳🎉Thank you for Joining our Community 🎉!
+              </h3>
+              <p className="popup-message">
+                We'll get back to you as soon as possible.
+              </p>
+            </div>
+          </Popup>
         </div>
-        
+      </div>
     </>
-  )
-}
+  );
+};
 
 export default Community;

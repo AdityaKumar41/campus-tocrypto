@@ -1,7 +1,8 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./Navbar.css";
-const logo = "https://campus-crypto.s3.eu-north-1.amazonaws.com/campustocryptologo.png";
+const logo =
+  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/campustocryptologo.png";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -40,12 +41,15 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="navigation">
-          <div className={`menu-icon ${showMenu ? 'active' : ''}`} onClick={toggleMenu}>
+          <div
+            className={`menu-icon ${showMenu ? "active" : ""}`}
+            onClick={toggleMenu}
+          >
             <div className="bar"></div>
             <div className="bar"></div>
             <div className="bar"></div>
           </div>
-          <ul ref={menuRef} className={showMenu ? 'active' : ''}>
+          <ul ref={menuRef} className={showMenu ? "active" : ""}>
             <li onClick={hideMenu}>
               <NavLink
                 to="/COE"

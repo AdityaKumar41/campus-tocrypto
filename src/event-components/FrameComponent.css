@@ -160,7 +160,8 @@
   border-radius: 0 0 18.95px 18.95px;
 }
 .rectangle-container {
-  flex: 1;
+  /* flex: 1; */
+  width: 500px;
   flex-direction: column;
   min-width: 14rem;
   max-width: 100%;
@@ -341,7 +342,6 @@
   font-family: var(--font-dm-sans);
 }
 .join-these-brands {
-
   margin: 0;
   position: relative;
   font-size: inherit;
