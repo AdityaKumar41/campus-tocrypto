@@ -1,0 +1,407 @@
+.divIcon,
+.wrapperDiv {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  mix-blend-mode: normal;
+}
+.divIcon {
+  overflow: hidden;
+  object-fit: contain;
+  left: 1.313rem;
+  transform: scale(1.917);
+}
+.wrapperDiv {
+  margin: 0 !important;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+}
+.buildThe,
+.projectTools {
+  margin: 0;
+}
+.buildTheProjectContainer {
+  margin: 0;
+  height: 11rem;
+  flex: 1;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: 1.2px;
+  line-height: 5.5rem;
+  font-weight: 700;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  z-index: 1;
+  text-align: center;
+}
+.buildTheProjectToolsWrapper {
+  /* width: 33.875rem; */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0.75rem 0 0.687rem;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.andSpeedUp,
+.turnOrdinaryTools {
+  display: block;
+}
+.turnOrdinaryToolsContainer {
+  margin: 0;
+  position: relative;
+  font-size: 1.25rem;
+  letter-spacing: 0.3px;
+  line-height: 1.75rem;
+  color: rgba(255, 255, 255, 0.6);
+  display: inline-block;
+  max-width: 100%;
+  z-index: 1;
+}
+.wrapperDivParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* padding: 16.681rem 1.25rem 3.287rem 9.312rem; */
+  box-sizing: border-box;
+  position: relative;
+  gap: 1.531rem;
+  max-width: 100%;
+}
+.linkPaints {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: -0.375rem;
+  bottom: -0.375rem;
+  left: 0;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  z-index: 1;
+}
+.visitGithub {
+  flex: 1;
+  position: relative;
+  font-size: 1rem;
+  letter-spacing: 0.2px;
+  line-height: 1.25rem;
+  font-weight: 500;
+  font-family: Inter;
+  color: #0d0d0d;
+  text-align: center;
+  z-index: 2;
+}
+.beforeParent {
+  height: 2.438rem;
+  width: 16.5rem;
+  position: absolute;
+  margin: 0 !important;
+  bottom: -0.75rem;
+  left: -5.25rem;
+}
+.before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: blur(20px);
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+}
+.add509a1cb6566ab41f07d1e6f868fIcon {
+  position: absolute;
+  top: 0.438rem;
+  left: 3.875rem;
+  width: 1.375rem;
+  height: 1.188rem;
+  overflow: hidden;
+  z-index: 2;
+}
+.productCircle1,
+.productCircle3 {
+  position: fixed;
+  width: 28vw;
+  height: 28vw;
+  background-color: #6843ec;
+  z-index: -1;
+  border-radius: 50%;
+  filter: blur(14vw);
+
+  /* Vendor prefixes for better browser support */
+  -webkit-filter: blur(14vw); /* Safari and Chrome */
+  -moz-filter: blur(14vw); /* Firefox */
+  -ms-filter: blur(14vw); /* IE (non-standard) */
+  -o-filter: blur(14vw); /* Opera */
+
+  /* Ensure compatibility with older versions of border-radius */
+  -webkit-border-radius: 50%; /* Safari and Chrome */
+  -moz-border-radius: 50%; /* Firefox */
+  -ms-border-radius: 50%; /* IE (non-standard) */
+  -o-border-radius: 50%; /* Opera */
+
+  /* Fallback for older browsers that do not support the filter property */
+  background: #6843ec; /* solid background color as fallback */
+  background: rgba(104, 67, 236, 0.8); /* semi-transparent fallback */
+}
+
+.productCircle1 {
+  top: -6vw;
+  left: -9vw;
+}
+
+.productCircle3 {
+  top: -7vw;
+  right: -9vw;
+}
+
+@media (max-width: 768px) {
+  .productCircle1,
+  .productCircle3 {
+    height: 100%;
+    filter: blur(40vw);
+
+    /* Vendor prefixes for better browser support */
+    -webkit-filter: blur(40vw); /* Safari and Chrome */
+    -moz-filter: blur(40vw); /* Firefox */
+    -ms-filter: blur(40vw); /* IE (non-standard) */
+    -o-filter: blur(40vw); /* Opera */
+  }
+}
+.productCircle2 {
+  position: fixed;
+  top: -2vw;
+  /* left: 1vw; */
+  background-color: rgb(236, 188, 67);
+  width: 100%;
+  height: 20.688rem;
+  overflow-x: hidden;
+  /* border-radius: 60%; */
+  filter: blur(16vw);
+  z-index: -1;
+
+  /* Vendor prefixes for better browser support */
+  -webkit-filter: blur(16vw); /* Safari and Chrome */
+  -moz-filter: blur(16vw); /* Firefox */
+  -ms-filter: blur(16vw); /* IE (non-standard) */
+  -o-filter: blur(16vw); /* Opera */
+
+  /* Ensure compatibility with older versions of border-radius */
+  -webkit-border-radius: 60%; /* Safari and Chrome */
+  -moz-border-radius: 60%; /* Firefox */
+  -ms-border-radius: 60%; /* IE (non-standard) */
+  -o-border-radius: 60%; /* Opera */
+
+  /* Fallback for older browsers that do not support the filter property */
+  background: rgb(236, 188, 67); /* solid background color as fallback */
+  background: rgba(236, 188, 67, 0.8); /* semi-transparent fallback */
+}
+@media (max-width: 768px) {
+  .productCircle2 {
+    filter: blur(25vw);
+
+    /* Vendor prefixes for better browser support */
+    -webkit-filter: blur(25vw); /* Safari and Chrome */
+    -moz-filter: blur(25vw); /* Firefox */
+    -ms-filter: blur(25vw); /* IE (non-standard) */
+    -o-filter: blur(25vw); /* Opera */
+  }
+}
+.mainContainer {
+  width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+.link,
+.visitGithubParent {
+  width: 7.375rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+}
+.link {
+  cursor: pointer;
+  border: 0;
+  padding: 0.75rem 4.187rem;
+  background-color: transparent;
+  width: 17.125rem;
+  border-radius: 10px;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  z-index: 1;
+}
+.beforeLink {
+  /* flex: 1;
+   */
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.frameParent,
+.linkWrapper {
+  display: flex;
+  max-width: 100%;
+}
+.linkAdd509a1cb6566ab41f07d1 {
+  width: 1rem;
+  height: 0.875rem;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.linkWrapper {
+  width: 51.75rem;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: -0.1rem;
+}
+.frameParent {
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.blockchainInner {
+  /* width: 68.188rem; */
+  height: 95vh;
+  flex-direction: row;
+  /* padding: 0 4.187rem; */
+  box-sizing: border-box;
+  max-width: 100%;
+  text-align: center;
+  font-size: 5rem;
+  color: #fff;
+  font-family: Inter;
+}
+.blockchain,
+.blockchainInner,
+.firstFooter,
+.firstFooterWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.firstFooter {
+  flex: 1;
+  flex-direction: column;
+  gap: 8rem;
+  max-width: 100%;
+}
+.blockchain,
+.firstFooterWrapper {
+  box-sizing: border-box;
+}
+.firstFooterWrapper {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 1.187rem 0 1.25rem;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 30px;
+}
+@media screen and (max-width: 750px) {
+  .firstFooterWrapper {
+    padding: 0;
+    /* padding-bottom: 20px; */
+    margin-bottom: 20px;
+  }
+}
+.blockchain {
+  width: 100%;
+  position: relative;
+  background-color: #05010d;
+  overflow: hidden;
+  flex-direction: column;
+  padding: 0.037rem 6.875rem 43.343rem;
+  gap: 9.625rem;
+  line-height: normal;
+  letter-spacing: normal;
+}
+.ecosystemIcon {
+  height: 20.688rem;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: -0.562rem;
+  /* right: -0.812rem; */
+  filter: blur(300px);
+  border-radius: 50%;
+  background-color: rgba(255, 184, 0, 0.32);
+}
+@media screen and (max-width: 1200px) {
+  .blockchainInner {
+    /* padding-left: 2.063rem; */
+    /* padding-right: 2.063rem; */
+    box-sizing: border-box;
+    height: 70vh;
+  }
+  .firstFooter {
+    gap: 4rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .buildTheProjectContainer {
+    font-size: 2.5rem;
+    line-height: 3.313rem;
+  }
+  .wrapperDivParent {
+    /* padding-left: 4.625rem;
+    padding-top: 10.813rem; */
+    padding-bottom: 2.125rem;
+    box-sizing: border-box;
+  }
+  .firstFooter {
+    gap: 2rem;
+  }
+  .blockchain {
+    gap: 4.813rem;
+    padding-left: 3.438rem;
+    padding-right: 3.438rem;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .buildTheProjectContainer {
+    font-size: 2.5rem;
+    line-height: 2.188rem;
+  }
+  .turnOrdinaryToolsContainer {
+    font-size: 1rem;
+    line-height: 1.375rem;
+  }
+  .link,
+  .wrapperDivParent {
+    /* padding-left: 1.25rem; */
+    /* box-sizing: border-box; */
+  }
+
+  .firstFooter {
+    gap: 1rem;
+  }
+  .blockchain {
+    gap: 2.375rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    box-sizing: border-box;
+  }
+}
