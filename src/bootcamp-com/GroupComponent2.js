@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import { FaLocationDot } from "react-icons/fa6";
 import "./GroupComponent2.css";
 const GroupComponent2 = () => {
   const [timerEnded, setTimerEnded] = useState(false);
@@ -7,10 +8,10 @@ const GroupComponent2 = () => {
     days: 0,
     hours: 0,
     minutes: 0,
-    seconds: 0
+    seconds: 0,
   });
   useEffect(() => {
-    const futureDate = new Date("2024-04-01T20:00:00"); // Set your future date here
+    const futureDate = new Date("2024-09-24T18:30:00"); // Set your future date here
     const interval = setInterval(() => {
       const now = new Date();
       const difference = futureDate.getTime() - now.getTime();
@@ -34,12 +35,27 @@ const GroupComponent2 = () => {
   // after timer end
   // object here
   const groupDetails = {
-    group1: { title: "Bootcamp 2024", heading: "Chainlink", date: "1-12 April 2024", Time: "08-10 PM", location: "CUTM Bhubaneswar", Redgh: "https://lu.ma/ChainlinkBootcamp2024?utm_source=012moiiuvdi2",joinLink:"https://www.youtube.com/live/uULPXQBMBpc?si=-rdMx85JBIORiup3" },
-    group2: { title: "Chainlink Live Workshop 2024", heading: "Chainlink", date: "To Be Announced!", Time: "00-00 PM", location: "CUTM Bhubaneswar", Redgh: "#" }
-  }
+    group1: {
+      title: "Avalanche Bootcamp 2024",
+      heading: "Avalanche",
+      date: "24-27 Sep 2024",
+      Time: "06-30 PM",
+      location: "CUTM Bhubaneswar",
+      Redgh: "https://lu.ma/nznv8zcv",
+      joinLink: "https://www.youtube.com/live/uULPXQBMBpc?si=-rdMx85JBIORiup3",
+    },
+    group2: {
+      title: "Chainlink Live Workshop 2024",
+      heading: "Chainlink",
+      date: "To Be Announced!",
+      Time: "00-00 PM",
+      location: "CUTM Bhubaneswar",
+      Redgh: "#",
+    },
+  };
   let { id } = useParams();
   let content;
-  if (id === '1') {
+  if (id === "1") {
     content = (
       <section className="group-section">
         <div className="frame-child13" />
@@ -67,7 +83,10 @@ const GroupComponent2 = () => {
                 </div>
                 <div className="location-parent">
                   <b className="location">Location</b>
-                  <b className="online-mode">{groupDetails.group1.location}</b>
+                  <b className="online-mode">
+                    <FaLocationDot />
+                    {groupDetails.group1.location}
+                  </b>
                 </div>
               </div>
             </div>
@@ -82,40 +101,62 @@ const GroupComponent2 = () => {
               </div>
               <div className="frame-parent9">
                 <div className="button-instance-wrapper">
-                  {countdown.days === 0 && countdown.hours === 0 && countdown.minutes === 0 && countdown.seconds === 0 ? (
+                  {countdown.days === 0 &&
+                  countdown.hours === 0 &&
+                  countdown.minutes === 0 &&
+                  countdown.seconds === 0 ? (
                     <b className="bootcamp-live">Bootcamp is live 🎊!</b>
                   ) : (
-                    <b className="button-instance"><div className="countdown-container">
-                      <span className="countdown-number-big">
-                        {countdown.days.toString().padStart(2, '0')} :
-                      </span>
-                      <span className="countdown-number-big">
-                        {countdown.hours.toString().padStart(2, '0')} :
-                      </span>
-                      <span className="countdown-number-big">
-                        {countdown.minutes.toString().padStart(2, '0')} :
-                      </span>
-                      <span className="countdown-number-big">
-                        {countdown.seconds.toString().padStart(2, '0')}
-                      </span>
-                    </div>
+                    <b className="button-instance">
+                      <div className="countdown-container">
+                        <span className="countdown-number-big">
+                          {countdown.days.toString().padStart(2, "0")} :
+                        </span>
+                        <span className="countdown-number-big">
+                          {countdown.hours.toString().padStart(2, "0")} :
+                        </span>
+                        <span className="countdown-number-big">
+                          {countdown.minutes.toString().padStart(2, "0")} :
+                        </span>
+                        <span className="countdown-number-big">
+                          {countdown.seconds.toString().padStart(2, "0")}
+                        </span>
+                      </div>
                     </b>
                   )}
-
                 </div>
-                {countdown.days === 0 && countdown.hours === 0 && countdown.minutes === 0 && countdown.seconds === 0 ? (
+                {countdown.days === 0 &&
+                countdown.hours === 0 &&
+                countdown.minutes === 0 &&
+                countdown.seconds === 0 ? (
                   <>
-                  <button className="button1">
-                    <div className="text1">
-                      <div className="try-for-free1"><a href={groupDetails.group1.joinLink} target='_blank' rel='noreferrer'>Join Here</a></div>
-                    </div>
-                  </button>
-                </>
+                    <button className="button1">
+                      <div className="text1">
+                        <div className="try-for-free1">
+                          <a
+                            href={groupDetails.group1.joinLink}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            Redgistation over
+                          </a>
+                        </div>
+                      </div>
+                    </button>
+                  </>
                 ) : (
                   <>
                     <button className="button1">
                       <div className="text1">
-                        <div className="try-for-free1"><a href={groupDetails.group1.Redgh} target='_blank' rel='noreferrer'>Register Now</a></div>
+                        <div className="try-for-free1">
+                          <a
+                            href={groupDetails.group1.Redgh}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            Register Now
+                          </a>
+                        </div>
                       </div>
                     </button>
                   </>
@@ -126,7 +167,7 @@ const GroupComponent2 = () => {
         </div>
       </section>
     );
-  } else if (id === '2') {
+  } else if (id === "2") {
     content = (
       <section className="group-section">
         <div className="frame-child13" />
@@ -147,7 +188,7 @@ const GroupComponent2 = () => {
                 <div className="frame-wrapper7">
                   <div className="frame-parent7">
                     <div className="time-wrapper">
-                      <b className="time">Time</b>
+                      <b className="time">Date</b>
                     </div>
                     <b className="pm">{groupDetails.group2.Time}</b>
                   </div>
@@ -171,9 +212,14 @@ const GroupComponent2 = () => {
                 <div className="button-instance-wrapper">
                   <b className="button-instance">00:00:00:00</b>
                 </div>
-                <button className="button1 no-work-btn" style={{ cursor: 'not-allowed' }}>
+                <button
+                  className="button1 no-work-btn"
+                  style={{ cursor: "not-allowed" }}
+                >
                   <div className="text1">
-                    <div className="inactive-btn" ><a href={groupDetails.group2.Redgh}>Register Now</a></div>
+                    <div className="inactive-btn">
+                      <a href={groupDetails.group2.Redgh}>Register Now</a>
+                    </div>
                   </div>
                 </button>
               </div>

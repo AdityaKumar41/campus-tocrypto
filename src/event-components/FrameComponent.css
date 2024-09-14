@@ -400,7 +400,7 @@
   box-sizing: border-box;
   text-align: left;
   font-size: var(--font-size-21xl);
-  color: var(--color-mediumblue);
+  color: #e84142;
   font-family: var(--font-darker-grotesque);
 }
 @media screen and (max-width: 1050px) {

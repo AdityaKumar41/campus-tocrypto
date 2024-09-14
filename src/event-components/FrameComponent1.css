@@ -19,7 +19,7 @@
   top: -4rem;
   right: -14.875rem;
   border-radius: 50%;
-  background-color: var(--color-blueviolet-100);
+  background-color: #e84142;
   filter: blur(349px);
 }
 .div {
@@ -55,6 +55,7 @@
   left: -5.875rem;
   object-fit: contain;
   z-index: 1;
+  filter: blur(3px);
 }
 .chainlink {
   margin: 0;
@@ -62,8 +63,8 @@
   font-size: inherit;
   letter-spacing: 0.2px;
   line-height: 5.5rem;
-  font-weight: 400;
-  font-family: inherit;
+  font-weight: 600;
+  font-family: Inter;
   z-index: 2;
 }
 .frame-wrapper,
@@ -92,17 +93,20 @@
   right: -6.025rem;
   object-fit: contain;
   z-index: 1;
+  filter: blur(3px);
 }
 .bootcamp-2024 {
   position: relative;
   letter-spacing: 0.2px;
   line-height: 5.5rem;
   z-index: 2;
+  font-family: Inter;
 }
 .ipsum-is-simply-dummy {
   position: relative;
   line-height: 1.75rem;
   z-index: 2;
+  font-family: Inter;
 }
 .ipsum-is-simply-dummy-text-of-wrapper {
   align-self: stretch;
@@ -178,6 +182,7 @@
   right: 15.375rem;
   object-fit: contain;
   z-index: 1;
+  filter: blur(3px);
 }
 .try-for-free {
   /* width: 14.313rem; */
@@ -207,7 +212,7 @@
   border: 0;
   padding: var(--padding-11xs) var(--padding-xl) var(--padding-11xs)
     var(--padding-11xl);
-  background-color: var(--primary);
+  background-color: #e84142;
   border-radius: var(--br-4981xl);
   box-shadow: var(--shadow);
   z-index: 1;
@@ -221,6 +226,7 @@
   left: -8.125rem;
   object-fit: contain;
   z-index: 1;
+  filter: blur(3px);
 }
 .button-parent,
 .picture-mt-9 {

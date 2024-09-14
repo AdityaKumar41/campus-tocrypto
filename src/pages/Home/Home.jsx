@@ -20,6 +20,7 @@ import Person4 from "../../Assets/images/ellipse-40.png";
 // import Company1 from "../../Assets/images/image-40.png";
 // import Company2 from "../../Assets/images/image-50.png";
 import Backimg from "../../Assets/images/backgroundIMAGE.png";
+import { IconSquareRoundedX } from "@tabler/icons-react";
 // import image1 from "../../Assets/images/image9.png";
 // import image2 from "../../Assets/images/image10.png";
 // import image3 from "../../Assets/images/image11.png";
@@ -74,6 +75,9 @@ const imgePolkdot =
   "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/Polkadot_Logo.webp";
 const imgweb3foundation =
   "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/web3foundation.webp";
+
+const avalanche =
+  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/avalanche.svg";
 const YTicon =
   "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png";
 const Podcast =
@@ -157,6 +161,7 @@ const Home = () => {
     },
   });
   const [showPopup, setShowPopup] = useState(false);
+  const [showNav, setShowNav] = useState(true);
   // const [showPop, setShowPop] = useState(false);
   // const [showNotification, setShowNotification] = useState(false);
   const [Showpopuprev, setShowpopuprev] = useState(false);
@@ -270,24 +275,37 @@ const Home = () => {
     typeSpeed: 100,
     deleteSpeed: 40,
   });
+
+  const handleRemove = () => {
+    setShowNav(!showNav);
+  };
   return (
     <>
       <div className="circle"></div>
       <div className="home">
-        <div className="framer">
-          <div className="content">
-            Access the power of Decentralization on IPFS
-          </div>
-          <div className="visit">
-            <a
-              href="https://campustocrypto.eth.limo"
-              target="blank"
-              rel="noopener noreferrer"
-            >
-              Visit site
-            </a>
-            <GoArrowUpRight color="black" />
-          </div>
+        <div className="topframer">
+          {showNav && (
+            <>
+              <div onClick={handleRemove} className="framerabsolute">
+                {/* <IconSquareRoundedX />{" "} */}
+              </div>
+              <div className="framer">
+                <div className="content">
+                  Access the power of Decentralization on IPFS
+                </div>
+                <div className="visit">
+                  <a
+                    href="https://campustocrypto.eth.limo"
+                    target="blank"
+                    rel="noopener noreferrer"
+                  >
+                    Visit site
+                  </a>
+                  <GoArrowUpRight color="black" />
+                </div>
+              </div>
+            </>
+          )}
         </div>
         {/* SECTION 1 */}
         <div className="section1">
@@ -471,6 +489,7 @@ const Home = () => {
             <img src={imgGramTarang} alt="img" />
             <img src={imgePolkdot} alt="imgpol" />
             <img src={imgweb3foundation} alt="web3img" />
+            <img src={avalanche} alt="img" />
             <img src={imgFilemarket} alt="img" />
             <img src={imgKoinX} alt="img" />
             <img src={imgFusionWave} alt="img" />

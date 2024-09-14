@@ -6,13 +6,13 @@ const FrameComponent = () => {
   const UpcomingEvenet = [
     {
       image: "/rectangle-12@2x.png",
-      title: "Chainlink Live Workshop at CUTM.",
+      title: "Avalanche Live Workshop at CUTM.",
       subtitle:
         "Exploring the Future of Decentralized Oracles and Smart Contracts with Industry Leaders",
       year: "2024",
-      month: "TBA",
+      month: "SEP",
       date: "",
-      link: "/event-details/2",
+      link: "/event-details/1",
     },
   ];
   return (

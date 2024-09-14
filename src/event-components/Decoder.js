@@ -15,6 +15,9 @@ const imgePolkdot =
   "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/Polkadot_Logo.webp";
 const imgweb3foundation =
   "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/web3foundation.webp";
+
+const avalanche =
+  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/avalanche.svg";
 const Decoder = () => {
   const ourEvent = [
     {
@@ -95,6 +98,7 @@ const Decoder = () => {
               <img src={imgGramTarang} alt="img" />
               <img src={imgePolkdot} alt="imgpol" />
               <img src={imgweb3foundation} alt="web3img" />
+              <img src={avalanche} alt="img" />
               <img src={imgFilemarket} alt="img" />
               <img src={imgKoinX} alt="img" />
               <img src={imgFusionWave} alt="img" />

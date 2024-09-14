@@ -76,8 +76,8 @@
   justify-content: flex-start;
   padding: 0 var(--padding-2xl) 0 1.244rem;
 }
-@media screen and (max-width:800px) {
-  .time-wrapper{
+@media screen and (max-width: 800px) {
+  .time-wrapper {
     padding: 0;
   }
 }
@@ -98,7 +98,7 @@
   align-self: stretch;
 }
 .frame-wrapper7 {
-  width: 8.994rem;
+  /* width: 8.994rem; */
   padding: var(--padding-9xs) 1.25rem 0 0;
   box-sizing: border-box;
 }
@@ -185,7 +185,7 @@
   display: inline-block;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), 0 4px 4px rgba(0, 0, 0, 0.25);
 }
-.inactive-btn{
+.inactive-btn {
   position: relative;
   font-size: 1.3rem;
   letter-spacing: 0.2px;
@@ -197,7 +197,7 @@
   display: inline-block;
   text-shadow: 0 4px 4px rgba(248, 17, 17, 0.25), 0 4px 4px rgba(0, 0, 0, 0.25);
 }
-.inactive-btn a{
+.inactive-btn a {
   cursor: not-allowed;
 }
 .text1 {
@@ -220,7 +220,7 @@
   cursor: pointer;
   border: 0;
   padding: 0 var(--padding-11xl);
-  background-color: var(--primary);
+  background-color: #e84142;
   /* height: 3.688rem; */
   width: 14.975rem;
   border-radius: var(--br-4981xl);
@@ -232,13 +232,13 @@
   z-index: 1;
 }
 
-@media screen and (max-width:350px) {
-  .button1{
+@media screen and (max-width: 350px) {
+  .button1 {
     padding: 0;
     width: 10rem;
   }
-}z
-.frame-parent9 {
+}
+z .frame-parent9 {
   width: 67.131rem;
   justify-content: space-between;
   gap: var(--gap-xl);
@@ -289,12 +289,12 @@
   color: var(--light-text);
   font-family: var(--font-darker-grotesque);
 }
-.try-for-free1 a{
+.try-for-free1 a {
   text-decoration: none;
   white-space: nowrap;
   text-align: center;
 }
-.bootcamp-live{
+.bootcamp-live {
   font-size: var(--font-size-13xl);
   white-space: nowrap;
 }
@@ -305,7 +305,7 @@
   .time {
     font-size: var(--font-size-13xl);
   }
-  .time{
+  .time {
     padding: 0;
   }
   .blockchain-label-parent {
@@ -322,7 +322,7 @@
   .frame-parent6 {
     gap: 1.313rem 2.656rem;
   }
-  .bootcamp-live{
+  .bootcamp-live {
     font-size: var(--font-size-8xl);
     margin-bottom: 1.5rem;
     white-space: nowrap;

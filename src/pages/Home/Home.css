@@ -51,6 +51,12 @@
   }
 }
 
+.topframer {
+  position: relative;
+}
+.framerabsolute {
+  position: absolute;
+}
 .section1 {
   display: flex;
   justify-content: space-between;
