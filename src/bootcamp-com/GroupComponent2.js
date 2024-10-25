@@ -11,7 +11,7 @@ const GroupComponent2 = () => {
     seconds: 0,
   });
   useEffect(() => {
-    const futureDate = new Date("2024-09-24T18:30:00"); // Set your future date here
+    const futureDate = new Date("2024-09-24T09:30:00"); // Set your future date here
     const interval = setInterval(() => {
       const now = new Date();
       const difference = futureDate.getTime() - now.getTime();
@@ -39,7 +39,7 @@ const GroupComponent2 = () => {
       title: "Avalanche Bootcamp 2024",
       heading: "Avalanche",
       date: "24-27 Sep 2024",
-      Time: "06-30 PM",
+      Time: "09-30 AM",
       location: "CUTM Bhubaneswar",
       Redgh: "https://lu.ma/nznv8zcv",
       joinLink: "https://www.youtube.com/live/uULPXQBMBpc?si=-rdMx85JBIORiup3",
@@ -105,7 +105,7 @@ const GroupComponent2 = () => {
                   countdown.hours === 0 &&
                   countdown.minutes === 0 &&
                   countdown.seconds === 0 ? (
-                    <b className="bootcamp-live">Bootcamp is live 🎊!</b>
+                    <b className="bootcamp-live">Bootcamp is Over!</b>
                   ) : (
                     <b className="button-instance">
                       <div className="countdown-container">
@@ -130,14 +130,10 @@ const GroupComponent2 = () => {
                 countdown.minutes === 0 &&
                 countdown.seconds === 0 ? (
                   <>
-                    <button className="button1">
+                    <button className="button1" disabled>
                       <div className="text1">
                         <div className="try-for-free1">
-                          <a
-                            href={groupDetails.group1.joinLink}
-                            target="_blank"
-                            rel="noreferrer"
-                          >
+                          <a href={"#"} aria-disabled rel="noreferrer">
                             Redgistation over
                           </a>
                         </div>

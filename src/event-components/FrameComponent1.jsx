@@ -51,7 +51,7 @@ const FrameComponent1 = () => {
           />
           <div className="button-parent">
             <button className="button">
-              <a href={chainlinkRedg} target="_blank" rel="noreferrer">
+              <a href={"#"} rel="noreferrer">
                 <div className="text">
                   <div className="try-for-free">REGISTER NOW</div>
                 </div>

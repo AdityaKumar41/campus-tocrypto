@@ -14,18 +14,18 @@ import { Link } from "react-router-dom";
 // import google from '../../Assets/images/image-50.png';
 // import { FaLinkedinIn, FaXTwitter, FaFacebookF } from "react-icons/fa6";
 const imgKoinX =
-  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/koinx.svg";
+  "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/koinx.svg";
 const polcadotImg =
-  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/Polkadot_Logo.webp";
+  "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/Polkadot_Logo.webp";
 // const imgCutm = "https://campus-crypto.s3.eu-north-1.amazonaws.com/ICONS/cutm+logo.png";
 const imgFusionWave =
-  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/FusionWaveAI.png";
+  "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/FusionWaveAI.png";
 // const imgBlockCation = "https://campus-crypto.s3.eu-north-1.amazonaws.com/ICONS/blockcation_logo.png";
 const imgFilemarket =
-  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/filemarket.png";
+  "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/filemarket.png";
 // const imgGramTarang = "https://campus-crypto.s3.eu-north-1.amazonaws.com/ICONS/logo.png";
 const imgs =
-  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/c2c-grp.JPG";
+  "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/c2c-grp.JPG";
 const team = [
   {
     img: imgs,

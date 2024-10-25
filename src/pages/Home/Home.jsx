@@ -30,54 +30,54 @@ import { IconSquareRoundedX } from "@tabler/icons-react";
 // import image7 from "../../Assets/images/image15.png";
 // import image8 from "../../Assets/images/image16.png";
 const imgPolk =
-  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/radhakrishnadashari.jpg";
+  "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/radhakrishnadashari.jpg";
 const imgwaveAI =
-  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/ankitdas.jpg";
+  "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/ankitdas.jpg";
 const imgKoi =
-  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/punitagarwal.jpg";
+  "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/punitagarwal.jpg";
 const imgFile =
-  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/Ilya%20(Makhov)%20Orlov.jpg";
+  "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/Ilya+(Makhov)+Orlov.jpg";
 const imgBSB =
-  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/sahilthakur.jpg";
+  "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/sahilthakur.jpg";
 const imgSFT =
-  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/Prashantsurana.png";
+  "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/Prashantsurana.png";
 //footer-side
 const image1 =
-  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/iamge2018.jpg";
+  "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/iamge2018.jpg";
 const image2 =
-  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/timeline1.jpg";
+  "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/timeline1.jpg";
 const image3 =
-  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/image2019.avif";
+  "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/image2019.avif";
 const image4 =
-  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/image2020.webp";
+  "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/image2020.webp";
 const image5 =
-  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/timeline2.jpg";
+  "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/timeline2.jpg";
 const image6 =
-  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/image2021.avif";
+  "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/image2021.avif";
 const image7 =
-  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/timeline4.jpg";
+  "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/timeline4.jpg";
 const image8 =
-  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/timeline3.jpg";
+  "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/timeline3.jpg";
 
 const imgKoinX =
-  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/koinx.svg";
+  "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/koinx.svg";
 const imgCutm =
-  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/centurion.png";
+  "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/centurion.png";
 const imgFusionWave =
-  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/FusionWaveAI.png";
+  "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/FusionWaveAI.png";
 const imgBlockCation =
-  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/blockcationlogo.png";
+  "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/blockcationlogo.png";
 const imgFilemarket =
-  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/filemarket.png";
+  "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/filemarket.png";
 const imgGramTarang =
-  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/gramtarang.png";
+  "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/gramtarang.png";
 const imgePolkdot =
-  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/Polkadot_Logo.webp";
+  "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/Polkadot_Logo.webp";
 const imgweb3foundation =
-  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/web3foundation.webp";
+  "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/web3foundationorg.png";
 
 const avalanche =
-  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/avalanche.svg";
+  "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/avalanche+(1).png";
 const YTicon =
   "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png";
 const Podcast =

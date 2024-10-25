@@ -15,21 +15,21 @@ import Triangle from "../../Assets/svg/Group 1 (1).svg";
 // import { Link } from 'react-router-dom';
 
 const imgKoinX =
-  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/koinx.svg";
+  "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/koinx.svg";
 const imgCutm =
-  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/centurion.png";
+  "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/centurion.png";
 const imgFusionWave =
-  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/FusionWaveAI.png";
+  "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/FusionWaveAI.png";
 const imgBlockCation =
-  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/blockcationlogo.png";
+  "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/blockcationlogo.png";
 const imgFilemarket =
-  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/filemarket.png";
+  "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/filemarket.png";
 const imgGramTarang =
-  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/gramtarang.png";
+  "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/gramtarang.png";
 const imgePolkdot =
-  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/Polkadot_Logo.webp";
+  "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/Polkadot_Logo.webp";
 const imgweb3foundation =
-  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/web3foundation.webp";
+  "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/web3foundation.webp";
 // function scrollToSection() {
 //   const section = document.getElementById('sectionId');
 //   if (section) {

@@ -1,28 +1,97 @@
 import "./Decoder.css";
 const imgKoinX =
-  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/koinx.svg";
+  "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/koinx.svg";
 const imgCutm =
-  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/centurion.png";
+  "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/centurion.png";
 const imgFusionWave =
-  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/FusionWaveAI.png";
+  "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/FusionWaveAI.png";
 const imgBlockCation =
-  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/blockcationlogo.png";
+  "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/blockcationlogo.png";
 const imgFilemarket =
-  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/filemarket.png";
+  "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/filemarket.png";
 const imgGramTarang =
-  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/gramtarang.png";
+  "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/gramtarang.png";
 const imgePolkdot =
-  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/Polkadot_Logo.webp";
+  "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/Polkadot_Logo.webp";
 const imgweb3foundation =
-  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/web3foundation.webp";
+  "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/web3foundationorg.png";
 
 const avalanche =
-  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/avalanche.svg";
+  "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/avalanche+(1).png";
 const Decoder = () => {
   const ourEvent = [
     {
       image:
-        "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/ppolkadot.png",
+        "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/devikamital.jpeg",
+      title:
+        "Introductory Speech by Devika Mittal, Ava Labs Head India - Day 4",
+      subtitle:
+        "Devika Mittal, Head of Ava Labs India, delivered an inspiring introductory speech, sharing insights into Ava Labs' vision and the future of blockchain technology, setting a motivating tone for the day's sessions.",
+      year: "2024",
+      month: "SEP",
+      date: "27",
+      link: "https://www.campustocrypto.com",
+    },
+    {
+      image:
+        "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/avalanchehack.jpeg",
+      title: "24-Hour Hackathon with 230+ Participants - Day 3",
+      subtitle:
+        "Over 230 participants joined a thrilling 24-hour hackathon, showcasing creativity and innovation as they tackled real-world challenges and built impactful projects in a competitive, high-energy environment.",
+      year: "2023",
+      month: "SEP",
+      date: "26",
+      link: "https://www.campustocrypto.com",
+    },
+    {
+      image:
+        "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/avalancheday2.jpeg",
+      title: "Solidity Smart Contracts and L1 Deployment Workshop - Day 2",
+      subtitle:
+        "Participants delved into the fundamentals of Solidity smart contract development and learned how to deploy on L1 blockchains, gaining hands-on experience in building and deploying decentralized applications.",
+      year: "2024",
+      month: "SEP",
+      date: "25",
+      link: "https://www.campustocrypto.com",
+    },
+    {
+      image:
+        "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/avalancheday1.jpeg",
+      title:
+        "Avalanche Workshop: Community Building and Fundamentals by Shriyash Pandey",
+      subtitle:
+        "Day one of the Avalanche Workshop, focused on fostering community engagement and understanding the Avalanche blockchain.",
+      year: "2024",
+      month: "SEP",
+      date: "24",
+      link: "https://www.campustocrypto.com",
+    },
+    {
+      image:
+        "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/icp2.jpg",
+      title: "ICP Blockchain Workshop by Crewshpear at CUTM Andhra Pradesh",
+      subtitle:
+        " Crewshpear hosted an ICP blockchain workshop at CUTM Andhra Pradesh, featuring practical sessions on Motoko contract deployment and project creation.",
+      year: "2023",
+      month: "OCT",
+      date: "3",
+      link: "https://www.campustocrypto.com",
+    },
+
+    {
+      image:
+        "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/icpcrewspear.jpeg",
+      title: "ICP Blockchain Workshop by Crewshpear at CUTM Bhubaneswar",
+      subtitle:
+        "Hosted by ICP Crewshpear at CUTM Bhubaneswar, this workshop provided hands-on learning in ICP blockchain, including contract deployment with Motoko and creating diverse projects.",
+      year: "2024",
+      month: "SEP",
+      date: "10",
+      link: "https://www.campustocrypto.com",
+    },
+    {
+      image:
+        "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/ppolkadot.png",
       title: "India’s first university to host polkadot workshop, by C2C.",
       subtitle:
         "Our students got a deep understanding on Web3 Foundation and Polkadot Ecosystem.",
@@ -33,7 +102,7 @@ const Decoder = () => {
     },
     {
       image:
-        "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/filemarket.JPG",
+        "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/filemarket.JPG",
       title: "Usecases of decentralized storage on Filemarket.",
       subtitle:
         "Navigating Decentralized Data: Insights from the FileMarket Workshop",
@@ -44,7 +113,7 @@ const Decoder = () => {
     },
     {
       image:
-        "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/Blockseblock.png",
+        "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/Blockseblock.png",
       title: "BlockseBlock Hackathon:",
       subtitle:
         " A transformative experience for our students, fostering collective creativity, knowledge acquisition, and invaluable hands-on experience.",
@@ -54,7 +123,8 @@ const Decoder = () => {
       link: "https://www.campustocrypto.com",
     },
     {
-      image: "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/koinx.JPG",
+      image:
+        "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/koinx.JPG",
       title: "Web3 & Fintech event in Centurion University hosted by C2C",
       subtitle:
         "enriching our understanding Tokenization of asset and other transformative technologies.",
@@ -65,7 +135,7 @@ const Decoder = () => {
     },
     {
       image:
-        "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/fusionwaveanitdas.png",
+        "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/fusionwaveanitdas.png",
       title: "Campus to Crypto: Career Journeys in Blockchain & AI",
       subtitle:
         "Exploring Career Trajectories in Blockchain and Generative AI with FusionWave AI",
@@ -76,7 +146,7 @@ const Decoder = () => {
     },
     {
       image:
-        "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/nearprotocol.png",
+        "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/nearprotocol.png",
       title: "How to grow inside Web3 as an Noncoder.",
       subtitle: "Directly seated and inside for you to enjoy the show.",
       year: "2023",

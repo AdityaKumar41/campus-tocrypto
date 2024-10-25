@@ -398,8 +398,8 @@
   padding: var(--padding-268xl) 0 0;
   box-sizing: border-box;
 }
-@media screen and (max-width:1050px) {
-  .logging-system{
+@media screen and (max-width: 1050px) {
+  .logging-system {
     display: none;
   }
 }

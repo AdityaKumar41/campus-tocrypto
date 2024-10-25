@@ -217,7 +217,7 @@
   justify-content: space-between;
 }
 .button1 {
-  cursor: pointer;
+  cursor: not-allowed;
   border: 0;
   padding: 0 var(--padding-11xl);
   background-color: #e84142;

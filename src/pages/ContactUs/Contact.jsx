@@ -10,11 +10,11 @@ import { NavLink } from "react-router-dom";
 import "./Contact.css";
 import Contact1 from "../../Assets/svg/Yuppies Chat.svg";
 const Person1 =
-  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/siddarth-kumar.jpeg";
+  "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/siddarth-kumar.jpeg";
 const Person2 =
-  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/chirpa.jpeg";
+  "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/chirpa.jpeg";
 const Person3 =
-  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/nirvan.png";
+  "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/nirvan.png";
 const person1Linked = "https://www.linkedin.com/in/siddharth-kumar-45b449133/";
 const person2Linked = "https://www.linkedin.com/in/nirvan-abhilash-8a890218b/";
 const person3Linked =

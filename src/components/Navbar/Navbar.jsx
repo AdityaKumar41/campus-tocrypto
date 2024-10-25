@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./Navbar.css";
 const logo =
-  "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/campustocryptologo.png";
+  "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/campustocryptologo.png";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);

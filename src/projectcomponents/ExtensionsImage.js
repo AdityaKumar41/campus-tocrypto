@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 
 const ExtensionsImage = ({ className = "" }) => {
   const headingImage1 =
-    "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/projectImg1.png";
+    "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/projectImg1.png";
   const headingImage2 =
-    "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/projectImg2.png";
+    "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/projectImg2.png";
   return (
     <div className={styles.MainContainer}>
       <section className={[styles.extensionsImage, className].join(" ")}>

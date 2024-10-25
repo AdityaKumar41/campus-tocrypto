@@ -5,18 +5,18 @@ import { Link } from "react-router-dom";
 
 const ImageComponentes = ({ className = "" }) => {
   const gridImage1 =
-    "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/DAOimage.png";
+    "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/DAOimage.png";
   const gridImage2 =
-    "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/D-MEETimage.png";
+    "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/D-MEETimage.png";
 
   const gridImage3 =
-    "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/AccountAbstract1.png";
+    "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/AccountAbstract1.png";
   const gridImage4 =
-    "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/AccountAbstract.png";
+    "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/AccountAbstract.png";
   const gridImage5 =
-    "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/NFT-MARKETPLACE.png";
+    "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/NFT-MARKETPLACE.png";
   const gridImage6 =
-    "https://campustocrypto.nyc3.cdn.digitaloceanspaces.com/EOD%20APPLICATION.png";
+    "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/EOD+SYSTEM.jpg";
 
   const gridLink1 = "https://github.com/campustocrypto/DAO-Dapp";
   const gridLink2 = "https://github.com/campustocrypto/D-MEET";
