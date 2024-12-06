@@ -14,11 +14,15 @@ const Person1 =
 const Person2 =
   "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/chirpa.jpeg";
 const Person3 =
-  "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/nirvan.png";
+  "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/nirvan.png";  
+const Person4 =
+  "https://campustocrypto.s3.ap-south-1.amazonaws.com/source/abhimitra.jpg";
 const person1Linked = "https://www.linkedin.com/in/siddharth-kumar-45b449133/";
 const person2Linked = "https://www.linkedin.com/in/nirvan-abhilash-8a890218b/";
 const person3Linked =
   "https://www.linkedin.com/in/chira-rajeswari-sushree-maharani-6208b9269/";
+  const person4Linked =
+  "https://www.linkedin.com/in/ofabhimitra/";
 const Contact = () => {
   const [formData, setFormData] = useState({
     firstName: "",
@@ -35,6 +39,7 @@ const Contact = () => {
     },
   });
   const peopleData = [
+    { name: "Abhi Mitra", imgSrc: Person4, link: person4Linked },
     { name: "Siddharth Kumar", imgSrc: Person1, link: person1Linked },
     { name: "Nirvan Abhilash", imgSrc: Person3, link: person2Linked },
     { name: "C.R Sushree Maharani", imgSrc: Person2, link: person3Linked },
@@ -224,7 +229,7 @@ const Contact = () => {
 
         <div className="c-section2">
           <h3>
-            Our <span>Founding</span>
+            Our <span>Founder</span>
           </h3>
           <h6>
             C2C started in 2017 and this year we restarted this group and
